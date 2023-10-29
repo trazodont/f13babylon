@@ -27,6 +27,7 @@ Will probably start phasing more of this to actual custom access as we go.
 /*
 Mayor
 */
+/*
 /datum/job/bighorn/f13mayor
 	title = "Mayor"
 	flag = F13MAYOR
@@ -241,20 +242,20 @@ Mayor
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /*--------------------------------------------------------------*/
-
-/datum/job/bighorn/f13barkeep
-	title = "Barkeep"
+*/
+/datum/job/khan/f13barkeep
+	title = "Khan Barkeep"
 	flag = F13BARKEEP
 	department_flag = DEP_BIGHORN
 	total_positions = 2
 	spawn_positions = 2
 	roleplay_exclusive_notify = 1
-	supervisors = "the free market and Bighorn laws"
-	description = "As a proprietor of the Blue Oyster, you are responsible for ensuring both citizens and travellers in Bighorn can get some food, drink and rest. This town is usually run by the Great Khans, and the farm within their compound could provide fresh supplies for your business, so try negotiating with them if they are present."
+	supervisors = "the Kharuul and the Five Laws"
+	description = "You are a Khutsdag, a Khan bartender, and a proprietor of the Blue Oyster. You are responsible for ensuring both citizens and travellers in Bighorn can get some food, drink and rest. This town is run by your fellow Khans, and the farm within their compound could provide fresh supplies for your business, so try bartering with them if they are present."
 	enforces = "While you have dominion over your private business, your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
 	selection_color = "#dcba97"
 
-	outfit = /datum/outfit/job/bighorn/f13barkeep
+	outfit = /datum/outfit/job/khan
 
 	loadout_options = list(
 	/datum/outfit/loadout/rugged,
@@ -267,9 +268,11 @@ Mayor
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/bighorn,
+			/datum/job/khan,
 		),
 		/datum/matchmaking_pref/rival = list(
 			/datum/job/bighorn,
+			/datum/job/khan,
 		),
 	)
 
@@ -328,6 +331,7 @@ Mayor
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 
 /*-----------------------------------------------------*/
+/*
 /datum/job/bighorn/f13shopkeeper
 	title = "Shopkeeper"
 	flag = F13SHOPKEEPER
@@ -336,7 +340,7 @@ Mayor
 	spawn_positions = 2
 	roleplay_exclusive_notify = 1
 	supervisors = "the free market, Sierra Trading Company, and Bighorn laws"
-	description = "You are a Sierra Trading Company affiliate based in Bighorn - a settlement in a key area between warring factions. Your store allows you to sell all kinds of merchandise, from dandy boy apples to laser rifles. Ensure you make a profit and retain enough capital for your day-to-day operations."
+	description = "You are an Irgen, a Citizen of Bighorn under the protection of the Great Khanate, with ownership. Your store allows you to sell all kinds of merchandise, from dandy boy apples to laser rifles. Ensure you make a profit and retain enough capital for your day-to-day operations."
 	enforces = "While you have dominion over your private business, your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
 	selection_color = "#dcba97"
 	exp_requirements = 300
@@ -400,16 +404,17 @@ Mayor
 		return
 
 /*--------------------------------------------------------------*/
-/datum/job/bighorn/f13settler
-	title = "Citizen"
+*/
+/datum/job/khan/citizen
+	title = "Bighorn Citizen"
 	flag = F13SETTLER
 	department_flag = DEP_BIGHORN
 	total_positions = -1
 	spawn_positions = -1
 	roleplay_exclusive_notify = 1
-	supervisors = "Bighorn laws"
-	description = "You are a citizen living in Bighorn - a settlement typically run by the Great Khans. Take good care of your town, and consider picking up a trade to support the settlement - farming, hunting, or something more particular. One of the local businesses or the Khans themselves may have work if you require funds."
-	enforces = "Your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
+	supervisors = "the Kharuul and the Five Laws"
+	description = "You are an Irgen, a Citizen who was born in the Great Khanate settlement of Bighorn, though not necessarily to Khan parents. While you have not yet joined the ranks of the Bulchin or the Tsereg, or the Followers clinic, or even the New Canaanites at their church for reasons entirely your own to decide, you are no weakling, and have had an upbringing that left you rougher around the edges than the average Wastelander, as Khan children make for rough company. Take good care of your town, and consider picking up a trade to support the settlement - farming, hunting, or something more particular. One of the local businesses or the Khans themselves may have work if you require funds, and you can always produce, bottle, and sell booze for extra caps."
+	enforces = "Your premium status as a citizen may be revoked if you break the Five Laws too often or too severely. Khan justice is harsh, but typically also fair."
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/bighorn/f13settler
@@ -442,9 +447,9 @@ Mayor
 	total_positions = 1
 	spawn_positions = 1
 	roleplay_exclusive_notify = 1
-	supervisors = "your faith and Bighorn laws"
-	description = "You are a preacher based in Bighorn - a settlement typically run by the Great Khans. As a bastion of faith, spread the good word and bring hope to the needy. The divine may not protect from the harsh realities of the wasteland, but surely offers some solace."
-	enforces = "Your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
+	supervisors = "your faith and the Five Laws"
+	description = "You are a New Canaanite serving as a missionary to Bighorn, and a connection to other Mormons. While the town has no shortage of skepticism or biting remarks about Faith, you do what you can for the people of Bighorn, for God has love, even for the Gentiles. Sometimes this also means advocating on behalf of criminals, if the evidence against them is weak enough."
+	enforces = "Your premium status as a citizen may be revoked if you break the Five Laws too often or too severely. Khan justice is harsh, but typically also fair. However, your chapel is sacred ground, and you and your clergy have the right to protect it from bloodshed."
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/bighorn/f13preacher
@@ -730,6 +735,7 @@ Mayor
 	)
 
 /*--------------------------------------------------------------*/
+/*
 /datum/job/bighorn/f13secretary
 	title = "Secretary"
 	flag = F13SECRETARY
@@ -755,4 +761,6 @@ Mayor
 	/obj/item/clothing/under/suit/black_really = 1,
 	/obj/item/clothing/gloves/evening = 1,
 	/obj/item/clothing/gloves/color/white = 1)
+
 /*--------------------------------------------------------------*/
+*/
