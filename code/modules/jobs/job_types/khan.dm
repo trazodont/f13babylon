@@ -150,7 +150,7 @@
 	faction = FACTION_KHAN
 	total_positions = 4
 	spawn_positions = 4
-	description = "You are a Kharuul, a seasoned fighter who has volunteered for the duty and the honor of enforcing the Five Laws of Bighorn. You have been given a book to guide you in this endeavor.
+	description = "You are a Kharuul, a seasoned fighter who has volunteered for the duty and the honor of enforcing the Five Laws of Bighorn. You have been given a book to guide you in this endeavor."
 	enforces = "The Five Laws, which are as follows:\
 	1. Keep your wars out of scope range.\
 	2. Settle petty scores with your fists.\
@@ -169,7 +169,7 @@
 		)
 
 /datum/job/khan/chemist
-	title = "Khan Scholar
+	title = "Khan Scholar"
 	flag = F13KHANCHEMIST
 	faction = FACTION_KHAN
 	total_positions = 2
@@ -227,6 +227,7 @@
 
 	loadout_options = list(
 		/datum/outfit/loadout/smith//one for now
+		)
 
 /datum/job/khan/courtesan
 	title = "Khan Musician"
@@ -269,7 +270,7 @@
 	gunsmith_four = TRUE
 
 /datum/outfit/job/khan/merchant
-	jobtype = /datum/job/khan/marchant
+	jobtype = /datum/job/khan/merchant
 
 /datum/outfit/job/khan/courtesan
 	jobtype = /datum/job/khan/courtesan
@@ -281,7 +282,7 @@
 	total_positions = 5
 	spawn_positions = 5
 	description = "You are a Bulchin, literally meaning 'Muscle' in the Mongol-esque pidgin tongue that the Great Khanate has adopted. You are the truest and most traditional kind of Great Khan, adhering to the battle-hungry, plunder-seeking traditions that you and the rest of the Wasteland has always known the Khans for.\
-	You dont have any strict responsibilities beyond sticking to the Five Laws, and are quite free to stick it to anyone in the Wasteland who isn't paying for the Khanate's protection. That being said, a Khan's word is their bond. If you make a promise, stick to it.
+	You dont have any strict responsibilities beyond sticking to the Five Laws, and are quite free to stick it to anyone in the Wasteland who isn't paying for the Khanate's protection. That being said, a Khan's word is their bond. If you make a promise, stick to it."
 	supervisors = "the Kharuul, the Five Laws, and the Noyan."
 	selection_color = "#ff915e"
 	exp_requirements = 240

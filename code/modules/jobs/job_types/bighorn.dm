@@ -279,7 +279,7 @@ Mayor
 
 /datum/outfit/job/bighorn/f13barkeep
 	name = "Barkeep"
-	jobtype = /datum/job/bighorn/f13barkeep
+	jobtype = /datum/job/khan/f13barkeep
 
 	uniform = /obj/item/clothing/under/f13/bartenderalt
 	id = /obj/item/card/id/dogtag/town
@@ -628,7 +628,7 @@ Mayor
 
 /datum/outfit/job/bighorn/f13settler
 	name = "Citizen"
-	jobtype = /datum/job/bighorn/f13settler
+	jobtype = /datum/job/khan/citizen
 	ears = /obj/item/radio/headset/headset_town
 	belt = null
 	id = /obj/item/card/id/dogtag/town
