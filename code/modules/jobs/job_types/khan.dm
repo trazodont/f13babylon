@@ -325,6 +325,8 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	belt = /obj/item/storage/belt/bandolier
 	backpack_contents = list(
+		/obj/item/book/granter/trait/chemistry = 1,
+		/obj/item/book/granter/trait/lowsurgery =1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 )
 
