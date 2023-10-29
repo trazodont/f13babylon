@@ -1,3 +1,4 @@
+
 /*
 Town access doors
 Sheriff/Deputy, Gatehouse etc: 62 ACCESS_GATEWAY
