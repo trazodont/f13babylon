@@ -58,9 +58,9 @@ Elder
 	req_admin_notify = 1
 	roleplay_exclusive_notify = 1
 
-	exp_requirements = 3000
+	exp_requirements = 0
 
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 
 	outfit = /datum/outfit/job/bos/f13elder
@@ -108,7 +108,7 @@ Head Paladin
 	supervisors = "the Baron"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 2400
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/sentheavy, //Gauss
@@ -197,7 +197,7 @@ Head Scribe
 	supervisors = "the Baron"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 1500
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/hsstand,
@@ -272,7 +272,7 @@ Head Knight
 	supervisors = "the Baron"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 1500
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/capstand, //Wattz 2k
@@ -365,7 +365,7 @@ Star Paladin
 	supervisors = "the Castellan"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 1500 //Not used right now anyways. Slot disabled.
+	exp_requirements = 0 
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
@@ -448,7 +448,7 @@ Paladin
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Paladin Marshal and Castellan"
 	selection_color = "#95a5a6"
-	exp_requirements = 1200
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladinb, //Combat Rifle
@@ -531,7 +531,7 @@ Senior Scribe
 	supervisors = "the Keeper"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 900
+	exp_requirements = 0
 
 	outfit = /datum/outfit/job/bos/f13seniorscribe
 
@@ -598,7 +598,7 @@ Scribe
 	supervisors = "the Librarian and Keeper"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 300
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/scribea,
@@ -681,7 +681,7 @@ Senior Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Knight-Commander"
 	selection_color = "#95a5a6"
-	exp_requirements = 900
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/sknighta, //AER12
@@ -781,7 +781,7 @@ Knight
 	supervisors = "the Knight-Captain and Knight-Commander"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 300
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/knighta, //AER9
@@ -969,13 +969,13 @@ Off-Duty
 /datum/job/bos/f13offdutybos
 	title = "BoS Off-Duty"
 	flag = F13OFFDUTYBOS
-	total_positions = 6
+	total_positions = 3
 	spawn_positions = 6
 	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason."
 	supervisors = "your superior rank."
 	selection_color = "#95a5a6"
 	roleplay_exclusive_notify = 1
-	exp_requirements = 300
+	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND//So you can't sit on it and play Baron / Inquisitor. :)
 	outfit = /datum/outfit/job/bos/f13offdutybos
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
