@@ -155,7 +155,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
-	exp_requirements = 1900
+	exp_requirements = 0
 
 	loadout_options = list(
 		/datum/outfit/loadout/captainbackline,	// Infiltrator, El Capitan
@@ -233,7 +233,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
 	outfit = /datum/outfit/job/ncr/f13lieutenant
-	exp_requirements = 1250
+	exp_requirements = 0
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -286,7 +286,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/job/ncr/f13sergeant
 	title = "NCR Sergeant"
 	flag = F13SERGEANT
-	total_positions = 3
+	total_positions = 2
 	spawn_positions = 3
 	description = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the enlisted follow them to the letter. Additionally, you are responsible for the wellbeing of the troops and their ongoing training with the NCR."
 	supervisors = "Sergeant First Class and Above"
@@ -294,7 +294,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13sergeant
-	exp_requirements = 500
+	exp_requirements = 0
 
 	loadout_options = list( // ALL: Bayonet, M1911 sidearm
 		/datum/outfit/loadout/sergeantrifleman,	// Worn Assault Carbine
@@ -386,7 +386,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13drillsergeant
 	roleplay_exclusive_notify = 1
-	exp_requirements = 1000
+	exp_requirements = 0
 
 	loadout_options = list( // ALL: Bayonet
 		/datum/outfit/loadout/seatechnical, //Worn carbine
@@ -466,7 +466,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
 	outfit = /datum/outfit/job/ncr/f13representative
 	roleplay_exclusive_notify = 1
-	exp_requirements = 750
+	exp_requirements = 0
 
 	loadout_options = list(
 		/datum/outfit/loadout/repbrahminbaron, //
@@ -539,7 +539,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 ///////////////
 /// Rangers ///
 ///////////////
-
+/*
 // VETERAN RANGER
 
 /datum/job/ncr/f13vetranger
@@ -747,7 +747,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/gun/ballistic/revolver/m29/snub = 1,
 		/obj/item/ammo_box/m44box = 1,
 		)
-
+*/
 
 ////////////////////
 /// Specialists ////
@@ -758,7 +758,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/job/ncr/f13heavytrooper
 	title = "NCR Heavy Trooper"
 	flag = F13HEAVYTROOPER
-	total_positions = 2
+	total_positions = 1
 	spawn_positions = 2
 	description = "You are the most elite of the enlisted, sergeant in rank but forgoing regular command roles to lead in battle only. You are expected to be on the frontlines of every engagement, and to provide firing support for the rank and file. Your power armor lacks the protection the full working sets have, but you have trained with it and can use it in battle well. You're the NCR's heaviest hitter in combat, don't be the exception."
 	supervisors = "Lieutenant and Above"
@@ -766,7 +766,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_HEAVYTROOPER
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
-	exp_requirements = 375
+	exp_requirements = 0
 
 	loadout_options = list(
 		/datum/outfit/loadout/shockht,	// BAR
@@ -788,9 +788,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	uniform = /obj/item/clothing/under/f13/ncr
 	accessory =	/obj/item/clothing/accessory/ncr/SGT
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
-	head = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr
+	head = /obj/item/clothing/head/f13/ncr
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	neck = /obj/item/storage/belt/holster/legholster
-	suit = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
@@ -827,7 +827,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_COMBATENGINEER
 	outfit = /datum/outfit/job/ncr/f13combatengineer
-	exp_requirements = 60
+	exp_requirements = 0
 
 	loadout_options = list( // ALL: Trench tool, Limited blueprints
 		/datum/outfit/loadout/combatengineerbuilder, // R82, X4 explosive, Extra materials
@@ -928,7 +928,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13mp
 	roleplay_exclusive_notify = 1
-	exp_requirements = 150
+	exp_requirements = 0
 
 /datum/outfit/job/ncr/f13mp		// .45 Pistol, Beanbag Shotgun, Military baton
 	name = "NCR Military Police"
@@ -970,7 +970,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_COMBATMEDIC
 	outfit = /datum/outfit/job/ncr/f13combatmedic
-	exp_requirements = 60
+	exp_requirements = 0
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -1028,7 +1028,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_CORPORAL
 	outfit = /datum/outfit/job/ncr/f13corporal
-	exp_requirements = 90
+	exp_requirements = 0
 
 	loadout_options = list(
 		/datum/outfit/loadout/corporaldesignatedmarksman,	 // Marksman Carbine, 9mm sidearm
@@ -1108,7 +1108,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13trooper
-	exp_requirements = 60
+	exp_requirements = 0
 
 	loadout_options = list(
 		/datum/outfit/loadout/trooperrifleman, // Service Rifle, Bayonet
@@ -1237,7 +1237,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
 	roleplay_exclusive_notify = 1
-	exp_requirements = 750
+	exp_requirements = 0
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/ncr,
@@ -1296,7 +1296,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_LOGISTICSOFFICER
 	outfit = /datum/outfit/job/ncr/f13logisticsofficer
 	roleplay_exclusive_notify = 1
-	exp_requirements = 750
+	exp_requirements = 0
 
 /datum/outfit/job/ncr/f13logisticsofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
@@ -1366,7 +1366,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/job/ncr/f13rearechelon
 	title = "NCR Rear Echelon"
 	flag = F13REARECHELON
-	total_positions = 4
+	total_positions = 2
 	spawn_positions = 4
 	description = "You are the support element sent to assist the Camp Miller garrison. You are essential specialized support staff to help sustain the base via supply or specialized skills. You are not allowed to leave base unless given an explicit order by the CO or the current acting CO."
 	supervisors = "Logistics/Medical officer first, regular chain of command after that."
@@ -1375,7 +1375,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_REAR_ECHELON
 	outfit = /datum/outfit/job/ncr/f13rearechelon
 	roleplay_exclusive_notify = 1
-	exp_requirements = 60
+	exp_requirements = 0
 
 	loadout_options = list( // ALL: Very limited blueprints
 		/datum/outfit/loadout/rearlog, // Varmint rifle, Trench tool
