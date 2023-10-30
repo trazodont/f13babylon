@@ -1,3 +1,5 @@
+/*
+
 /datum/job/followers //do NOT use this for anything, it's just to store faction datums
 	department_flag = FOLLOWERS
 	selection_color = "#ffeeaa"
@@ -423,3 +425,4 @@ Follower Volunteer
 	R.apply_pref_name("human", M.client)
 	R.gender = NEUTER
 	R.forceMove(pick(GLOB.special_borg_start))
+*/
