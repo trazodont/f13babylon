@@ -39,7 +39,7 @@ Mayor
 	supervisors = "Yourself"
 	description = "You are the benevolent tyrant of Bighorn, chosen by the people to represent and lead them. Pass laws to protect your citizens, distribute town funds and make deals with the powers present within the Region to better the people, and yourself, of course."
 	selection_color = "#d7b088"
-	exp_requirements = 1500
+	exp_requirements = 0
 	outfit = /datum/outfit/job/bighorn/f13mayor
 	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FORENSICS_LOCKERS, ACCESS_FUSION, ACCESS_TOWN)
 	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FORENSICS_LOCKERS, ACCESS_FUSION, ACCESS_TOWN)
@@ -81,7 +81,7 @@ Mayor
 	supervisors = "the mayor"
 	description = "As the chief law enforcer of the Town, your job is to keep the peace, settle local disputes, and keep your townsfolk safe and alive. Unfortunately, with the NCR and Legion closing in on the region, the Town is caught between a rock and a hard place, as with the war brings with it unsavory elements like the Khans and Outlaws. Sometimes the people you handle inside the town will be alive in cuffs, or dead on the street. Other times, they'll escape the limits of the town, to which you can put a bounty on their head for their capture, or have your deputies capture them. However, you must remember these three critical things: never leave the town undefended, keep the townsfolk alive and safe, and most importantly - keep your hand on your gun and don't you trust anyone."
 	selection_color = "#d7b088"
-	exp_requirements = 1500
+	exp_requirements = 0
 	outfit = /datum/outfit/job/bighorn/f13sheriff
 	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
 	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
@@ -132,7 +132,7 @@ Mayor
 	supervisors = "the sheriff and the mayor"
 	description = "Working alongside the Sheriff you've known them for a while, having worked with them under the previous Sheriff - you bagged many a bandit and raider together on the road. These days you patrol the areas outside of town, tracking down bounties on the run and keeping the settlers safe from harm."
 	selection_color = "#dcba97"
-	exp_requirements = 620
+	exp_requirements = 0
 	outfit = /datum/outfit/job/bighorn/f13deputy
 	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
 	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
@@ -177,7 +177,7 @@ Mayor
 	supervisors = "the free market, Sierra Trading Company, and Bighorn laws."
 	description = "As a representative of the Sierra Trading Company, you have both the authority and the means to hire mercenaries, form trade deals with other groups in the area, and represent the trading company in local (town) matters. Your focus is not the small-scale; you have shopkeepers for that. Your focus is not to do dungeons; you have mercenaries for that. You are here to run the economical side of the company's interests, and make sure that whatever comes, the Sierra Trading Company ends up on top, both in caps, and reputation."
 	selection_color = "#dcba97"
-	exp_requirements = 1500
+	exp_requirements = 0
 	enforces = "You are in a Job meant for encouraging roleplay with others, do not abandon your post or hoard money unless absolutely necessary. Do not use the caps provided for yourself. DO NOT DO DUNGEONS.."
 	outfit = /datum/outfit/job/bighorn/shoprep
 	access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS, ACCESS_MINING, ACCESS_MINT_VAULT, ACCESS_CARGO_BOT, ACCESS_TOWN, ACCESS_SHOPKEEP)
@@ -211,7 +211,7 @@ Mayor
 	supervisors = "the shopkeeper, representative, Sierra Trading Company"
 	description = "You're one of the mercenaries hired on behalf of the Sierra Trading Company. Help them out, guard the shop, and obtain stock for them, but remember, they aren't entitled to give you free things. Remember, you can also be hired out to others in a pinch."
 	selection_color = "#dcba97"
-	exp_requirements = 620
+	exp_requirements = 0
 	outfit = /datum/outfit/job/bighorn/shopmerc
 	access = list(ACCESS_BAR, ACCESS_TOWN)
 	minimal_access = list(ACCESS_BAR, ACCESS_TOWN)
@@ -344,7 +344,7 @@ Mayor
 	description = "You are an Irgen, a Citizen of Bighorn under the protection of the Great Khanate, with ownership. Your store allows you to sell all kinds of merchandise, from dandy boy apples to laser rifles. Ensure you make a profit and retain enough capital for your day-to-day operations."
 	enforces = "While you have dominion over your private business, your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
 	selection_color = "#dcba97"
-	exp_requirements = 300
+	exp_requirements = 0
 
 	outfit = /datum/outfit/job/bighorn/f13shopkeeper
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN, ACCESS_SHOPKEEP)
@@ -747,7 +747,7 @@ Mayor
 	supervisors = "the mayor"
 	description = "Working alongside the Mayor, you've known them for a while. Your duties mainly consist of handling appointments and managing mundane tasks."
 	selection_color = "#dcba97"
-	exp_requirements = 60
+	exp_requirements = 0
 	outfit = /datum/outfit/job/bighorn/f13secretary
 	access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
