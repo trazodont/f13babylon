@@ -51,8 +51,8 @@
 /datum/job/enclave/enclavecpt
 	title = "Enclave Captain"
 	flag = F13USLT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Casper mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
 	Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week."
@@ -278,71 +278,6 @@
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
 
-//Armoured Infantry
-
-/datum/job/enclave/enclaveapa
-	title = "Enclave Armoured Infantry"
-	flag = F13USSGT
-	total_positions = 1
-	spawn_positions = 1
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Casper mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
-	supervisors = "The Lieutenant and the Gunnery Sergeant."
-	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
-	exp_requirements = 0
-
-	loadout_options = list(
-		/datum/outfit/loadout/apa_ballistics,	// G11
-		/datum/outfit/loadout/apa_laser, 	// Plasma
-		)
-
-/datum/outfit/job/enclave/peacekeeper/enclaveapa
-	name = "Enclave Armoured Infantry"
-	jobtype = /datum/job/enclave/enclaveapa
-	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
-	accessory = /obj/item/clothing/accessory/enclave/sergeant
-	l_pocket = /obj/item/clothing/mask/chameleon
-
-	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/grenade/f13/frag = 1,
-		/obj/item/pda = 1,
-		/obj/item/storage/bag/money/small/wastelander = 1,
-		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
-		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
-		/obj/item/card/id/syndicate/anyone =1
-		)
-
-/datum/outfit/loadout/apa_ballistics
-	name = "Frontline Operator"
-	suit_store = /obj/item/gun/ballistic/automatic/g11
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m473 = 3,
-		)
-
-/datum/outfit/loadout/apa_laser
-	name = "Support Rifleman"
-	suit_store = /obj/item/gun/energy/laser/plasma
-	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
-		/obj/item/grenade/f13/plasma = 1,
-		)
-
-/datum/outfit/job/enclave/peacekeeper/enclavesgt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
-	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
-	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)//Sergeant
-
 //Sergeant
 
 /datum/job/enclave/enclavesgt
@@ -363,8 +298,8 @@
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	name = "Enclave Sergeant"
 	jobtype = /datum/job/enclave/enclavesgt
-	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
+	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
 	l_pocket = /obj/item/clothing/mask/chameleon
 
