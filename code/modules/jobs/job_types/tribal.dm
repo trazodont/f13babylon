@@ -93,7 +93,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	title = "Tribal Gatherer"
 	flag = F13TRIBAL_GATHERER
 	exp_type = EXP_TYPE_WASTELAND
-	exp_requirements = 300
+	exp_requirements = 0
 	total_positions = -1
 	spawn_positions = -1
 	roleplay_exclusive_notify = 1
@@ -209,7 +209,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 	total_positions = -1
 	spawn_positions = -1
 	exp_type = EXP_TYPE_WASTELAND
-	exp_requirements = 300
+	exp_requirements = 0
 
 	outfit = /datum/outfit/job/tribal/temp
 
