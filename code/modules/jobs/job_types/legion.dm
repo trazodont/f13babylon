@@ -127,30 +127,28 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 // ORATOR
 
-/datum/job/CaesarsLegion/Legionnaire/f13frum
-	title = "Legion Frumentarii"
+/datum/job/CaesarsLegion/Legionnaire/f13orator
+	title = "Legion Orator"
 	flag = F13FRUM
 	supervisors = "Centurion"
 	selection_color = "#ffdddd"
 	total_positions = 1
 	spawn_positions = 1
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13frum
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
 	display_order = JOB_DISPLAY_ORDER_FRUM
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
-	loadout_options = list(
-		/datum/outfit/loadout/orator,		// Armor and money
-		/datum/outfit/loadout/venator, // 
-
-		)
 
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13frum
-	name = "Frumentarii"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13frum
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
+	name = "Orator"
+	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13orator
+	suit = /obj/item/clothing/suit/armor/f13/legion/orator
+	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	shoes = /obj/item/clothing/shoes/f13/military/plated
 	neck = /obj/item/storage/belt/holster
 	shoes = null
 	id = /obj/item/card/id/dogtag/legorator
@@ -164,6 +162,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/binoculars = 1,
 		/obj/item/ammo_box/a357 = 2,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
+		/obj/item/book/granter/trait/iron_fist = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/stack/f13Cash/random/denarius/high = 3,
+		/obj/item/stack/f13Cash/random/aureus/high = 2,
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -174,35 +176,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
-/datum/outfit/loadout/oratorm
-	name = "Orator"
-	suit = /obj/item/clothing/suit/armor/f13/legion/orator
-	head = /obj/item/clothing/head/helmet/f13/legion/orator
-	shoes = /obj/item/clothing/shoes/f13/military/plated
-	backpack_contents = list(
-		/obj/item/book/granter/trait/iron_fist = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/stack/f13Cash/random/denarius/high = 3,
-		/obj/item/stack/f13Cash/random/aureus/high = 2,
-
-		)
-
-/datum/outfit/loadout/Venator
-	name = "Venator"
-	suit = /obj/item/clothing/suit/armor/f13/legion/venator
-	head = /obj/item/clothing/head/helmet/f13/legion/venator
-	mask = /obj/item/clothing/mask/bandana/legion/legdecan
-	neck = /obj/item/storage/belt/holster
-	glasses = /obj/item/clothing/glasses/night/polarizing
-	ears = /obj/item/radio/headset/headset_legion
-	r_pocket = /obj/item/binoculars
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/snipervenator
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308 = 3,
-		/obj/item/melee/onehanded/machete/gladius = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 3,
-
-		)
 
 /////////////////
 //// Officers ///
