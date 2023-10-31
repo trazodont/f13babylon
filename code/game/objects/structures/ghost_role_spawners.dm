@@ -736,6 +736,7 @@
 		/obj/item/storage/box/ration/menu_two = 1,
 		)
 
+/*
 /obj/effect/mob_spawn/human/fallout13/ncr/ranger
 	name = "NCR Ranger Spawn"
 	desc = "An entry point for rangers of the NCR to join a battle."
@@ -758,7 +759,7 @@
 		/obj/item/clothing/mask/gas/ranger = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		)
-
+*/
 /obj/effect/mob_spawn/human/fallout13/ncr/special(mob/living/new_spawn)
 	new_spawn.real_name = random_unique_name(gender)
 
