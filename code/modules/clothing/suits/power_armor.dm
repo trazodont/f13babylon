@@ -1,4 +1,4 @@
-
+/*
 
 
 //Power armors, including salvaged and faction
@@ -307,4 +307,4 @@
 			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
 
-
+*/
