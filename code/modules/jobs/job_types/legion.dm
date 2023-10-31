@@ -129,13 +129,13 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/job/CaesarsLegion/Legionnaire/f13orator
 	title = "Legion Orator"
-	flag = F13FRUM
+	flag = F13ORATOR
 	supervisors = "Centurion"
 	selection_color = "#ffdddd"
 	total_positions = 1
 	spawn_positions = 1
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
-	display_order = JOB_DISPLAY_ORDER_FRUM
+	display_order = JOB_DISPLAY_ORDER_ORATOR
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	roleplay_exclusive_notify = 1
