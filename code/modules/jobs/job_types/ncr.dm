@@ -1028,7 +1028,7 @@ loadout_options = list(
 	loadout_options = list(
 		/datum/outfit/loadout/corporalsmg,	 // 10mm SMG
 		/datum/outfit/loadout/corporalrifleman,				 // R82
-		/datum/outfit/loadout/corporalcommand,				 // Trench Shotgun
+		/datum/outfit/loadout/corporalcqc,				 // Trench Shotgun
 		)
 
 	matchmaking_allowed = list(
