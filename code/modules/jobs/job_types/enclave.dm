@@ -92,7 +92,7 @@
 		/obj/item/card/id/syndicate/anyone =1
 		)
 
-/datum/outfit/loadout/cptt_ballistics
+/datum/outfit/loadout/cpt_ballistics
 	name = "Shiny Bullet"
 	suit_store = /obj/item/gun/ballistic/automatic/g11/g11e
 	backpack_contents = list(
