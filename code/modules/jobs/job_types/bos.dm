@@ -50,7 +50,7 @@ Elder
 */
 
 /datum/job/bos/f13elder
-	title = "Baron"
+	title = "Elder"
 	flag = F13ELDER
 	head_announce = list("Security")
 	supervisors = "the high elders"
@@ -58,9 +58,9 @@ Elder
 	req_admin_notify = 1
 	roleplay_exclusive_notify = 1
 
-	exp_requirements = 3000
+	exp_requirements = 0
 
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 
 	outfit = /datum/outfit/job/bos/f13elder
@@ -77,7 +77,7 @@ Elder
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/bos/f13elder
-	name = "Baron"
+	name = "Elder"
 	jobtype = /datum/job/bos/f13elder
 	pa_wear = TRUE
 	suit =	/obj/item/clothing/suit/f13/elder
@@ -97,7 +97,7 @@ Head Paladin
 */
 
 /datum/job/bos/f13sentinel
-	title = "Castellan"
+	title = "Head Paladin"
 	flag = F13SENTINEL
 	head_announce = list("Security")
 	total_positions = 1
@@ -105,15 +105,15 @@ Head Paladin
 	description = "You are the acting field commander until the Brotherhood regains its strength enough to place an Elder for the bunker. You are a veteran of many battles and sorties in pursuit of Brotherhood goals; your only weakness may just be your hubris. Your main goals are defense of the Chapter and surveillance of the surrounding region for technology."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Baron"
+	supervisors = "the Elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 2400
+	exp_requirements = 0
 
 	loadout_options = list(
-	/datum/outfit/loadout/sentheavy, //Gauss
-	/datum/outfit/loadout/sentlaser, //Wattz laser
-	/datum/outfit/loadout/sentmelee, //Inquis spear+14mm, REPLACE WITH RIPPER WHEN SPRITES FOR IT COME
+	/datum/outfit/loadout/sentheavy, //Minigun
+	/datum/outfit/loadout/sentlaser, //Lasminigun
+	/datum/outfit/loadout/sentmelee, //Prewar ripper+14mm
 	)
 
 	outfit = /datum/outfit/job/bos/f13sentinel
@@ -140,6 +140,8 @@ Head Paladin
 	jobtype = /datum/job/bos/f13sentinel
 	uniform = 		/obj/item/clothing/under/f13/recon
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
+	head = /obj/item/clothing/head/helmet/f13/power_armor/t51b
 	glasses =       /obj/item/clothing/glasses/sunglasses
 	belt =			/obj/item/storage/belt/military/assault
 	mask =			/obj/item/clothing/mask/gas/sechailer
@@ -155,38 +157,32 @@ Head Paladin
 		)
 
 /datum/outfit/loadout/sentheavy
-	name = "Heavy Head Paladin"
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/midwest/hardened
-	head = /obj/item/clothing/head/helmet/f13/power_armor/midwest/hardened
+	name = "Ballistic Head Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/m72 = 1,
-		/obj/item/ammo_box/magazine/m2mm = 3,
+		/obj/item/minigunpackbal5mm = 1,
+		/obj/item/ammo_box/m5mmbox = 2,
 	)
 
 /datum/outfit/loadout/sentlaser
-	name = "Rifle Laser Head Paladin"
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/midwest/hardened
-	head = /obj/item/clothing/head/helmet/f13/power_armor/midwest/hardened
+	name = "Laser Laser Head Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/wattz2k/extended=1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/minigunpack = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 3,
 	)
 
 /datum/outfit/loadout/sentmelee
 	name = "Melee Head Paladin"
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/midwest/hardened
-	head = /obj/item/clothing/head/helmet/f13/power_armor/midwest/hardened
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1, 
-		/obj/item/ammo_box/magazine/m14mm = 4,
-		/obj/item/twohanded/inquis_spear = 1,
+		/obj/item/ammo_box/magazine/m14mm = 3,
+		/obj/item/melee/powered/ripper/prewar = 1,
 	)
 /*
 Head Scribe
 */
 
 /datum/job/bos/f13headscribe
-	title = "Keeper"
+	title = "Head Scribe"
 	flag = F13HEADSCRIBE
 	head_announce = list("Security")
 	total_positions = 1
@@ -194,15 +190,11 @@ Head Scribe
 	description = "You are the foremost experienced scribe remaining in this bunker. Your role is to ensure the safekeeping and proper usage of technology within the Brotherhood. You are also the lead medical expert in this Chapter. Delegate your tasks to your Scribes."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Baron"
+	supervisors = "the Elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 1500
+	exp_requirements = 0
 
-	loadout_options = list(
-	/datum/outfit/loadout/hsstand,
-	/datum/outfit/loadout/hspract
-	)
 
 	outfit = /datum/outfit/job/bos/f13headscribe
 
@@ -240,20 +232,10 @@ Head Scribe
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
-		)
-
-/datum/outfit/loadout/hsstand
-	name = "Medicinal Expert"
-	backpack_contents = list(
-		/obj/item/gun/medbeam = 1,
-		/obj/item/reagent_containers/hypospray/CMO = 1,
-		)
-
-/datum/outfit/loadout/hspract
-	name = "Administrative Leader"
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma/pistol = 1,
+		/obj/item/gun/energy/laser/plasma/glock = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/book/granter/crafting_recipe/gunsmith_three=1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_four=1,
 		)
 
 /*
@@ -261,7 +243,7 @@ Head Knight
 */
 
 /datum/job/bos/f13knightcap
-	title = "Knight-Commander"
+	title = "Head Knight"
 	flag = F13KNIGHTCAPTAIN
 	head_announce = list("Security")
 	total_positions = 1
@@ -269,15 +251,14 @@ Head Knight
 	description = "You are the Head Knight, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Baron"
+	supervisors = "the Elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 1500
+	exp_requirements = 0
 
 	loadout_options = list(
-	/datum/outfit/loadout/capstand, //Wattz 2k
-	/datum/outfit/loadout/capsap, //Marksman
-	/datum/outfit/loadout/capalt //Neostead 
+	/datum/outfit/loadout/capstand, //P90
+	/datum/outfit/loadout/capsap, //AER12
 	)
 
 	outfit = /datum/outfit/job/bos/f13knightcap
@@ -332,45 +313,39 @@ Head Knight
 /datum/outfit/loadout/capstand
 	name = "Standard"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/wattz2k = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
 	)
 
 /datum/outfit/loadout/capsap
 	name = "Close Support"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/rcw = 1,
-		/obj/item/stock_parts/cell/ammo/ecp = 2,
+		/obj/item/gun/ballistic/automatic/smg/p90 = 1,
+		/obj/item/ammo_box/magazine/m10mm_p90 = 2,
 	)
 
-/datum/outfit/loadout/capalt
-	name = "Warden-Defender"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/automatic/combat/neostead = 1,
-		/obj/item/ammo_box/shotgun/buck = 2,
-	)
 
 /*
 Star Paladin
 */
 
 /datum/job/bos/f13seniorpaladin
-	title = "Paladin Marshal"
+	title = "Star Paladin"
 	flag = F13SENIORPALADIN
 	total_positions = 1
 	spawn_positions = 1
 	description = "As the Chapter's senior offensive warrior, you have proven your service and dedication to the Brotherhood over your time as a Paladin. As your skills gained, however, you were deigned to be more useful as a commander and trainer. Your job is to coordinate the Paladins and ensure they work as a team, instilling discipline as you go."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Castellan"
+	supervisors = "the Head Paladin"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 1500 //Not used right now anyways. Slot disabled.
+	exp_requirements = 0 
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 		/datum/outfit/loadout/spaladinb, //Combat Rifle + Powerfist
-		/datum/outfit/loadout/spaladinc,  //AER12
+		/datum/outfit/loadout/spaladinc,  //AER12 + Scope
 		)
 
 	outfit = /datum/outfit/job/bos/f13seniorpaladin
@@ -399,8 +374,8 @@ Star Paladin
 /datum/outfit/job/bos/f13seniorpaladin
 	name =	"Senior Paladin"
 	jobtype =	/datum/job/bos/f13seniorpaladin
-	suit =	/obj/item/clothing/suit/armor/f13/power_armor/midwest
-	head =	/obj/item/clothing/head/helmet/f13/power_armor/midwest
+	suit =	/obj/item/clothing/suit/armor/f13/power_armor/t60
+	head =	/obj/item/clothing/head/helmet/f13/power_armor/t60
 	accessory =	/obj/item/clothing/accessory/bos/seniorpaladin
 	uniform =	/obj/item/clothing/under/f13/recon
 	mask =	/obj/item/clothing/mask/gas/sechailer
@@ -410,26 +385,25 @@ Star Paladin
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/melee/onehanded/knife/hunting = 1,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=1,
 	)
 
 /datum/outfit/loadout/spaladinb
-	name = "Senior Tactical Paladin"
+	name = "Senior Offensive Paladin"
 	backpack_contents = list(
 		/obj/item/melee/powerfist/f13 = 1,
-		/obj/item/gun/ballistic/automatic/combat = 1,
-		/obj/item/ammo_box/magazine/tommygunm45/stick = 3,
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=1,
+		/obj/item/gun/energy/laser/scatter,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/clothing/accessory/bos/paladin=1,
 		)
 
 /datum/outfit/loadout/spaladinc
-	name = "Senior Frontline Paladin"
+	name = "Senior Support Paladin"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer12 = 1,
-		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/attachments/scope = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/stock_parts/cell/ammo/ec=1,
 		/obj/item/clothing/accessory/bos/paladin=1,
 		)
 
@@ -443,12 +417,12 @@ Paladin
 	flag = F13PALADIN
 	total_positions = 2
 	spawn_positions = 2
-	description = "You answer directly to the Marshal. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
+	description = "You answer directly to the Star Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Paladin Marshal and Castellan"
+	supervisors = "the Star Paladin and Head Paladin"
 	selection_color = "#95a5a6"
-	exp_requirements = 1200
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladinb, //Combat Rifle
@@ -483,8 +457,8 @@ Paladin
 /datum/outfit/job/bos/f13paladin
 	name =	"Paladin"
 	jobtype =	/datum/job/bos/f13paladin
-	suit =	/obj/item/clothing/suit/armor/f13/power_armor/midwest
-	head =	/obj/item/clothing/head/helmet/f13/power_armor/midwest
+	suit =	/obj/item/clothing/suit/armor/f13/power_armor/t45d
+	head =	/obj/item/clothing/head/helmet/f13/power_armor/t45d
 	uniform =	/obj/item/clothing/under/f13/recon
 	mask =	/obj/item/clothing/mask/gas/sechailer
 	belt =	/obj/item/storage/belt/military/assault
@@ -492,15 +466,15 @@ Paladin
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak= 2,
 		/obj/item/melee/onehanded/knife/hunting = 1,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=1,
 	)
 
 /datum/outfit/loadout/paladinb
 	name = "Tactical Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/combat = 1,
-		/obj/item/ammo_box/magazine/tommygunm45/stick = 3,
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=1,
+		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
+		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
 		/obj/item/clothing/accessory/bos/paladin = 1,
 		/obj/item/clothing/accessory/bos/juniorpaladin = 1,
 		)
@@ -509,9 +483,7 @@ Paladin
 	name = "Frontline Paladin"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer9 = 1,
-		/obj/item/gun/energy/laser/pistol=1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/stock_parts/cell/ammo/ec=1,
 		/obj/item/clothing/accessory/bos/paladin = 1,
 		/obj/item/clothing/accessory/bos/juniorpaladin = 1,
 		)
@@ -521,17 +493,17 @@ Senior Scribe
 */
 
 /datum/job/bos/f13seniorscribe
-	title = "Librarian"
+	title = "Senior Scribe"
 	flag = F13SENIORSCRIBE
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the bunker's seniormost medical and scientific expert in the bunker, sans the Keeper themselves. You are trained in both medicine and engineering, while also having extensive studies of the old world to assist in pinpointing what technology would be useful to the Brotherhood and its interests."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Keeper"
+	supervisors = "the Head Scribe"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 900
+	exp_requirements = 0
 
 	outfit = /datum/outfit/job/bos/f13seniorscribe
 
@@ -577,10 +549,12 @@ Senior Scribe
 	glasses =	/obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/gun/energy/laser/plasma/pistol = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/storage/firstaid/regular = 1,
 		/obj/item/reagent_containers/hypospray/CMO = 1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_three=1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_four=1,
 	)
 
 /*
@@ -595,10 +569,10 @@ Scribe
 	description = "You answer directly to the Librarian, tasked with researching and reverse-engineering recovered technologies from the old world, while maintaining the brotherhoods scientific archives. You may also be given a trainee to assign duties to."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Librarian and Keeper"
+	supervisors = "the Senior Scribe and Head Scribe"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 300
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/scribea,
@@ -635,10 +609,9 @@ Scribe
 	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/ec=2,
-		/obj/item/gun/energy/laser/pistol=1,
 		/obj/item/melee/onehanded/knife/survival=1,
 		/obj/item/storage/firstaid/regular=1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_three=1,
 		)
 
 /datum/outfit/job/bos/f13scribe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -672,21 +645,20 @@ Senior Knight
 */
 
 /datum/job/bos/f13seniorknight
-	title = "Knight-Captain"
+	title = "Senior Knight"
 	flag = F13SENIORKNIGHT
 	total_positions = 2
 	spawn_positions = 2
-	description = "You report directly to the Knight-Commander. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
+	description = "You report directly to the Head Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Knight-Commander"
+	supervisors = "the Head Knight"
 	selection_color = "#95a5a6"
-	exp_requirements = 900
+	exp_requirements = 0
 
 	loadout_options = list(
-	/datum/outfit/loadout/sknighta, //AER12
-	/datum/outfit/loadout/sknightb, //Police Shotgun
-	/datum/outfit/loadout/sknightc, //R93 PDW
+	/datum/outfit/loadout/sknighta, //Wattz2k
+	/datum/outfit/loadout/sknightb, //DKS
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
@@ -741,30 +713,21 @@ Senior Knight
 /datum/outfit/loadout/sknighta
 	name = "Footknight"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/gun/energy/laser/wattz2k = 1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
-		/obj/item/attachments/scope = 1,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/ammo_box/magazine/m45exp = 1,
 		)
 
 /datum/outfit/loadout/sknightb
 	name = "Knight-Defender"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/police=1,
-		/obj/item/ammo_box/shotgun/buck=2,
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=1,
+		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
+		/obj/item/ammo_box/magazine/m762 = 2,
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
 
-/datum/outfit/loadout/sknightc
-	name = "Recon"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/r93=1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=1,
-		)
 
 /*
 Knight
@@ -778,16 +741,15 @@ Knight
 	description = " You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
 	forbids = "TheBrotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Knight-Captain and Knight-Commander"
+	supervisors = "the Senior Knights and Head Knight"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 300
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/knighta, //AER9
-	/datum/outfit/loadout/knightb, //R82
-	/datum/outfit/loadout/knightd, //R82 J
-	/datum/outfit/loadout/knighte, //Ripper J
+	/datum/outfit/loadout/knightb, //Marksman
+	/datum/outfit/loadout/knightc, //Ripper
 	)
 
 	outfit = /datum/outfit/job/bos/f13knight
@@ -839,49 +801,39 @@ Knight
 		)
 
 /datum/outfit/loadout/knighta
-	name = "Junior Footknight"
+	name = "Footknight"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorknight=1,
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/clothing/accessory/bos/juniorknight = 1,
+		/obj/item/clothing/accessory/bos/knight = 1,
+		/obj/item/gun/energy/laser/aer9 = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
-		/obj/item/clothing/accessory/bos/KnightC=1,
-		/obj/item/clothing/accessory/bos/KnightT=1,
+		/obj/item/ammo_box/magazine/m45exp = 1,
+		/obj/item/clothing/accessory/bos/KnightC = 1,
+		/obj/item/clothing/accessory/bos/KnightT = 1,
 		)
 
 /datum/outfit/loadout/knightb
-	name = "Junior Knight-Defender"
+	name = "Defender"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorknight=1,
-		/obj/item/gun/ballistic/automatic/marksman=1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
+		/obj/item/clothing/accessory/bos/juniorknight = 1,
+		/obj/item/clothing/accessory/bos/knight = 1,
+		/obj/item/gun/ballistic/automatic/marksman = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 1,
 		/obj/item/clothing/accessory/bos/KnightC=1,
 		/obj/item/clothing/accessory/bos/KnightT=1,
 		)
 
-/datum/outfit/loadout/knightd
-	name = "Footknight"
+/datum/outfit/loadout/knightc
+	name = "Melee"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knight=1,
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
-		/obj/item/clothing/accessory/bos/KnightC=1,
-		/obj/item/clothing/accessory/bos/KnightT=1,
-		)
-
-/datum/outfit/loadout/knighte
-	name = "Knight-Defender"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knight=1,
-		/obj/item/gun/ballistic/automatic/smg/mp5=1,
-		/obj/item/ammo_box/magazine/uzim9mm=2,
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=1,
+		/obj/item/clothing/accessory/bos/juniorknight = 1,
+		/obj/item/clothing/accessory/bos/knight = 1,
+		/obj/item/melee/powered/ripper = 1,
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 3,
 		/obj/item/clothing/accessory/bos/KnightC=1,
 		/obj/item/clothing/accessory/bos/KnightT=1,
 		)
@@ -939,20 +891,20 @@ Initiate
 		)
 
 /datum/outfit/loadout/initiatek
-	name = "Errant"
+	name = "Knight Aspirant"
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
+		/obj/item/stock_parts/cell/ammo/ec=1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_one=1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_two=1,
 		/obj/item/clothing/accessory/bos/initiateK=1,
 		)
 
 /datum/outfit/loadout/initiates
-	name = "Confrere"
+	name = "Scribe Aspirant"
 	belt =			/obj/item/storage/belt/medical
 	suit =			/obj/item/clothing/suit/toggle/labcoat
 	glasses =		/obj/item/clothing/glasses/science
@@ -969,13 +921,13 @@ Off-Duty
 /datum/job/bos/f13offdutybos
 	title = "BoS Off-Duty"
 	flag = F13OFFDUTYBOS
-	total_positions = 6
+	total_positions = 3
 	spawn_positions = 6
 	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason."
 	supervisors = "your superior rank."
 	selection_color = "#95a5a6"
 	roleplay_exclusive_notify = 1
-	exp_requirements = 300
+	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND//So you can't sit on it and play Baron / Inquisitor. :)
 	outfit = /datum/outfit/job/bos/f13offdutybos
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)

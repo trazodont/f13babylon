@@ -9,7 +9,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	faction = FACTION_RAIDERS
 	access = list(ACCESS_RAIDER)
 	minimal_access = list(ACCESS_RAIDER)
-	exp_requirements = 300
+	exp_requirements = 0
 	exp_type = EXP_TYPE_OUTLAW
 
 /datum/job/raider/f13raider
@@ -17,7 +17,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	flag = F13RAIDER
 	faction = FACTION_RAIDERS
 	social_faction = FACTION_RAIDERS
-	exp_requirements = 300
+	exp_requirements = 0
 	exp_type = EXP_TYPE_FALLOUT
 	total_positions = -1
 	spawn_positions = -1
@@ -243,7 +243,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	flag = F13RAIDER_OUTSIDER
 	faction = FACTION_RAIDERS
 	social_faction = FACTION_RAIDERS
-	exp_requirements = 60
+	exp_requirements = 0
 	exp_type = EXP_TYPE_OUTLAW
 	total_positions = -1
 	spawn_positions = -1
@@ -377,7 +377,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	flag = F13RAIDER_BOSS
 	faction = FACTION_RAIDERS
 	social_faction = FACTION_RAIDERS
-	exp_requirements = 600
+	exp_requirements = 0
 	exp_type = EXP_TYPE_OUTLAW
 	total_positions = 1
 	spawn_positions = 1

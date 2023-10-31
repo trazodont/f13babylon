@@ -1,3 +1,5 @@
+
+
 /datum/job/followers //do NOT use this for anything, it's just to store faction datums
 	department_flag = FOLLOWERS
 	selection_color = "#ffeeaa"
@@ -55,7 +57,7 @@ Administrator
 	forbids = "Causing harm to others except in times of self-defense."
 	enforces = "Followers are not fond of the NCR due to their corruption, but they will help them. They dislike the Brotherhood for hoarding tech, but will make deals to work with them if it furthers the spreading of knowledge. While your goal is to assist those who need your help, you do not have to help everyone, and may turn away anyone - you are not obligated to revive a raider or Legionnaire dropped at your doorstep. Preaching humanitarianism and valuing human life. Assist and provide medical services to those in need. Provide free education for all those who are willing to learn."
 	selection_color = "#FF95FF"
-	exp_requirements = 750
+	exp_requirements = 0
 
 	outfit = /datum/outfit/job/followers/f13leadpractitioner
 
@@ -114,7 +116,7 @@ Practitioner
 	forbids = "Causing harm to others except in times of self-defense."
 	enforces = "Followers are not fond of the NCR due to their corruption, but they will help them. They dislike the Brotherhood for hoarding tech, but will make deals to work with them if it furthers the spreading of knowledge. While your goal is to assist those who need your help, you do not have to help everyone, and may turn away anyone - you are not obligated to revive a raider or Legionnaire dropped at your doorstep. Preaching humanitarianism and valuing human life. Assist and provide medical services to those in need. Provide free education for all those who are willing to learn."
 	selection_color = "#FFDDFF"
-	exp_requirements = 300
+	exp_requirements = 0
 
 	outfit = /datum/outfit/job/followers/f13practitioner
 	matchmaking_allowed = list(
@@ -406,7 +408,7 @@ Follower Volunteer
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Administrator and Doctors, in that order"
-	exp_requirements = 300
+	exp_requirements = 0
 	description = "You are a Robotic unit assigned to this clinic. As a Robot for the Followers, you're bound to the orders of the Administrator and Doctors, in that order for priority. Should the Administrator declare something, you must follow it."
 	forbids = "Abandoning your post and not defending the clinic."
 	selection_color = "#FFDDFF"

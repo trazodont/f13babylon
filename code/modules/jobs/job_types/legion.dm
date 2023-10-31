@@ -139,17 +139,16 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	roleplay_exclusive_notify = 1
-	exp_requirements = 750
+	exp_requirements = 0
 
-	loadout_options = list(
-		/datum/outfit/loadout/oratorm,		// Armor and money
-		/datum/outfit/loadout/priestess, // Priestess robes, medical training
-		)
 
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
 	name = "Orator"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13orator
+	suit = /obj/item/clothing/suit/armor/f13/legion/orator
+	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	shoes = /obj/item/clothing/shoes/f13/military/plated
 	neck = /obj/item/storage/belt/holster
 	shoes = null
 	id = /obj/item/card/id/dogtag/legorator
@@ -163,6 +162,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/binoculars = 1,
 		/obj/item/ammo_box/a357 = 2,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
+		/obj/item/book/granter/trait/iron_fist = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/stack/f13Cash/random/denarius/high = 3,
+		/obj/item/stack/f13Cash/random/aureus/high = 2,
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -173,31 +176,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
-/datum/outfit/loadout/oratorm
-	name = "Orator"
-	suit = /obj/item/clothing/suit/armor/f13/legion/orator
-	head = /obj/item/clothing/head/helmet/f13/legion/orator
-	shoes = /obj/item/clothing/shoes/f13/military/plated
-	backpack_contents = list(
-		/obj/item/book/granter/trait/iron_fist = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/stack/f13Cash/random/denarius/high = 3,
-		/obj/item/stack/f13Cash/random/aureus/high = 2,
-
-		)
-
-/datum/outfit/loadout/priestess
-	name = "Priestess of Mars"
-	uniform = /obj/item/clothing/under/f13/pmarsrobe
-	head = /obj/item/clothing/head/helmet/f13/legion/orator
-	shoes = /obj/item/clothing/shoes/roman
-	backpack_contents = list(
-		/obj/item/book/granter/trait/midsurgery = 1,
-		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/book/granter/trait/legionalchemy = 1,
-		/obj/item/stack/f13Cash/random/denarius/high = 1,
-
-		)
 
 /////////////////
 //// Officers ///
@@ -217,7 +195,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CENTURION
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
-	exp_requirements = 750
+	exp_requirements = 0
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
@@ -315,7 +293,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANVET
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
-	exp_requirements = 450
+	exp_requirements = 0
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
@@ -425,7 +403,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	exp_requirements = 360
+	exp_requirements = 0
 
 	loadout_options = list(	//ALL: Gladius, Smokebomb
 		/datum/outfit/loadout/decprimfront,	// Lever action, .357 Revolver, Legion lance, Throwing knives
@@ -515,7 +493,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	exp_requirements = 300
+	exp_requirements = 0
 
 	loadout_options = list(
 		/datum/outfit/loadout/recdeclegion,	// Uzi, Bumper sword, Smokebomb
@@ -596,7 +574,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	exp_requirements = 360
+	exp_requirements = 0
 
 	loadout_options = list(
 		/datum/outfit/loadout/vexbear,	//	Lever shotgun, Ripper
@@ -681,7 +659,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Veteran Decanus and Centurion must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist."
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
-	exp_requirements = 150
+	exp_requirements = 0
 
 	loadout_options = list(	// ALL: .45 Revolver, Machete
 		/datum/outfit/loadout/expambusher,	// lever-action shotgun, Bottlecap mine
@@ -763,7 +741,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	exp_requirements = 300
+	exp_requirements = 0
 
 	loadout_options = list(	//ALL: Gladius
 		/datum/outfit/loadout/vetaxe,	// Tclaw, Axe
@@ -860,7 +838,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legions muscle, the young men who will build the future with their own blood and sacrifice, for Caesar."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
-	exp_requirements = 60
+	exp_requirements = 0
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 
 	loadout_options = list(	//ALL: Forged Machete
@@ -1008,14 +986,14 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/f13immune
 	title = "Legion Immune"
 	flag = F13IMMUNE
-	total_positions = 4
+	total_positions = 2
 	spawn_positions = 1
 	description = "An Immune is a legionnaire temporarily assigned to keeping the camp in order, according to their tasking on any given week."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_IMMUNE
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13immune
 	roleplay_exclusive_notify = 1
-	exp_requirements = 150
+	exp_requirements = 0
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13immune
 	name = "Immune"
@@ -1208,7 +1186,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/slave
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
-	total_positions = 3
+	total_positions = 2
 	spawn_positions = 3
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
 	supervisors = "Officers and Slavemaster first, then Auxilia, then warriors."
@@ -1304,6 +1282,7 @@ Post Scriptum
 Plans: Add recipes/traits to keep refining support roles, Forgemaster done, others will need some minor tweaking. Planned is making the medicus more of a improvised surgery master, using primitive tools to good effect, because its interesting and unique.
 Venator  - Zero slots, role built on cloning vet ranger, linear just vastly better than all but the Cent, snowflakey in command when it suits them, messes up the chain of command thats already messy for Legion. FUCK IT ENABLE IT
 */
+/*
 /datum/job/CaesarsLegion/Legionnaire/f13venator
 	title = "Legion Venator"
 	flag = F13VENATOR
@@ -1346,7 +1325,7 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 3,
 		)
-
+*/
 // Slavemaster
 
 /datum/job/CaesarsLegion/Legionnaire/f13slavemaster
@@ -1357,7 +1336,7 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken."
 	supervisors = "the Decani and Centurion"
 	roleplay_exclusive_notify = 1
-	exp_requirements = 150
+	exp_requirements = 0
 	display_order = JOB_DISPLAY_ORDER_SLAVEMASTER
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13slavemaster

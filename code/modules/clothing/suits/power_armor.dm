@@ -1,5 +1,5 @@
+/*
 
-/* Temp commented out due to clash with old system
 
 //Power armors, including salvaged and faction
 
@@ -248,9 +248,9 @@
 	icon_state = "t60powerarmor"
 	item_state = "t60powerarmor"
 	slowdown = 0.16
-	armor = list("melee" = 75, "bullet" = 75, "laser" = 55, "energy" = 50, "bomb" = 70, "bio" = 80, "rad" = 80, "fire" = 90, "acid" = 30, "wound" = 50)
-	melee_block_threshold = 40
-	armor_block_threshold = 0.4
+	armor = list("melee" = 75, "bullet" = 70, "laser" = 50, "energy" = 40, "bomb" = 70, "bio" = 80, "rad" = 80, "fire" = 90, "acid" = 30, "wound" = 50)
+	melee_block_threshold = 30
+	armor_block_threshold = 0.3
 	armor_block_chance = 50
 	deflection_chance = 10
 

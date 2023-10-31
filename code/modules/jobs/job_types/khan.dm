@@ -58,7 +58,7 @@
 	enforces = "You are responsible for keeping track of any outsider who seeks residence or to ply their wares in the town's market, or more specifically, whether or not they have paid their weekly tribute."
 	supervisors = "The Noyan and the Khan of Bighorn."
 	selection_color = "#ff915e"
-	exp_requirements = 320
+	exp_requirements = 0
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/senior_enforcer
 
@@ -76,7 +76,7 @@
 	enforces = "Your appearance is a special occasion, whether that is a blessing or an omen. Typically, you are either hosting or attending festivals or tournaments of great importance to Bighorn."
 	supervisors = "Nothing and Nobody"
 	selection_color = "#ff915e"
-	exp_requirements = 320
+	exp_requirements = 0
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/senior_enforcer
 
@@ -94,7 +94,7 @@
 	enforces = "You enforce the will of Ganbaatar the Inhuman, Khan of Khans and ruler of the Great Khanate. Your presence shouldn't be necessary unless you are part of an event or are carrying out punishment of lesser Khanate leadership."
 	supervisors = "The Noyan and the Khan of Bighorn."
 	selection_color = "#ff915e"
-	exp_requirements = 320
+	exp_requirements = 0
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/senior_enforcer
 
@@ -112,7 +112,7 @@
 	enforces = "You are responsible for keeping track of any outsider who seeks residence or to ply their wares in the town's market, or more specifically, whether or not they have paid their weekly tribute."
 	supervisors = "The Noyan and the Khan of Bighorn."
 	selection_color = "#ff915e"
-	exp_requirements = 320
+	exp_requirements = 0
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/senior_enforcer
 
@@ -130,7 +130,7 @@
 	enforces = "As soldiers, it's your main responsibility to respond to threats made against the Great Khanate or its citizens, or against the settlement of Bighorn, and you keep the Savages from marauding on or near Khanate territory."
 	supervisors = "the Noyan and the Khagan."
 	selection_color = "#ff915e"
-	exp_requirements = 240
+	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND
 	outfit = /datum/outfit/job/khan/enforcer
 
@@ -155,7 +155,7 @@
 	5. All are born free in the eyes of the Khans."
 	supervisors = "the Steward and the Noyan"
 	selection_color = "#ff915e"
-	exp_requirements = 240
+	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND
 	outfit = /datum/outfit/job/khan/enforcer
 
@@ -175,7 +175,7 @@
 	supervisors = "The Noyan, the Steward, and the Khan of Bighorn."
 	selection_color = "#ff915e"
 	req_admin_notify = 1
-	exp_requirements = 750
+	exp_requirements = 0
 	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/chemist
@@ -196,7 +196,7 @@
 	supervisors = "The Noyan, the Steward, and the Khan of Bighorn."
 	selection_color = "#ff915e"
 	req_admin_notify = 1
-	exp_requirements = 750
+	exp_requirements = 0
 	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/smith
@@ -216,7 +216,7 @@
 	supervisors = "The Noyan, the Steward, and the Khan of Bighorn."
 	selection_color = "#ff915e"
 	req_admin_notify = 1
-	exp_requirements = 750
+	exp_requirements = 0
 	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/smith
