@@ -948,7 +948,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13combatmedic
 	exp_requirements = 0
 
-loadout_options = list(
+	loadout_options = list(
 		/datum/outfit/loadout/ncrdocsmg,	 // 10mm+stims
 		/datum/outfit/loadout/ncrdocrifle,	 // M1A1+seeds, REPLACE STIMS WITH SEEDS(2broc, 2xander)
 		)
