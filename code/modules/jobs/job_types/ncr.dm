@@ -213,7 +213,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 	exp_requirements = 0
 
-loadout_options = list( // ALL: Bayonet, M1911 sidearm
+	loadout_options = list( 				// ALL: Bayonet, M1911 sidearm
 		/datum/outfit/loadout/ncrltsniper,	// Worn Assault Carbine
 		/datum/outfit/loadout/ncrltshotgun, // Scout Carbine, Trekking
 		)
