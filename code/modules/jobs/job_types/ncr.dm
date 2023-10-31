@@ -1122,7 +1122,7 @@ loadout_options = list(
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/stack/crafting/armor_plate = 4,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-		/obj/item/grenade/f13/frag = 1
+		/obj/item/grenade/f13/frag = 1,
 		/obj/item/storage/box/ration/menu_eight = 1,
 		)
 
@@ -1254,7 +1254,7 @@ loadout_options = list(
 		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/storage/firstaid/regular = 1,
-		/obj/item/stack/crafting/armor_plate = 5
+		/obj/item/stack/crafting/armor_plate = 5,
 		)
 
 /datum/outfit/job/ncr/f13medicalofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
