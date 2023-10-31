@@ -253,7 +253,7 @@ loadout_options = list( // ALL: Bayonet, M1911 sidearm
 
 /datum/outfit/loadout/ncrltsniper
 	name = "Backline Support"
-	suit_store = obj/item/gun/ballistic/automatic/m1garand/republicspride
+	suit_store = /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/garand308 = 2,
 		)
