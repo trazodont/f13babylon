@@ -9,7 +9,7 @@
 	forbids = "THE KHANATE DISCOURAGES: Weakness, Sabotaging other Khans."
 	enforces = "THE KHANATE ENCOURAGES: Displays of Strength. Assisting your brothers and sisters. Enforcing Khan domination of the Valley."
 
-/datum/outfit/job/khan
+/datum/outfit/job/khan/muscle
 	name = "Khan"
 	jobtype = /datum/job/khan
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
@@ -264,6 +264,9 @@
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
+
+/datum/outfit/job/khan/muscle
+	jobtype = /datum/job/khan/muscle
 
 /datum/outfit/job/khan/merchant
 	jobtype = /datum/job/khan/merchant
