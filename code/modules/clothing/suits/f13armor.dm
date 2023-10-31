@@ -694,7 +694,7 @@
 	icon_state = "t60powerarmor"
 	item_state = "t60powerarmor"
 	slowdown = 0.2
-	armor = list("melee" = 80, "bullet" = 70, "laser" = 80, "energy" = 30, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 50, "wound" = 50)
+	armor = list("melee" = 80, "bullet" = 70, "laser" = 40, "energy" = 30, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 50, "wound" = 50)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 30)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t60
 
@@ -736,7 +736,7 @@
 	item_state = "x-01tesla"
 	slowdown = 0.3//Worst slowdown of all combat sets.
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 95, "energy" = 95, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
-	//var/hit_reflect_chance = 35
+	var/hit_reflect_chance = 35
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
