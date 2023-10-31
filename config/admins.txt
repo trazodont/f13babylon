@@ -7,3 +7,13 @@
 # NOTE: if the rank-name cannot be found in admin_ranks.txt, they will not be adminned! ~Carn #
 # NOTE: syntax was changed to allow hyphenation of ranknames, since spaces are stripped.      #
 ###############################################################################################
+
+derflammenwerfer = Host
+roachwitharoach = Head Administrator
+zerantio = Head Administrator
+spartan2548 = Head Administrator
+ThyBaron = Head Administrator
+jeckieboy = Administrator
+tzula = Administrator
+duckymomo = Administrator
+oprime = Coder

@@ -9,7 +9,7 @@
 	forbids = "THE KHANATE DISCOURAGES: Weakness, Sabotaging other Khans."
 	enforces = "THE KHANATE ENCOURAGES: Displays of Strength. Assisting your brothers and sisters. Enforcing Khan domination of the Valley."
 
-/datum/outfit/job/khan
+/datum/outfit/job/khan/muscle
 	name = "Khan"
 	jobtype = /datum/job/khan
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
@@ -127,12 +127,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	description = "You are a Moriton, one of the Khanate's elite soldiers. You carry the fearsome Gun-Pike, some of the finest armor in the Khanate, and have the right and the privilege of owning a Warbike. Unless ordered to do so by a Noyan or above, you should not be leaving the Valley."
-	enforces = "The Five Laws, which are as follows:\
-	1. Keep your wars out of scope range.\
-	2. Settle petty scores with your fists.\
-	3. Keep your appendages to yourself.\
-	4. Outsiders must pay for the privilege of living off our lands and renting space at our market.\
-	5. All are born free in the eyes of the Khans."
+	enforces = "As soldiers, it's your main responsibility to respond to threats made against the Great Khanate or its citizens, or against the settlement of Bighorn, and you keep the Savages from marauding on or near Khanate territory."
 	supervisors = "the Noyan and the Khagan."
 	selection_color = "#ff915e"
 	exp_requirements = 240
@@ -270,25 +265,67 @@
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
 
+/datum/outfit/job/khan/muscle
+	jobtype = /datum/job/khan/muscle
+
 /datum/outfit/job/khan/merchant
 	jobtype = /datum/job/khan/merchant
 
 /datum/outfit/job/khan/courtesan
 	jobtype = /datum/job/khan/courtesan
 
+/datum/job/khan/soldier
+	title = "Khan Soldier"
+	flag = F13KHAN
+	faction = FACTION_KHAN
+	total_positions = 8
+	spawn_positions = 8
+	description = "You are a Tsereg, a Soldier of the Great Khanate, and a warrior who has chosen to be more than just a gangster. You fight together with your Turuuch and your fellow Tsereg in a sibling company, or Sibko."
+	enforces = "As soldiers, it's your main responsibility to respond to threats made against the Great Khanate or its citizens, or against the settlement of Bighorn, and you keep the Savages from marauding on or near Khanate territory."
+	supervisors = "the Tsereg, the Five Laws, and the Noyan."
+	selection_color = "#ff915e"
+	exp_requirements = 240
+	exp_type = EXP_TYPE_WASTELAND
+	outfit = /datum/outfit/job/khan
+
+	loadout_options = list(
+		/datum/outfit/loadout/soldier,
+		/datum/outfit/loadout/soldierb,
+		)
+
+/datum/job/khan/sergeant
+	title = "Khan Veteran"
+	flag = F13KHAN
+	faction = FACTION_KHAN
+	total_positions = 2
+	spawn_positions = 2
+	description = "You are a Turuuch, a Sergeant of the Great Khanate, and a veteran who has taken on the responsibility of leading the Tsereg into battle and teaching them a particular set tactics."
+	enforces = "As soldiers, it's your main responsibility to respond to threats made against the Great Khanate or its citizens, or against the settlement of Bighorn, and you keep the Savages from marauding on or near Khanate territory."
+	supervisors = "the Five Laws and the Noyan."
+	selection_color = "#ff915e"
+	exp_requirements = 240
+	exp_type = EXP_TYPE_WASTELAND
+	outfit = /datum/outfit/job/khan
+
+	loadout_options = list(
+		/datum/outfit/loadout/soldier,
+		/datum/outfit/loadout/soldierb,
+		)
+
+
 /datum/job/khan/muscle
 	title = "Khan Muscle"
 	flag = F13KHAN
 	faction = FACTION_KHAN
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = -1
+	spawn_positions = -1
 	description = "You are a Bulchin, literally meaning 'Muscle' in the Mongol-esque pidgin tongue that the Great Khanate has adopted. You are the truest and most traditional kind of Great Khan, adhering to the battle-hungry, plunder-seeking traditions that you and the rest of the Wasteland has always known the Khans for.\
 	You dont have any strict responsibilities beyond sticking to the Five Laws, and are quite free to stick it to anyone in the Wasteland who isn't paying for the Khanate's protection. That being said, a Khan's word is their bond. If you make a promise, stick to it."
 	supervisors = "the Kharuul, the Five Laws, and the Noyan."
 	selection_color = "#ff915e"
 	exp_requirements = 240
 	exp_type = EXP_TYPE_WASTELAND
-	outfit = /datum/outfit/job/khan
+	outfit = /datum/outfit/job/khan/muscle
 
 	loadout_options = list(
 		/datum/outfit/loadout/soldier,
@@ -325,8 +362,6 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	belt = /obj/item/storage/belt/bandolier
 	backpack_contents = list(
-		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/book/granter/trait/lowsurgery =1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 )
 
