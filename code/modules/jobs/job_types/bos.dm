@@ -258,7 +258,7 @@ Head Knight
 
 	loadout_options = list(
 	/datum/outfit/loadout/capstand, //P90
-	/datum/outfit/loadout/capsap, //AER12
+	/datum/outfit/loadout/capsap, //Wattz2ke
 	)
 
 	outfit = /datum/outfit/job/bos/f13knightcap
@@ -313,7 +313,7 @@ Head Knight
 /datum/outfit/loadout/capstand
 	name = "Standard"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/gun/energy/laser/wattz2k/extended = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3,
 	)
 
@@ -657,8 +657,9 @@ Senior Knight
 	exp_requirements = 0
 
 	loadout_options = list(
-	/datum/outfit/loadout/sknighta, //Wattz2k
+	/datum/outfit/loadout/sknighta, //AER12
 	/datum/outfit/loadout/sknightb, //DKS
+	/datum/outfit/loadout/sknightc, //MP5
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
@@ -713,14 +714,14 @@ Senior Knight
 /datum/outfit/loadout/sknighta
 	name = "Footknight"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/wattz2k = 1,
+		/obj/item/gun/energy/laser/aer12 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 1,
 		)
 
 /datum/outfit/loadout/sknightb
-	name = "Knight-Defender"
+	name = "Knight Ranger"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
 		/obj/item/ammo_box/magazine/m762 = 2,
@@ -728,6 +729,14 @@ Senior Knight
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
 
+/datum/outfit/loadout/sknightb
+	name = "Knight Defender"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/smg/mp5 = 1,
+		/obj/item/ammo_box/magazine/uzim9mm/rockwell = 2,
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 1,
+		)
 
 /*
 Knight
