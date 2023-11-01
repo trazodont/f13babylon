@@ -442,7 +442,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/revolver/m29
 	backpack_contents = list(
 		/obj/item/shield/riot/tower
-		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 3,
 		/obj/item/melee/onehanded/knife/throwing = 3,
 		)
