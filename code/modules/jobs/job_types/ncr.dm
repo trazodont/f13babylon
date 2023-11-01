@@ -520,7 +520,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 ///////////////
 /// Rangers ///
 ///////////////
-/*
+
 // VETERAN RANGER
 
 /datum/job/ncr/f13vetranger
@@ -534,13 +534,12 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_VETRANGE
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	outfit = /datum/outfit/job/ncr/f13vetranger
-	exp_requirements = 1750
+	exp_requirements = 0
 
 	loadout_options = list( // ALL: Binoculars, Bowie knife
-		/datum/outfit/loadout/vrclassic, // AMR, Sequoia
-		/datum/outfit/loadout/vrlite, // Medicine stick, Sequoia
-		/datum/outfit/loadout/vrshotgunner, // Winchester City-Killer, Sequoia
-		/datum/outfit/loadout/vrcqc // 2 x .45 Long colt revolvers
+		/datum/outfit/loadout/vrclassic, // DKS
+		/datum/outfit/loadout/vrlite, // Brushgun
+		/datum/outfit/loadout/vrshotgunner, // Leveraction
 		)
 
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -577,44 +576,29 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 2,
 		/obj/item/grenade/smokebomb = 1,
+		/obj/item/ammo_box/c4570box/ = 1,
+		/obj/item/gun/ballistic/revolver/sequoia = 1,
 		)
 
 /datum/outfit/loadout/vrclassic
 	name = "Classic Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/sniperranger
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/amr = 2,
-		/obj/item/gun/ballistic/revolver/sequoia = 1,
-		/obj/item/ammo_box/c4570box/knockback = 1,
-		/obj/item/ammo_box/magazine/amr/penetrator = 1,
+		/obj/item/ammo_box/magazine/w308 = 3,
 		)
 
 /datum/outfit/loadout/vrlite
 	name = "Rifler Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush/medistick
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
 		/obj/item/ammo_box/c4570box/ = 1,
-		/obj/item/gun/ballistic/revolver/sequoia = 1,
-		/obj/item/book/granter/trait/rifleman = 1,
 		)
 
 /datum/outfit/loadout/vrshotgunner
 	name = "Veteran Ranger Shotgunner"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/gun/ballistic/revolver/sequoia = 1,
-		/obj/item/ammo_box/c4570box/knockback = 1,
-		)
-
-/datum/outfit/loadout/vrcqc
-	name = "Gunslinger"
-	mask = /obj/item/clothing/mask/cigarette/cigar/havana
-	backpack_contents = list(
-		/obj/item/book/granter/trait/gunslinger = 1,
-		/obj/item/gun/ballistic/revolver/revolver45/gunslinger = 2,
-		/obj/item/ammo_box/a45lcbox = 1,
-		/obj/item/lighter = 1,
 		)
 
 
@@ -623,17 +607,17 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/job/ncr/f13ranger
 	title = "NCR Ranger"
 	flag = F13RANGER
-	total_positions = 3
+	total_positions = 2
 	spawn_positions = 3
 	description = "As an NCR Ranger, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
 	supervisors = "Veteran Ranger"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_RANGER
 	outfit = /datum/outfit/job/ncr/f13ranger
-	exp_requirements = 500
+	exp_requirements = 0
 
 	loadout_options = list( // ALL: Binoculars, Bowie knife
-	/datum/outfit/loadout/rangerrecon, // DKS Sniper rifle, .45 Revolver
+	/datum/outfit/loadout/rangerrecon, // Marksman, .45 Revolver
 	/datum/outfit/loadout/rangertrail, // Trail Carbine, 2 x .357 Revolvers
 	/datum/outfit/loadout/rangerpatrol, // R91 Assault Rifle, .44 SA Revolver
 	/datum/outfit/loadout/rangerpatrolcqb, // 10mm SMG, .44 Snubnose revolver
@@ -679,11 +663,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	belt = /obj/item/storage/belt/military/reconbandolier
 	head = /obj/item/clothing/head/beret/ncr_recon_ranger
 	neck = /obj/item/clothing/neck/mantle/ranger
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/sniperranger
+	suit_store = /obj/item/gun/ballistic/automatic/marksman
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308 = 3,
+		/obj/item/ammo_box/magazine/m556/rifle/small = 2,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
-		/obj/item/ammo_box/c45rev = 2,
+		/obj/item/ammo_box/c45rev = 1,
 		)
 
 /datum/outfit/loadout/rangertrail
@@ -694,11 +678,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/m44box = 2,
-		/obj/item/ammo_box/m44box/incendiary = 1,
 		/obj/item/melee/classic_baton/telescopic = 1,
 		/obj/item/attachments/scope = 1,
 		/obj/item/gun/ballistic/revolver/colt357 = 2,
-		/obj/item/ammo_box/a357=4,
+		/obj/item/ammo_box/a357=2,
 		)
 
 /datum/outfit/loadout/rangerpatrol
@@ -712,7 +695,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/gun/ballistic/revolver/revolver44 = 1,
-		/obj/item/ammo_box/m44 = 2,
+		/obj/item/ammo_box/m44 = 1,
 		)
 
 /datum/outfit/loadout/rangerpatrolcqb
@@ -728,7 +711,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/gun/ballistic/revolver/m29/snub = 1,
 		/obj/item/ammo_box/m44box = 1,
 		)
-*/
+
 
 ////////////////////
 /// Specialists ////
