@@ -201,9 +201,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 
 	loadout_options = list(
-		/datum/outfit/loadout/palacent,		//Goliath, CQC, Throwing stars
-		/datum/outfit/loadout/rangerhunter,	// Hunting Revolver, AMR, Spatha
-		/datum/outfit/loadout/centurion,	// M1919
+		/datum/outfit/loadout/palacent,		//Goliath, CQC, Carl Gustaf
+		/datum/outfit/loadout/rangerhunter,	// Hunting Revolver, Brushgun, Spatha
+		/datum/outfit/loadout/centurion,	// M1919, Spatha
 		/datum/outfit/loadout/berserkercenturion,	// Love Tap, Berserker Martial Art
 		)
 
@@ -246,16 +246,15 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/automatic/m1919
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/mm762 = 1,
-		/obj/item/melee/powerfist/f13 = 1,
+		/obj/item/melee/onehanded/machete/spatha = 1,
 		)
 
 /datum/outfit/loadout/rangerhunter
 	name = "Ranger-Hunter Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
 	head = /obj/item/clothing/head/helmet/f13/legion/rangercent
-	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/amr = 2,
 		/obj/item/ammo_box/c4570 = 3,
 		/obj/item/gun/ballistic/revolver/hunting = 1,
 		/obj/item/melee/onehanded/machete/spatha = 1,
@@ -268,7 +267,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 		/obj/item/melee/powerfist/f13/goliath = 1,
 		/obj/item/book/granter/martial/cqc = 1,
-		/obj/item/throwing_star/ninja = 2
+		/obj/item/gun/ballistic/automatic/smg/cg45_two = 1,
+		/obj/item/ammo_box/magazine/cg45_two = 2,
 		)
 
 /datum/outfit/loadout/berserkercenturion
@@ -278,7 +278,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 					/obj/item/melee/unarmed/brass/lovetap = 1,
 					/obj/item/book/granter/martial/berserker = 1,
-					/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 2
 					)
 
 
@@ -299,11 +298,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 
 	loadout_options = list(
-		/datum/outfit/loadout/decvetbull,	// Supersledge, 10mm SMG, Smokebomb
-		/datum/outfit/loadout/decvetwolf,	// Thermic lance, Carl Gustaf, Extra Bitter
-		/datum/outfit/loadout/decvetsnake, // Brush gun, Ripper, Extra Bitters
+		/datum/outfit/loadout/decvetbull,	// Towershield, 10mm SMG, Spatha
+		/datum/outfit/loadout/decvetwolf,	// Thermic lance, Carl Gustaf, Extra Bitters
+		/datum/outfit/loadout/decvetsnake, // Brush gun, Spatha, Extra Bitters
 		/datum/outfit/loadout/decvetbrave, // trench shotgun, 44 revolver, ballistic fist
-		/datum/outfit/loadout/decvetspecialist, // USP, Moleminer, legion cape holster
 		)
 
 
@@ -340,11 +338,11 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/decvetbull
 	name = "Mark of The Bull"
 	head = /obj/item/clothing/head/helmet/f13/legion/heavy
-	suit_store = /obj/item/twohanded/sledgehammer/supersledge
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv = 2,
-		/obj/item/grenade/smokebomb = 1,
+		/obj/item/melee/onehanded/machete/spatha = 1,
+		/obj/item/shield/riot/tower
 		)
 
 /datum/outfit/loadout/decvetwolf
@@ -354,7 +352,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/cg45 = 1,
 		/obj/item/ammo_box/magazine/cg45 = 2,
-		/obj/item/reagent_containers/pill/patch/bitterdrink = 1,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
 		)
 
 /datum/outfit/loadout/decvetsnake
@@ -362,9 +360,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
-		/obj/item/melee/powered/ripper = 1,
+		/obj/item/melee/onehanded/machete/spatha = 1,
 		/obj/item/ammo_box/tube/c4570 = 3,
-		/obj/item/attachments/scope = 1,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
 		)
 
@@ -378,16 +375,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		)
 
-/datum/outfit/loadout/decvetspecialist
-	name = "Mark of the Heedful"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/mk23
-	backpack_contents = list(
-		/obj/item/melee/powerfist/f13/moleminer = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
-		/obj/item/suppressor = 1,
-		/obj/item/clothing/neck/mantle/legion = 1,
-		)
 
 
 // PRIME DECANUS
@@ -406,9 +393,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	exp_requirements = 0
 
 	loadout_options = list(	//ALL: Gladius, Smokebomb
-		/datum/outfit/loadout/decprimfront,	// Lever action, .357 Revolver, Legion lance, Throwing knives
-		/datum/outfit/loadout/decprimrear,	// Legion shield, Ballistic fist
-		/datum/outfit/loadout/decprimboom, // Grenade rifle, .44 Revolver, Frag grenades, Coffepot bomb
+		/datum/outfit/loadout/decprimfront,	// .357 Revolver, Tower Shield, Throwing knives
+		/datum/outfit/loadout/decprimrear,	// Legion lance, Lever Shotgun
+		/datum/outfit/loadout/decprimboom, // GL, .44 Revolver, Frag grenades
 		)
 
 	matchmaking_allowed = list(
@@ -452,31 +439,30 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/decprimfront
 	name = "Aspiring Prime Decanus"
-	suit_store = /obj/item/twohanded/spear/lance
+	suit_store = /obj/item/gun/ballistic/revolver/m29
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/shield/riot/tower
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 3,
-		/obj/item/restraints/legcuffs/bola = 1,
-		/obj/item/melee/onehanded/knife/throwing = 2,
-		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1
+		/obj/item/melee/onehanded/knife/throwing = 3,
 		)
 
 /datum/outfit/loadout/decprimrear
 	name = "Battleborn Prime Decanus"
 	backpack_contents = list(
-		/obj/item/shield/riot/legion = 1,
-		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
+		/obj/item/twohanded/spear/lance = 1,
 		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/restraints/legcuffs/bola = 1,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1,
 		)
 
 /datum/outfit/loadout/decprimboom
 	name = "Demolition Prime Decanus"
+	suit_store = /obj/item/gun/ballistic/rocketlauncher
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/m29 = 1,
-		/obj/item/ammo_box/m44 = 3,
+		/obj/item/ammo_box/m44 = 2,
 		/obj/item/grenade/f13/he_grenade = 2,
+		/obj/item/ammo_box/magazine/internal/rocketlauncher = 2,
 		)
 
 
@@ -496,7 +482,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	exp_requirements = 0
 
 	loadout_options = list(
-		/datum/outfit/loadout/recdeclegion,	// Uzi, Bumper sword, Smokebomb
+		/datum/outfit/loadout/recdeclegion,	// Uzi, Lance, Smokebomb
 		/datum/outfit/loadout/recdectribal,	// M1 Garand, Throwing spears, Reinforced machete, Bottlecap mine
 		)
 
@@ -536,10 +522,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/recdeclegion
 	name = "Frontier Decanus"
-	suit_store = /obj/item/twohanded/fireaxe/bmprsword
+	suit_store = /obj/item/twohanded/spear/lance
 	backpack_contents = list(
 		/obj/item/grenade/smokebomb = 1,
-		/obj/item/restraints/legcuffs/bola = 1,
 		/obj/item/gun/ballistic/automatic/smg/mini_uzi = 1,
 		/obj/item/ammo_box/magazine/uzim9mm = 3,
 		)
@@ -653,7 +638,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/f13explorer
 	title = "Legion Explorer"
 	flag = F13EXPLORER
-	total_positions = 3
+	total_positions = 2
 	spawn_positions = 3
 	description = "Scout the area, secure key points, but do not ignore orders or wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment."
 	supervisors = "the Veteran Decanus and Centurion must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist."
@@ -661,9 +646,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 	exp_requirements = 0
 
-	loadout_options = list(	// ALL: .45 Revolver, Machete
-		/datum/outfit/loadout/expambusher,	// lever-action shotgun, Bottlecap mine
-		/datum/outfit/loadout/expsniper,	// SKS, Smokebomb
+	loadout_options = list(
+		/datum/outfit/loadout/expambusher,	// lever-action shotgun, Machete
+		/datum/outfit/loadout/expsniper,	// Trail carbine, .45 Revolver
 		)
 
 	matchmaking_allowed = list(
@@ -695,11 +680,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	r_pocket = /obj/item/flashlight
 	l_pocket = /obj/item/binoculars
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/revolver45 = 1,
-		/obj/item/ammo_box/c45rev = 1,
 		/obj/item/reagent_containers/pill/patch/healingpowder = 1,
 		/obj/item/storage/bag/money/small/legenlisted = 1,
-		/obj/item/melee/onehanded/machete = 1,
 		/obj/item/restraints/handcuffs = 1,
 		)
 
@@ -708,19 +690,19 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
-		/obj/item/bottlecap_mine = 1,
-		/obj/item/grenade/smokebomb = 1,
 		/obj/item/restraints/legcuffs/bola/tactical = 1,
+		/obj/item/melee/onehanded/machete = 1,
 		)
 
 /datum/outfit/loadout/expsniper
 	name = "Sniper"
 	glasses = /obj/item/clothing/glasses/sunglasses/big
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand/sks
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/sks = 2,
-		/obj/item/grenade/smokebomb = 1,
+		/obj/item/ammo_box/tube/m44 = 2,
 		/obj/item/attachments/scope = 1,
+		/obj/item/gun/ballistic/revolver/revolver45 = 1,
+		/obj/item/ammo_box/c45rev = 1,
 		)
 
 
@@ -744,8 +726,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	exp_requirements = 0
 
 	loadout_options = list(	//ALL: Gladius
-		/datum/outfit/loadout/vetaxe,	// Tclaw, Axe
-		/datum/outfit/loadout/vetsmg,	// Carl Gustaf, Lance
+		/datum/outfit/loadout/vetaxe,	// Smoke nade, Axe, extra heal
+		/datum/outfit/loadout/vetsmg,	// Carl Gustaf, Shield
 		/datum/outfit/loadout/vetberserker,	// Lever shotgun, Bola, Legion Lance
 		/datum/outfit/loadout/vetrifle,		// Trail gun, .357 Revolver
 		)
@@ -790,21 +772,16 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Enforcer"
 	suit_store = /obj/item/twohanded/legionaxe
 	backpack_contents = list(
-		/obj/item/melee/unarmed/tigerclaw = 1,
-		/obj/item/restraints/legcuffs/bola = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
-		/obj/item/stack/crafting/armor_plate = 4,
+		/obj/item/grenade/smokebomb = 1,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
 		)
 
 /datum/outfit/loadout/vetsmg
 	name = "Flanker"
 	suit_store = /obj/item/gun/ballistic/automatic/smg/cg45
 	backpack_contents = list(
-		/obj/item/twohanded/spear/lance = 1,
+		/obj/item/shield/riot/legion
 		/obj/item/ammo_box/magazine/cg45 = 2,
-		/obj/item/gun/ballistic/revolver/colt357 = 1,
-		/obj/item/ammo_box/a357 = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		)
 
 /datum/outfit/loadout/vetberserker
@@ -842,7 +819,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 
 	loadout_options = list(	//ALL: Forged Machete
-		/datum/outfit/loadout/primelancer,	// .357 Revolver, Buckler, Bola.
+		/datum/outfit/loadout/primelancer,	// .357 Revolver, Buckler
 		/datum/outfit/loadout/primerifle,	// Cowboy Repeater, Firebomb
 		/datum/outfit/loadout/primebrave,	// Hunting shotgun, Throwing spears
 		)
@@ -886,8 +863,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	r_hand = /obj/item/shield/riot/legion
 	backpack_contents = list(
 		/obj/item/ammo_box/a357 = 3,
-		/obj/item/restraints/legcuffs/bola = 2,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		)
 
 /datum/outfit/loadout/primerifle
@@ -896,7 +871,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 		/obj/item/ammo_box/a357 = 3,
 		/obj/item/grenade/homemade/firebomb = 2,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		)
 
 /datum/outfit/loadout/primebrave
@@ -906,7 +880,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/ammo_box/shotgun/buck = 1,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		)
 
 // RECRUIT
@@ -922,7 +895,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 
 	loadout_options = list(	//ALL: Machete
-		/datum/outfit/loadout/recruittribal,	// Fire Axe, Bola, Trekking
+		/datum/outfit/loadout/recruittribal,	// Gladius, Buckler
 		/datum/outfit/loadout/recruitlegion,	// .357 Revolver, 2 x prefilled Molotovs
 		)
 
@@ -959,10 +932,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/recruittribal
 	name = "Tribal Recruit"
-	suit_store = /obj/item/twohanded/fireaxe
+	suit_store = /obj/item/melee/onehanded/machete/gladius
 	backpack_contents = list(
-		/obj/item/restraints/legcuffs/bola = 1,
-		/obj/item/book/granter/trait/trekking = 1,
+		/obj/item/shield/riot/buckler = 1,
 		/obj/item/warpaint_bowl = 1,
 		)
 
@@ -986,7 +958,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/f13immune
 	title = "Legion Immune"
 	flag = F13IMMUNE
-	total_positions = 2
+	total_positions = 3
 	spawn_positions = 1
 	description = "An Immune is a legionnaire temporarily assigned to keeping the camp in order, according to their tasking on any given week."
 	supervisors = "the Centurion."
@@ -1021,14 +993,14 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/f13campfollower	// Extra materials, Blueprints
 	title = "Legion Forgemaster"
 	flag = F13CAMPFOLLOWER
-	total_positions = 2
+	total_positions = 1
 	spawn_positions = 2
 	description = "The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge and makes sure the camp is defended."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
 	roleplay_exclusive_notify = 1
-	exp_requirements = 150
+	exp_requirements = 0
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
 	name = "Legion Forgemaster"
