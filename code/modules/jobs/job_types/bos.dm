@@ -97,7 +97,7 @@ Head Paladin
 */
 
 /datum/job/bos/f13sentinel
-	title = "Head Paladin"
+	title = "Star Paladin"
 	flag = F13SENTINEL
 	head_announce = list("Security")
 	total_positions = 1
@@ -136,7 +136,7 @@ Head Paladin
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/bos/f13sentinel
-	name = "Head Paladin"
+	name = "Star Paladin"
 	jobtype = /datum/job/bos/f13sentinel
 	uniform = 		/obj/item/clothing/under/f13/recon
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
@@ -157,21 +157,21 @@ Head Paladin
 		)
 
 /datum/outfit/loadout/sentheavy
-	name = "Ballistic Head Paladin"
+	name = "Ballistic Star Paladin"
 	backpack_contents = list(
 		/obj/item/minigunpackbal5mm = 1,
 		/obj/item/ammo_box/m5mmbox = 2,
 	)
 
 /datum/outfit/loadout/sentlaser
-	name = "Laser Laser Head Paladin"
+	name = "Laser Star Paladin"
 	backpack_contents = list(
 		/obj/item/minigunpack = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 3,
 	)
 
 /datum/outfit/loadout/sentmelee
-	name = "Melee Head Paladin"
+	name = "Melee Star Paladin"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1, 
 		/obj/item/ammo_box/magazine/m14mm = 3,
@@ -243,7 +243,7 @@ Head Knight
 */
 
 /datum/job/bos/f13knightcap
-	title = "Head Knight"
+	title = "Knight Commander"
 	flag = F13KNIGHTCAPTAIN
 	head_announce = list("Security")
 	total_positions = 1
@@ -285,7 +285,7 @@ Head Knight
 
 
 /datum/outfit/job/bos/f13knightcap
-	name = "Head Knight"
+	name = "Knight Commander"
 	jobtype = /datum/job/bos/f13knightcap
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
@@ -330,7 +330,7 @@ Star Paladin
 */
 
 /datum/job/bos/f13seniorpaladin
-	title = "Star Paladin"
+	title = "Paladin Commander"
 	flag = F13SENIORPALADIN
 	total_positions = 1
 	spawn_positions = 1
@@ -372,7 +372,7 @@ Star Paladin
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/bos/f13seniorpaladin
-	name =	"Senior Paladin"
+	name =	"Paladin Commander"
 	jobtype =	/datum/job/bos/f13seniorpaladin
 	suit =	/obj/item/clothing/suit/armor/f13/power_armor/t60
 	head =	/obj/item/clothing/head/helmet/f13/power_armor/t60
@@ -644,7 +644,7 @@ Senior Knight
 */
 
 /datum/job/bos/f13seniorknight
-	title = "Senior Knight"
+	title = "Knight Sergeant"
 	flag = F13SENIORKNIGHT
 	total_positions = 2
 	spawn_positions = 2
@@ -688,7 +688,7 @@ Senior Knight
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
 
 /datum/outfit/job/bos/f13seniorknight
-	name = "Senior Knight"
+	name = "Knight Sergeant"
 	jobtype = /datum/job/bos/f13seniorknight
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
