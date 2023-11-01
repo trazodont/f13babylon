@@ -728,7 +728,7 @@ Senior Knight
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
 
-/datum/outfit/loadout/sknightb
+/datum/outfit/loadout/sknightc
 	name = "Knight Defender"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/mp5 = 1,
