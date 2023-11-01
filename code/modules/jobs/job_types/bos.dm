@@ -344,7 +344,7 @@ Star Paladin
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
-		/datum/outfit/loadout/spaladinb, //Combat Rifle + Powerfist
+		/datum/outfit/loadout/spaladinb, //Tribeam
 		/datum/outfit/loadout/spaladinc,  //AER12 + Scope
 		)
 
@@ -392,7 +392,6 @@ Star Paladin
 /datum/outfit/loadout/spaladinb
 	name = "Senior Offensive Paladin"
 	backpack_contents = list(
-		/obj/item/melee/powerfist/f13 = 1,
 		/obj/item/gun/energy/laser/scatter,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/clothing/accessory/bos/paladin=1,
