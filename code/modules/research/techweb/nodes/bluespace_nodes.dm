@@ -40,7 +40,7 @@
 	prereq_ids = list("adv_power", "adv_bluespace", "adv_biotech", "adv_plasma")
 	design_ids = list( "bluespacebodybag","bag_holding", "bluespace_pod", "borg_upgrade_trashofholding", "blutrash", "satchel_holding", "bsblood_bag", "duffelbag_holding")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5500)
-
+*/
 /datum/techweb_node/bluespace_portal
 	id = "bluespace_portal"
 	display_name = "Bluespace Portals"
@@ -56,7 +56,7 @@
 	prereq_ids = list("adv_power", "adv_bluespace")
 	design_ids = list("tele_station", "tele_hub", "quantumpad", "quantum_keycard", "launchpad", "launchpad_console", "teleconsole", "roastingstick")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-*/
+
 /datum/techweb_node/unregulated_bluespace
 	id = "unregulated_bluespace"
 	display_name = "Unregulated Bluespace Research"
