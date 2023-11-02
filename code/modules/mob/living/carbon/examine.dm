@@ -136,6 +136,9 @@
 		if(digitalcamo)
 			. += "[t_He] [t_is] moving [t_his] body in an unnatural and blatantly unsimian manner."
 
+		if(HAS_TRAIT(src,TRAIT_FEVII) || HAS_TRAIT(src, TRAIT_FEV))
+			. += "<span class='warning'>[t_He] [t_is] a towering, staggering mutant... With [t_his] their body contorted in strange ways. How revolting...</span>"
+
 	if(SEND_SIGNAL(src, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_ACTIVE))
 		. += "[t_He] [t_is] visibly tense[CHECK_MOBILITY(src, MOBILITY_STAND) ? "." : ", and [t_is] standing in combative stance."]"
 
