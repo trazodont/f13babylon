@@ -129,7 +129,7 @@
 
 /datum/chemical_reaction/slime/slimemobspawn/proc/summon_mobs(datum/reagents/holder, turf/T)
 	T.visible_message("<span class='danger'>The slime extract begins to vibrate violently!</span>")
-	//addtimer(CALLBACK(src, .proc/chemical_mob_spawn, holder, 5, "Gold Slime", HOSTILE_SPAWN), 50)
+	addtimer(CALLBACK(src, .proc/chemical_mob_spawn, holder, 5, "Gold Slime", HOSTILE_SPAWN), 50)
 
 /datum/chemical_reaction/slime/slimemobspawn/lesser
 	name = "Slime Crit Lesser"
@@ -138,7 +138,7 @@
 
 /datum/chemical_reaction/slime/slimemobspawn/lesser/summon_mobs(datum/reagents/holder, turf/T)
 	T.visible_message("<span class='danger'>The slime extract begins to vibrate violently!</span>")
-	//addtimer(CALLBACK(src, .proc/chemical_mob_spawn, holder, 3, "Lesser Gold Slime", HOSTILE_SPAWN, "neutral"), 50)
+	addtimer(CALLBACK(src, .proc/chemical_mob_spawn, holder, 3, "Lesser Gold Slime", HOSTILE_SPAWN, "neutral"), 50)
 
 /datum/chemical_reaction/slime/slimemobspawn/friendly
 	name = "Slime Crit Friendly"
@@ -147,7 +147,7 @@
 
 /datum/chemical_reaction/slime/slimemobspawn/friendly/summon_mobs(datum/reagents/holder, turf/T)
 	T.visible_message("<span class='danger'>The slime extract begins to vibrate adorably!</span>")
-	//addtimer(CALLBACK(src, .proc/chemical_mob_spawn, holder, 1, "Friendly Gold Slime", FRIENDLY_SPAWN, "neutral"), 50)
+	addtimer(CALLBACK(src, .proc/chemical_mob_spawn, holder, 1, "Friendly Gold Slime", FRIENDLY_SPAWN, "neutral"), 50)
 
 //Silver
 /datum/chemical_reaction/slime/slimebork
@@ -358,7 +358,7 @@
 /datum/chemical_reaction/slime/slimeplasma/on_reaction(datum/reagents/holder)
 	new /obj/item/stack/sheet/mineral/plasma(get_turf(holder.my_atom), 3)
 	..()
-/*
+
 //Red
 /datum/chemical_reaction/slime/slimemutator
 	name = "Slime Mutator"
@@ -399,7 +399,7 @@
 /datum/chemical_reaction/slime/slimespeed/on_reaction(datum/reagents/holder)
 	new /obj/item/slimepotion/speed(get_turf(holder.my_atom))
 	..()
-*/
+
 //Pink
 /datum/chemical_reaction/slime/docility
 	name = "Docility Potion"
@@ -507,7 +507,7 @@
 /datum/chemical_reaction/slime/adamantine/on_reaction(datum/reagents/holder)
 	new /obj/item/stack/sheet/mineral/adamantine(get_turf(holder.my_atom))
 	..()
-/*
+
 //Bluespace
 /datum/chemical_reaction/slime/slimefloor2
 	name = "Bluespace Floor"
@@ -543,7 +543,7 @@
 /datum/chemical_reaction/slime/slimeradio/on_reaction(datum/reagents/holder, multiplier)
 	new /obj/item/slimepotion/slime/slimeradio(get_turf(holder.my_atom))
 	..()
-*/
+
 //Cerulean
 /datum/chemical_reaction/slime/slimepsteroid2
 	name = "Slime Steroid 2"
