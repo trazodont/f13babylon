@@ -1312,6 +1312,7 @@ Records disabled until a use for them is found
 		return
 
 	var/list/dat = list()
+	var/isconflicting = FALSE
 	if(!SSquirks.quirks.len)
 		dat += "The quirk subsystem hasn't finished initializing, please hold..."
 		dat += "<center><a href='?_src_=prefs;preference=trait;task=close'>Done</a></center><br>"
@@ -1320,7 +1321,6 @@ Records disabled until a use for them is found
 		dat += "<center><b>Choose quirk setup</b></center><br>"
 		dat += "<div align='center'>Left-click to add or remove quirks. You need negative quirks to have positive ones.<br>\
 		Quirks are applied at roundstart and cannot normally be removed.</div>"
-		dat += "<center><a href='?_src_=prefs;preference=trait;task=close'>Done</a></center>"
 		dat += "<hr>"
 		dat += "<center><b>Current quirks:</b> [all_quirks.len ? all_quirks.Join(", ") : "None"]</center>"
 		dat += "<center>[GetPositiveQuirkCount()] / [MAX_QUIRKS] max positive quirks<br>\
@@ -1342,8 +1342,8 @@ Records disabled until a use for them is found
 				quirk_conflict = TRUE
 			if(has_quirk)
 				if(quirk_conflict)
-					all_quirks -= quirk_name
-					has_quirk = FALSE
+					to_chat(user, "<span class='danger'>Your quirks have conflicts and will <b>NOT</b> function! Correct them before closing the menu.</span>")	
+					isconflicting = TRUE	
 				else
 					quirk_cost *= -1 //invert it back, since we'd be regaining this amount
 			if(quirk_cost > 0)
@@ -1361,7 +1361,10 @@ Records disabled until a use for them is found
 				else
 					dat += "<a href='?_src_=prefs;preference=trait;task=update;trait=[quirk_name]'>[has_quirk ? "Remove" : "Take"] ([quirk_cost] pts.)</a> \
 					<font color='[font_color]'>[quirk_name]</font> - [initial(T.desc)]<br>"
-		dat += "<br><center><a href='?_src_=prefs;preference=trait;task=reset'>Reset Quirks</a></center>"
+		if(isconflicting)
+			dat += "<center><b>You have an invalid quirk setup. Please correct any issues before leaving this menu</b></center>" //Future support for quirks that majorly affect character appearance, but are gained ingame- allows a 'soft preview'.
+		else
+			dat += "<center><a href='?_src_=prefs;preference=trait;task=close'>Done</a></center>"
 
 	user << browse(null, "window=preferences")
 	var/datum/browser/popup = new(user, "mob_occupation", "<div align='center'>SPECIAL</div>", 900, 600) //no reason not to reuse the occupation window, as it's cleaner that way

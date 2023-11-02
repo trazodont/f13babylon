@@ -3,7 +3,7 @@
 
 // FEV - Curling 13
 /datum/disease/curling_thirteen
-	form = "Virus"
+	form = "Modified Forced Evolutionary Virus"
 	name = "Curling 13"
 	desc = "A modified version of Forced Evolutionary Virus specifically engineered to kill every irradiated lifeform. The more radiation you have stored - the faster you'll die."
 	max_stages = 6 //Oh BOY
@@ -64,7 +64,7 @@
 				to_chat(affected_mob, "<span class='danger'>Your head feels dizzy...</span>")
 				affected_mob.adjustStaminaLoss(10)
 		if(4) // That's the part where you start dying
-			if(prob(2))
+			if(prob(15))
 				to_chat(affected_mob, "<span class='userdanger'>You feel as if your organs just exploded!</span>")
 				affected_mob.playsound_local(affected_mob, 'sound/effects/singlebeat.ogg', 50, 0)
 				affected_mob.blur_eyes(10)
@@ -76,26 +76,26 @@
 				to_chat(affected_mob, "<span class='userdanger'>Your skin starts to rip apart!")
 				affected_mob.adjustBruteLoss(10,0)
 				affected_mob.emote("scream")
-			if(prob(8))
+			if(prob(10))
 				affected_mob.adjustToxLoss(2)
 		if(5) // That's the part where you die for real
 			var/datum/component/mood/mood = affected_mob.GetComponent(/datum/component/mood)
 			mood.setSanity(SANITY_INSANE) // Who wouldn't be insane when they have 5 seconds left to live?
-			if(prob(5))
+			if(prob(17))
 				to_chat(affected_mob, "<span class='userdanger'>You feel as if all your organs just exploded!</span>")
 				affected_mob.emote("scream")
 				affected_mob.blur_eyes(5)
 				affected_mob.vomit(50, 1, 1, 0, 1, 1)
 				affected_mob.easy_randmut(NEGATIVE+MINOR_NEGATIVE)
-			if(prob(7))
+			if(prob(15))
 				to_chat(affected_mob, "<span class='userdanger'>Your skin keeps ripping itself apart!")
 				affected_mob.adjustBruteLoss(15,0)
 				affected_mob.emote("cry")
 				affected_mob.easy_randmut(NEGATIVE)
-			if(prob(10))
+			if(prob(20))
 				affected_mob.adjustToxLoss(5)
 		if(6) //I'm sorrry, but your ride is over, mutie.
-			if(prob(7))
+			if(prob(15))
 				affected_mob.adjustToxLoss(5)
 				affected_mob.adjustBruteLoss(25,0)
 				affected_mob.emote("scream")
@@ -103,7 +103,7 @@
 				affected_mob.Jitter(4)
 				affected_mob.vomit(50, 1, 1, 0, 1, 1)
 				affected_mob.easy_randmut(NEGATIVE+MINOR_NEGATIVE)
-			if(prob(10))
+			if(prob(20))
 				affected_mob.adjust_blindness(5)
 				affected_mob.adjustCloneLoss(5,0)
 				affected_mob.emote("cry")
@@ -169,11 +169,17 @@
 				affected_mob.easy_randmut(NEGATIVE)
 				affected_mob.Unconscious(10)
 			if(!FEV1trait) //You need to cure it past this point; unlike FEV-II, FEV-I is unstable and will continue mutating you until you're dead.
-				to_chat(affected_mob, "<span class='danger'>Your skin twitches and swells...</span>")
-				affected_mob.Jitter(3)
-				affected_mob.add_quirk(/datum/quirk/fev)
-				affected_mob.easy_randmut(NEGATIVE+MINOR_NEGATIVE)
-				FEV1trait = TRUE
+				if(affected_mob.radiation < 500) //FEV-I canonically kills you if you're too radioactive.
+					to_chat(affected_mob, "<span class='danger'>Your skin twitches and swells...</span>")
+					affected_mob.Jitter(3)
+					affected_mob.add_quirk(/datum/quirk/fev)
+					affected_mob.easy_randmut(NEGATIVE+MINOR_NEGATIVE)
+					FEV1trait = TRUE
+				else
+					affected_mob.adjustToxLoss(50) //Ouch
+					affected_mob.adjustBruteLoss(65,0) //ouch
+					affected_mob.adjustCloneLoss(50,0) //YEOWCH
+					affected_mob.emote("scream")
 
 /datum/disease/fev2 //You die from mutations.
 	form = "Forced Evolutionary Virus"
@@ -182,7 +188,7 @@
 	cures = list(/datum/reagent/medicine/mutadone, /datum/reagent/medicine/spaceacillin)
 	cure_text = "Mutadone and Spaceallin."
 	cure_chance = 5 // Nonlethal.
-	spread_text = "Blood."
+	spread_text = "Blood"
 	desc = "A megavirus, with a protein sheath reinforced by ionized hydrogen, which has been however, affected by radiation. This will mutate the host into something less... Horrifying."
 	viable_mobtypes = list(/mob/living/carbon/human)
 	severity = DISEASE_SEVERITY_MEDIUM
