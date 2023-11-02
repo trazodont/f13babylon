@@ -93,6 +93,7 @@
 	// It also had a lot of code duplication (many if statements with 'force >= 5' in them).
 	// Let this be a lesson not to do that. When in doubt, remember:
 	// Don't Repeat Yourself!
+	// Additional Addendum: Supermutant buffs/debuffs now controlled via FEV-I and FEV-II. When maintaining this in the future, TRAIT_FEV should be your gospel for changing direct mutant buffs.
 
 	//damage_multiplier += (user.special_s/100)//SPECIAL integration
 
@@ -109,8 +110,11 @@
 		if(HAS_TRAIT(user, TRAIT_BUFFOUT_BUFF))
 			damage_multiplier += 0.4
 
-		if (HAS_TRAIT(user, TRAIT_SMUTANT))
-			damage_multiplier += 0.25
+		if (HAS_TRAIT(user, TRAIT_FEV))
+			damage_multiplier += 0.15
+
+		if (HAS_TRAIT(user, TRAIT_FEVII))
+			damage_multiplier += 0.35
 
 		if (HAS_TRAIT(user, TRAIT_GHOULMELEE)) //negative trait
 			damage_multiplier -= 0.25 // reduces the damage done by melee by 25% of the base damage
