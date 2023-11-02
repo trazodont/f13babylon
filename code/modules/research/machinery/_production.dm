@@ -45,10 +45,12 @@
 	return ..()
 
 /obj/machinery/rnd/production/proc/update_research()
-	if(QDELETED(src))
-		return
-	host_research.copy_research_to(stored_research, TRUE)
-	update_designs()
+	if(linked_console) //Allows techwebs to correctly sync!!
+		host_research = linked_console.stored_research
+		host_research.copy_research_to(stored_research, TRUE)
+		update_designs()
+	else
+		say("This machine does not have a linked console, and thus cannot print!")
 
 /obj/machinery/rnd/production/proc/update_designs()
 	cached_designs?.Cut()
