@@ -379,7 +379,7 @@
 	backpack_contents = list(
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/book/granter/trait/midsurgery = 1
+		/obj/item/book/granter/trait/midsurgery = 1,
 		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/ammo_box/magazine/cg45 = 2,
