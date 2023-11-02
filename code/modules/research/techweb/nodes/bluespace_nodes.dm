@@ -32,7 +32,7 @@
 	design_ids = list("bluespace_cell", "quadratic_capacitor")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
-/*8
+/*
 /datum/techweb_node/bluespace_holding
 	id = "bluespace_holding"
 	display_name = "Bluespace Pockets"
@@ -48,20 +48,20 @@
 	prereq_ids = list("adv_weaponry", "adv_bluespace")
 	design_ids = list("wormholeprojector")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
+*/
 /datum/techweb_node/bluespace_warping
 	id = "bluespace_warping"
 	display_name = "Bluespace Travel"
 	description = "Application of Bluespace for static teleportation technology."
-	prereq_ids = list("adv_power", "adv_bluespace")
+	prereq_ids = list("adv_power")
 	design_ids = list("tele_station", "tele_hub", "quantumpad", "quantum_keycard", "launchpad", "launchpad_console", "teleconsole", "roastingstick")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
+/*
 /datum/techweb_node/unregulated_bluespace
 	id = "unregulated_bluespace"
 	display_name = "Unregulated Bluespace Research"
 	description = "Bluespace technology using unstable or unbalanced procedures, prone to damaging the fabric of bluespace. Outlawed by galactic conventions."
-	prereq_ids = list("bluespace_warping", "syndicate_basic")
+	prereq_ids = list("syndicate_basic")
 	design_ids = list("desynchronizer")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 */
