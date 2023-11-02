@@ -157,6 +157,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13captain
 	exp_requirements = 0
 
+	loadout_options = list( 				
+		/datum/outfit/loadout/ncrcptmelee,	// Lucky
+		/datum/outfit/loadout/ncrcptshotgun, // Pancor
+		)
 
 /datum/outfit/job/ncr/f13captain/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -191,12 +195,22 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/reagent_containers/food/snacks/grown/tobacco/dried = 1,
 		/obj/item/stack/crafting/armor_plate = 5,
 		/obj/item/clothing/suit/armor/f13/ncrarmor/captain = 1,
-		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
-		/obj/item/ammo_box/magazine/d12g = 3,
-		/obj/item/gun/ballistic/automatic/shotgun/pancor = 1,
 		/obj/item/storage/box/ration/menu_eight = 1,
 		)
 
+/datum/outfit/loadout/ncrcptmelee
+	name = "Backline Support"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/colt357/lucky = 1,
+		/obj/item/ammo_box/a357box = 2,
+		)
+
+/datum/outfit/loadout/ncrcptshotgun
+	name = "Frontliner"
+	suit_store = /obj/item/gun/ballistic/automatic/shotgun/pancor
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/d12g = 3,
+		)
 
 // LIEUTENANT
 

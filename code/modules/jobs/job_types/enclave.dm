@@ -51,8 +51,8 @@
 /datum/job/enclave/enclavecpt
 	title = "Enclave Captain"
 	flag = F13USLT
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Casper mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
 	Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week."
@@ -63,7 +63,8 @@
 
 	loadout_options = list(
 		/datum/outfit/loadout/cpt_ballistics, // G11 and Plasma Glock
-		/datum/outfit/loadout/cpt_plasma, // TriPlasma Rifle and 14mm
+		/datum/outfit/loadout/cpt_plasma, //Plasma Rifle and 14mm
+		/datum/outfit/loadout/cpt_flamer, //Flamer+deagle
 		)
 
 
@@ -93,22 +94,29 @@
 		)
 
 /datum/outfit/loadout/cpt_ballistics
-	name = "Shiny Bullet"
+	name = "Soldier"
 	suit_store = /obj/item/gun/ballistic/automatic/g11/g11e
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m473 = 3,
+		/obj/item/ammo_box/magazine/m473 = 2,
 		/obj/item/gun/energy/laser/plasma/glock = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/grenade/f13/plasma = 2,
+		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
 
 /datum/outfit/loadout/cpt_plasma
-	name = "Armored Rifleman Kit"
-	suit_store = /obj/item/gun/energy/laser/plasma/scatter
+	name = "Heavy"
+	suit_store = /obj/item/gun/energy/laser/plasma
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/ballistic/automatic/pistol/pistol14/custom = 1,
-		/obj/item/ammo_box/magazine/m14mm = 2,
+		/obj/item/ammo_box/magazine/m14mm = 1,
+		)
+
+/datum/outfit/loadout/cpt_flamer
+	name = "Pyro"
+	suit_store = /obj/item/m2flamethrowertank
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
+		/obj/item/ammo_box/magazine/m44 = 3,
 		)
 
 
@@ -139,8 +147,8 @@
 	exp_requirements = 0
 
 	loadout_options = list(
-		/datum/outfit/loadout/lt_ballistics, // G11 and Plasma Glock
-		/datum/outfit/loadout/lt_plasma, // Plasma Rifle and 14mm
+		/datum/outfit/loadout/lt_ballistics, // Citykiller Plasmapistol
+		/datum/outfit/loadout/lt_sniper, // Gauss MK23
 		)
 
 
@@ -162,31 +170,27 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
-		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone =1
 		)
 
 /datum/outfit/loadout/lt_ballistics
-	name = "Shiny Bullet"
-	suit_store = /obj/item/gun/ballistic/automatic/g11/g11e
+	name = "The close ranged"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m473 = 3,
-		/obj/item/gun/energy/laser/plasma/glock = 1,
+		/obj/item/ammo_box/shotgun/buck = 3,
+		/obj/item/gun/energy/laser/plasma/ = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/grenade/f13/plasma = 2,
 		)
 
-/datum/outfit/loadout/lt_plasma
-	name = "Never Forgotten"
-	suit_store = /obj/item/gun/energy/laser/plasma
+/datum/outfit/loadout/lt_sniper
+	name = "Sniper"
+	suit_store = /obj/item/gun/ballistic/automatic/m72
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/gun/ballistic/automatic/pistol/pistol14/custom = 1,
-		/obj/item/ammo_box/magazine/m14mm = 2,
-		/obj/item/grenade/f13/plasma = 2,
+		/obj/item/ammo_box/magazine/m2mm = 2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -216,9 +220,8 @@
 	exp_requirements = 0
 
 	loadout_options = list(
-		/datum/outfit/loadout/gysgt_ballistics, // Vindicator
-		/datum/outfit/loadout/gysgt_gatlas, // Lasminigun
-		/datum/outfit/loadout/gysgt_laser, // Multiplas
+		/datum/outfit/loadout/gysgt_ballistics, // Assault carbine
+		/datum/outfit/loadout/gysgt_melee, // CG+shield
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant
@@ -236,8 +239,6 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
-		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/megaphone = 1,
@@ -245,26 +246,21 @@
 		)
 
 /datum/outfit/loadout/gysgt_ballistics
-	name = "Armored Assault Kit"
+	name = "Marine"
 	backpack_contents = list(
-		/obj/item/encencminigunbal4mm = 1,
-		/obj/item/ammo_box/magazine/vindic = 2
+		/obj/item/gun/ballistic/automatic/assault_carbine = 1,
+		/obj/item/ammo_box/magazine/m5mm = 2
 		)
 
-/datum/outfit/loadout/gysgt_gatlas
-	name = "Armored Support Kit"
+/datum/outfit/loadout/gysgt_melee
+	name = "Defender"
 	backpack_contents = list(
-		/obj/item/encminigunpack = 1,
-		/obj/item/stock_parts/cell/ammo/ecp = 2
+		/obj/item/gun/ballistic/automatic/smg/cg45_two = 1,
+		/obj/item/melee/powered/ripper/prewar = 1,
+		/obj/item/ammo_box/magazine/cg45_two = 2,
+		
 		)
 
-/datum/outfit/loadout/gysgt_laser
-	name = "Armored Rifleman Kit"
-	suit_store = /obj/item/gun/energy/laser/plasma/scatter
-	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/grenade/f13/plasma = 1,
-		)
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -310,8 +306,6 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
-		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone =1
@@ -321,15 +315,14 @@
 	name = "Frontline Operator"
 	suit_store = /obj/item/gun/ballistic/automatic/g11
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m473 = 3,
+		/obj/item/ammo_box/magazine/m473 = 2,
 		)
 
 /datum/outfit/loadout/sgt_laser
 	name = "Support Rifleman"
 	suit_store = /obj/item/gun/energy/laser/plasma
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
-		/obj/item/grenade/f13/plasma = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -356,8 +349,8 @@
 	exp_requirements = 0
 
 	loadout_options = list(
-		/datum/outfit/loadout/combatmedic, // Medical Equipment
-		/datum/outfit/loadout/combatengie, // TBD
+		/datum/outfit/loadout/combatmedic, // CG, Defib, medbooks
+		/datum/outfit/loadout/combatengie, // RPG, MK23, TOOLBELT
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist
@@ -365,7 +358,6 @@
 	jobtype = /datum/job/enclave/f13specialist
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
 	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
-	suit_store = /obj/item/gun/energy/laser/aer9
 	accessory = /obj/item/clothing/accessory/enclave/specialist
 
 	backpack_contents = list(
@@ -374,10 +366,6 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
-		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/clothing/mask/chameleon = 1,
 		/obj/item/card/id/syndicate/anyone =1
 		)
@@ -387,10 +375,14 @@
 	mask = /obj/item/clothing/mask/surgical
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 	head = /obj/item/clothing/head/beret/enclave/science
+	suit_store = /obj/item/gun/ballistic/automatic/smg/cg45
 	backpack_contents = list(
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/book/granter/trait/midsurgery = 1
+		/obj/item/book/granter/trait/midsurgery = 1,
+		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
+		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
+		/obj/item/ammo_box/magazine/cg45 = 2,
 		)
 
 /datum/outfit/loadout/combatengie
@@ -398,10 +390,12 @@
 	mask = /obj/item/clothing/mask/gas/welding
 	gloves = /obj/item/clothing/gloves/color/yellow
 	head = /obj/item/clothing/head/hardhat/orange
+	suit_store = /obj/item/gun/ballistic/rocketlauncher
 	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
 		/obj/item/storage/belt/utility = 1,
-		/obj/item/shovel/trench = 1,
-		/obj/item/metaldetector = 1
+		/obj/item/ammo_box/magazine/internal/rocketlauncher = 3,
 	)
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -428,20 +422,22 @@
 /datum/outfit/job/enclave/peacekeeper/enclavespy
 	name = "Enclave Private"
 	jobtype = /datum/job/enclave/enclavespy
-	head = /obj/item/clothing/head/beret/enclave
 	accessory = /obj/item/clothing/accessory/enclave/private_firstclass
+	head = /obj/item/clothing/head/helmet/f13/combat/enclave
+	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/pda = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
 		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/clothing/mask/chameleon = 1,
-		/obj/item/card/id/syndicate/anyone =1
+		/obj/item/card/id/syndicate/anyone =1,
+		/obj/item/clothing/head/beret/enclave = 1,
+		/obj/item/gun/ballistic/automatic/assault_carbine = 1,
+		/obj/item/ammo_box/magazine/m5mm = 2
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -506,6 +502,7 @@
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/needle)
 
+/*
 //Pilot
 /datum/job/enclave/enclavepilot
 	title = "Enclave Pilot Officer"
@@ -548,6 +545,8 @@
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
+
+*/
 
 //Bunker Duty
 /datum/job/enclave/f13BDUTY
