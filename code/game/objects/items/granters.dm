@@ -194,7 +194,7 @@
 	desc = "An indepth look into how aircraft function, alongside your very own authorisation codes!"
 	oneuse = TRUE
 	granted_trait = TRAIT_PILOT
-	traitname = "vb_pilot"
+	traitname = "Piloting"
 	remarks = list("Remember, your standard VB-02 is only as good as the pilots flying it.", "Assure you've another pilot at your side, in case of emergency.")
 
 ///SPELLS///
@@ -879,7 +879,6 @@
 	crafting_recipe_types = list(/datum/crafting_recipe/policepistol, /datum/crafting_recipe/durathread_vest, /datum/crafting_recipe/policerifle, /datum/crafting_recipe/steelbib/heavy, /datum/crafting_recipe/armyhelmetheavy, /datum/crafting_recipe/huntingshotgun)
 	remarks = list("Looks like Bighorn hand-crafts replicas from a pre-war police armory", "Some of these weapons are more than 200 years old....", "Duct tape really can hold it together!", "So that is how you laminate armor sheets together", "Looks like you can beat metal into just the right shape to replace the bits")
 
-
 /obj/item/book/granter/trait/tagger
 	name = "Picket Fences"
 	desc = "A guide to home decor! The American Dream might be dead and the white picket fences might be caked in rads, but at least you can read about it!"
@@ -959,8 +958,6 @@
 	traitname = "wirevision"
 	remarks = list("Troubleshooting is a systematic approach to problem solving, do not skip any steps in the process.", "Ensure you have all the required parts before you begin.", "Don't lose track of your tools, or you have a new problem to deal with.", "Make sure you check the colouring of wires extremely carefully- you don't want to be mixing up yellow and lime, or purple and indigo!")
 
-
-
 /obj/item/book/granter/trait/pa_wear
 	name = "US Army: Mechanized Infantry Handbook"
 	desc = "A battered olive-green handbook, detailing lessons to ancient mechanized US Army infantry units."
@@ -976,6 +973,13 @@
 	granted_trait = TRAIT_HARD_YARDS
 	traitname = "trekking"
 	remarks = list("Tribes and gangs often hide the best loot in the back room.", "Radiation is best avoided entirely, but it helps to carry spare rad-x.", "Whether ancient or recent, landmines are still a threat, and readers should look out for them.", "Injuries and open bleeding make it harder to travel, always carry spare medical supplies.", "Most animals are simple-minded, and can be led into easy lines of fire.")
+
+/obj/item/book/granter/trait/research
+	name = "Research and You"
+	desc = "A battered purple-blue handbook, detailing lessons to use research equipment."
+	oneuse = TRUE
+	granted_trait = TRAIT_RESEARCHER
+	traitname = "Researching"
 
 /obj/item/book/granter/trait/explosives
 	name = "Industrial Society and Its Future"
@@ -1094,7 +1098,7 @@
 		desc = "A compendium of knowledge passed down from the elders. It looks to be in poor condition."
 
 /obj/item/book/granter/trait/selection/tribal/attack_self(mob/user)
-	var/list/choices = list("Hit Them With Sticks","Pugilist","Padded Feet","Veteran Table Climber","Desert Affinity","Spiritual Mending")
+	var/list/choices = list("Hit Them With Sticks","Pugilist","Brahmin Tender","Fireant Rituals","Fisting Expert","Spiritual Mending")
 	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		switch(choice)
@@ -1106,15 +1110,18 @@
 			if("Pugilist")
 				granted_trait = TRAIT_IRONFIST
 				traitname = "using your fists"
-			if("Padded Feet")
-				granted_trait = TRAIT_LIGHT_STEP
-				traitname = "treading carefully"
-			if("Veteran Table Climber")
-				granted_trait = TRAIT_FREERUNNING
-				traitname = "....climbing tables"
+			if("Brahmin Tender")
+				granted_trait = TRAIT_CALCIUM_HEALER //Heal from milk.
+				traitname = "drinking milk"
+			if("Fireant Rituals")
+				granted_trait = TRAIT_IGNOREDAMAGESLOWDOWN //Removes the slowdown from being injured, but not from fractures, stamdamage/etc.
+				traitname = "...pain resistance"
+			if("Fisting Expert") //ORIGINALLY: Trait "Hard Yards" - Tribals spawn with this trait, so it was useless
+				granted_trait = TRAIT_PERFECT_ATTACKER //Makes all punches do the highet possible damage roll, where-as Iron-fist buffs the raw damage you can do.
+				traitname = "fistfighting"
 			if("Spiritual Mending")
-				granted_trait = TRAIT_SURGERY_LOW
-				traitname = "minor surgery"
+				granted_trait = TRAIT_SURGERY_MID //This was very useless before.
+				traitname = "medium surgery"
 		return ..()
 
 /obj/item/book/granter/trait/selection/tribal/Initialize()

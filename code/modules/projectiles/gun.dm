@@ -1029,6 +1029,9 @@ ATTACHMENTS
 		else
 			//you have both poor aim and insane aim, why?
 			bonus_spread += rand(0,50)
+	if(HAS_TRAIT(user, TRAIT_FEV) || HAS_TRAIT(user, TRAIT_FEVII))
+		bonus_spread += 85 //This is going to be problematic for you.
+		base_inaccuracy += 10 //Unfortunate.
 	var/mult = max((GUN_AIMING_TIME + aiming_delay + user.last_click_move - world.time)/GUN_AIMING_TIME, -0.5) //Yes, there is a bonus for taking time aiming.
 	if(mult < 0) //accurate weapons should provide a proper bonus with negative inaccuracy. the opposite is true too.
 		mult *= 1/inaccuracy_modifier

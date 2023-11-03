@@ -118,7 +118,8 @@
 	design_ids = list(/*"mech_energy_relay",*/ "mech_ccw_armor", "mech_proj_armor", "mech_generator_nuclear")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
-/* ## Uncomment it after projectiles don't runtime anymore
+// ## Uncomment it after projectiles don't runtime anymore
+// hello past coder, they no longer runtime
 /datum/techweb_node/mech_scattershot
 	id = "mecha_tools"
 	display_name = "Exosuit Weapon (LBX AC 10 \"Scattershot\")"
@@ -150,7 +151,7 @@
 	prereq_ids = list("adv_weaponry")
 	design_ids = list("mech_lmg", "mech_lmg_ammo")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-*/
+
 
 /datum/techweb_node/mech_ion
 	id = "mmech_ion"

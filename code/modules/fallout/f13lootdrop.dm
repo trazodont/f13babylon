@@ -611,9 +611,9 @@
 		/obj/item/reagent_containers/glass/bottle/fentanyl = 5,
 		/obj/item/reagent_containers/glass/bottle/frostoil = 5,
 		/obj/item/book/granter/trait/midsurgery = 5,
-		/obj/item/reagent_containers/glass/bottle/FEV_solution = 20,
-		/obj/item/reagent_containers/glass/bottle/FEV_solution/two = 5,
-		/obj/item/reagent_containers/glass/bottle/FEV_solution/curling = 20,
+		/obj/item/reagent_containers/glass/bottle/FEV_solution = 30,
+		/obj/item/reagent_containers/glass/bottle/FEV_solution/two = 20,
+		/obj/item/reagent_containers/glass/bottle/FEV_solution/curling = 5, //Curling made rarer due to the immense lethality it now has
 		)
 
 /obj/effect/spawner/lootdrop/f13/medical/random_fev
@@ -621,9 +621,9 @@
 	lootcount = 1
 
 	loot = list(
-		/obj/item/reagent_containers/glass/bottle/FEV_solution = 1,
-		/obj/item/reagent_containers/glass/bottle/FEV_solution/two = 1,
-		/obj/item/reagent_containers/glass/bottle/FEV_solution/curling = 1,
+		/obj/item/reagent_containers/glass/bottle/FEV_solution = 5,
+		/obj/item/reagent_containers/glass/bottle/FEV_solution/two = 5,
+		/obj/item/reagent_containers/glass/bottle/FEV_solution/curling = 1, //Curling is 5x less likely
 		)
 
 /*	------------------------------------------------
