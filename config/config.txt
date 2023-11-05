@@ -24,7 +24,7 @@ $include policy.txt
 SERVERNAME Fallout 13: Yellowstone
 
 ## Server tagline: This will appear right below the server's title.
-SERVERTAGLINE [18+] The first furry-friendly Fallout server! MRP/HRP
+SERVERTAGLINE [18+] The fourth furry-friendly Fallout server! HRP
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 SERVERSQLNAME f13ysql
