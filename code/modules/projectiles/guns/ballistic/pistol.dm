@@ -194,7 +194,7 @@
 	fire_delay = 2
 	burst_size = 2
 	burst_shot_delay = 2.5
-	spread = 9
+	spread = 3 //every other weapon has a spread of 1-3
 	recoil = 0.2
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	automatic_burst_overlay = TRUE
