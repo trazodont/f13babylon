@@ -226,6 +226,8 @@
 	desc = "Dark beret issued to Intelligence Officers of the Enclave."
 	icon_state = "hat_enclave_intel"
 	item_state = "hat_enclave_intel"
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 30, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 90)
+
 
 /obj/item/clothing/head/helmet/f13/envirosuit
 	name = "enclave envirosuit hood"

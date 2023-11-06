@@ -274,7 +274,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/ncrltshotgun
 	name = "Frontliner"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
+	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/incendiary = 1,
 		)

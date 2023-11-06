@@ -113,7 +113,7 @@ Head Paladin
 	loadout_options = list(
 	/datum/outfit/loadout/sentheavy, //Minigun
 	/datum/outfit/loadout/sentlaser, //Lasminigun
-	/datum/outfit/loadout/sentmelee, //Prewar ripper+14mm
+	/datum/outfit/loadout/sentmelee, //Plasmaspear HEADPALLY OP+14mm
 	)
 
 	outfit = /datum/outfit/job/bos/f13sentinel
@@ -175,14 +175,14 @@ Head Paladin
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1, 
 		/obj/item/ammo_box/magazine/m14mm = 3,
-		/obj/item/melee/powered/ripper/prewar = 1,
+		/obj/item/twohanded/inquis_spear = 1,
 	)
 /*
 Head Scribe
 */
 
 /datum/job/bos/f13headscribe
-	title = "Head Scribe"
+	title = "Proctor"
 	flag = F13HEADSCRIBE
 	head_announce = list("Security")
 	total_positions = 1
@@ -219,7 +219,7 @@ Head Scribe
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
 
 /datum/outfit/job/bos/f13headscribe
-	name = "Head Scribe"
+	name = "Proctor"
 	jobtype = /datum/job/bos/f13headscribe
 	chemwhiz = TRUE
 	uniform = 		/obj/item/clothing/under/syndicate/brotherhood
@@ -243,7 +243,7 @@ Head Knight
 */
 
 /datum/job/bos/f13knightcap
-	title = "Knight Commander"
+	title = "Star Knight"
 	flag = F13KNIGHTCAPTAIN
 	head_announce = list("Security")
 	total_positions = 1
@@ -258,7 +258,7 @@ Head Knight
 
 	loadout_options = list(
 	/datum/outfit/loadout/capstand, //P90
-	/datum/outfit/loadout/capsap, //Wattz2ke
+	/datum/outfit/loadout/capsap, //AER12
 	)
 
 	outfit = /datum/outfit/job/bos/f13knightcap
@@ -285,7 +285,7 @@ Head Knight
 
 
 /datum/outfit/job/bos/f13knightcap
-	name = "Knight Commander"
+	name = "Star Knight"
 	jobtype = /datum/job/bos/f13knightcap
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
@@ -344,6 +344,7 @@ Star Paladin
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
+		/datum/outfit/loadout/spaladina, // Supersledge+add a pistol later if needed
 		/datum/outfit/loadout/spaladinb, //Tribeam
 		/datum/outfit/loadout/spaladinc,  //AER12 + Scope
 		)
@@ -389,6 +390,12 @@ Star Paladin
 		/obj/item/stock_parts/cell/ammo/ec=1,
 	)
 
+/datum/outfit/loadout/spaladina
+	name = "Senior Brawler Paladin"
+	backpack_contents = list(
+		/obj/item/twohanded/sledgehammer/supersledge = 1,
+		/obj/item/clothing/accessory/bos/paladin=1,
+		)
 /datum/outfit/loadout/spaladinb
 	name = "Senior Offensive Paladin"
 	backpack_contents = list(
@@ -424,7 +431,7 @@ Paladin
 	exp_requirements = 0
 
 	loadout_options = list(
-	/datum/outfit/loadout/paladinb, //Combat Rifle
+	/datum/outfit/loadout/paladinb, //R91
 	/datum/outfit/loadout/paladinc, //AER9
 	)
 
@@ -533,7 +540,6 @@ Senior Scribe
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AER9)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AEP7)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/dks)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
 
 /datum/outfit/job/bos/f13seniorscribe
 	name =	"Senior Scribe"
@@ -611,6 +617,8 @@ Scribe
 		/obj/item/melee/onehanded/knife/survival=1,
 		/obj/item/storage/firstaid/regular=1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/gun/energy/laser/pistol = 1,
 		)
 
 /datum/outfit/job/bos/f13scribe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -644,7 +652,7 @@ Senior Knight
 */
 
 /datum/job/bos/f13seniorknight
-	title = "Knight Sergeant"
+	title = "Senior Knight"
 	flag = F13SENIORKNIGHT
 	total_positions = 2
 	spawn_positions = 2
@@ -656,9 +664,8 @@ Senior Knight
 	exp_requirements = 0
 
 	loadout_options = list(
-	/datum/outfit/loadout/sknighta, //AER12
+	/datum/outfit/loadout/sknighta, //R93
 	/datum/outfit/loadout/sknightb, //DKS
-	/datum/outfit/loadout/sknightc, //MP5
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
@@ -688,7 +695,7 @@ Senior Knight
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
 
 /datum/outfit/job/bos/f13seniorknight
-	name = "Knight Sergeant"
+	name = "Senior Knight"
 	jobtype = /datum/job/bos/f13seniorknight
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
@@ -713,10 +720,10 @@ Senior Knight
 /datum/outfit/loadout/sknighta
 	name = "Footknight"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12 = 1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 1,
+		/obj/item/gun/ballistic/automatic/r93 = 1,
+		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
 
 /datum/outfit/loadout/sknightb
@@ -724,15 +731,6 @@ Senior Knight
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
 		/obj/item/ammo_box/magazine/m762 = 2,
-		/obj/item/gun/energy/laser/pistol = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 1,
-		)
-
-/datum/outfit/loadout/sknightc
-	name = "Knight Defender"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/mp5 = 1,
-		/obj/item/ammo_box/magazine/uzim9mm/rockwell = 2,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
