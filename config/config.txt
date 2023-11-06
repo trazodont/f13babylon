@@ -24,7 +24,7 @@ $include policy.txt
 SERVERNAME Fallout 13: Yellowstone
 
 ## Server tagline: This will appear right below the server's title.
-SERVERTAGLINE [18+] The first furry-friendly Fallout server! MRP/HRP
+SERVERTAGLINE [18+] The fourth furry-friendly Fallout server! HRP
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 SERVERSQLNAME f13ysql
@@ -78,7 +78,7 @@ ENABLE_LOCALHOST_RANK
 #USE_AGE_RESTRICTION_FOR_JOBS
 
 ## Uncomment the following line to enable the role whitelisting system.  You will also need the table from role_whitelist.sql in the SQL directory.
-#USE_ROLE_WHITELIST
+USE_ROLE_WHITELIST
 
 ## Uncomment this to have the job system use the player's account creation date, rather than the when they first joined the server for job timers.
 #USE_ACCOUNT_AGE_FOR_JOBS
