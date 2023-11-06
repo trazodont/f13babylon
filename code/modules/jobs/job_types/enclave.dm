@@ -148,7 +148,6 @@
 
 	loadout_options = list(
 		/datum/outfit/loadout/lt_ballistics, //Plasmaglock
-		/datum/outfit/loadout/lt_sniper, // Gauss MK23
 		)
 
 
@@ -180,15 +179,6 @@
 	suit_store = /obj/item/gun/energy/laser/plasma/glock
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
-		)
-
-/datum/outfit/loadout/sgt_sniper
-	name = "Sniper"
-	suit_store = /obj/item/gun/ballistic/automatic/m72
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m2mm = 2,
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
