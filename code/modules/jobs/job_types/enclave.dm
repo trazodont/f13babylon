@@ -64,7 +64,7 @@
 	loadout_options = list(
 		/datum/outfit/loadout/cpt_ballistics, // G11 and Plasma Glock
 		/datum/outfit/loadout/cpt_plasma, //Plasma Rifle and 14mm
-		/datum/outfit/loadout/cpt_flamer, //Flamer+deagle
+		/datum/outfit/loadout/cpt_flamer, //Flamer+el captain
 		)
 
 
@@ -73,8 +73,8 @@
 	jobtype = /datum/job/enclave/enclavecpt
 
 	uniform = /obj/item/clothing/under/f13/enclave/officer
-	head = /obj/item/clothing/head/helmet/f13/power_armor/tesla
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/tesla
+	head = /obj/item/clothing/head/beret/enclave/intel
+	suit = /obj/item/clothing/suit/armor/f13/enclavetrenchcoat
 	accessory = /obj/item/clothing/accessory/enclave/captain
 	id = /obj/item/card/id/dogtag/enclave/officer
 	ears = /obj/item/radio/headset/headset_enclave/command
@@ -115,8 +115,8 @@
 	name = "Pyro"
 	suit_store = /obj/item/m2flamethrowertank
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
-		/obj/item/ammo_box/magazine/m44 = 3,
+		/obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan = 1,
+		/obj/item/ammo_box/magazine/m14mm = 3,
 		)
 
 
@@ -147,7 +147,7 @@
 	exp_requirements = 0
 
 	loadout_options = list(
-		/datum/outfit/loadout/lt_ballistics, // Citykiller Plasmapistol
+		/datum/outfit/loadout/lt_ballistics, //Plasmaglock
 		/datum/outfit/loadout/lt_sniper, // Gauss MK23
 		)
 
@@ -158,7 +158,7 @@
 
 	head = /obj/item/clothing/head/helmet/f13/enclave/officer
 	uniform = /obj/item/clothing/under/f13/enclave/officer
-	suit = /obj/item/clothing/suit/armor/f13/enclavetrenchcoat
+	suit = /obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
 	accessory = /obj/item/clothing/accessory/enclave/first_lieutenant
 	id = /obj/item/card/id/dogtag/enclave/officer
 	ears = /obj/item/radio/headset/headset_enclave/command
@@ -177,14 +177,12 @@
 
 /datum/outfit/loadout/lt_ballistics
 	name = "The close ranged"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
+	suit_store = /obj/item/gun/energy/laser/plasma/glock
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck = 3,
-		/obj/item/gun/energy/laser/plasma/ = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		)
 
-/datum/outfit/loadout/lt_sniper
+/datum/outfit/loadout/sgt_sniper
 	name = "Sniper"
 	suit_store = /obj/item/gun/ballistic/automatic/m72
 	backpack_contents = list(
@@ -209,7 +207,7 @@
 // Gunnery Sergeant
 
 /datum/job/enclave/f13gysergeant
-	title = "Enclave Platoon Sergeant"
+	title = "Enclave Gunnery Sergeant"
 	flag = F13USGYSGT
 	total_positions = 1
 	spawn_positions = 1
@@ -220,15 +218,15 @@
 	exp_requirements = 0
 
 	loadout_options = list(
-		/datum/outfit/loadout/gysgt_ballistics, // Assault carbine
-		/datum/outfit/loadout/gysgt_melee, // CG+shield
+		/datum/outfit/loadout/gysgt_ballistics, // G11
+		/datum/outfit/loadout/gysgt_melee, // Citykiller+MK23
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant
-	name = "Enclave Platoon Sergeant"
+	name = "Enclave Gunnery Sergeant"
 	jobtype = /datum/job/enclave/f13gysergeant
-	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
+	head = /obj/item/clothing/head/helmet/f13/enclave/marine
+	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
 	accessory = /obj/item/clothing/accessory/enclave/sergeant_firstclass
 	ears = /obj/item/radio/headset/headset_enclave/command
 	l_pocket = /obj/item/clothing/mask/chameleon
@@ -248,17 +246,17 @@
 /datum/outfit/loadout/gysgt_ballistics
 	name = "Marine"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_carbine = 1,
-		/obj/item/ammo_box/magazine/m5mm = 2
+		/obj/item/gun/ballistic/automatic/g11 = 1,
+		/obj/item/ammo_box/magazine/m473 = 2,
 		)
 
 /datum/outfit/loadout/gysgt_melee
 	name = "Defender"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/cg45_two = 1,
-		/obj/item/melee/powered/ripper/prewar = 1,
-		/obj/item/ammo_box/magazine/cg45_two = 2,
-		
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 1,
 		)
 
 
@@ -279,7 +277,7 @@
 /datum/job/enclave/enclavesgt
 	title = "Enclave Sergeant"
 	flag = F13USSGT
-	total_positions = 2
+	total_positions = 1
 	spawn_positions = 2
 	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Casper mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Lieutenant and the Gunnery Sergeant."
@@ -287,15 +285,15 @@
 	exp_requirements = 0
 
 	loadout_options = list(
-		/datum/outfit/loadout/sgt_ballistics,	// G11
-		/datum/outfit/loadout/sgt_laser, 	// Plasma
+		/datum/outfit/loadout/sgt_ballistics,	// Minigun
+		/datum/outfit/loadout/sgt_sniper, //MK23+Gauss
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	name = "Enclave Sergeant"
 	jobtype = /datum/job/enclave/enclavesgt
-	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
+	head = /obj/item/clothing/head/helmet/f13/power_armor/tesla
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/tesla
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
 	l_pocket = /obj/item/clothing/mask/chameleon
 
@@ -313,16 +311,89 @@
 
 /datum/outfit/loadout/sgt_ballistics
 	name = "Frontline Operator"
-	suit_store = /obj/item/gun/ballistic/automatic/g11
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m473 = 2,
+		/obj/item/minigunpackbal5mm = 1,
+		/obj/item/ammo_box/m5mmbox = 2,
 		)
 
-/datum/outfit/loadout/sgt_laser
+/datum/outfit/loadout/sgt_sniper
+	name = "Sniper"
+	suit_store = /obj/item/gun/ballistic/automatic/m72
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m2mm = 2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
+		)
+
+/datum/outfit/job/enclave/peacekeeper/enclavesgt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
+	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
+	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
+
+//Armoured Infantry
+
+/datum/job/enclave/enclavesgt
+	title = "Enclave Sergeant"
+	flag = F13USSGT
+	total_positions = 2
+	spawn_positions = 2
+	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Casper mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
+	supervisors = "The Lieutenant and the Gunnery Sergeant."
+	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
+	exp_requirements = 0
+
+	loadout_options = list(
+		/datum/outfit/loadout/asgt_ballistics,	// Assault Carbine
+		/datum/outfit/loadout/asgt_laser, 	// Plasma
+		/datum/outfit/loadout/asgt_fool, 	// Ripper+10mm WICH CUNT REMOVED THE 10mm PISTOL
+		)
+
+/datum/outfit/job/enclave/peacekeeper/enclavesgt
+	name = "Enclave Sergeant"
+	jobtype = /datum/job/enclave/enclavesgt
+	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
+	accessory = /obj/item/clothing/accessory/enclave/specialist
+	l_pocket = /obj/item/clothing/mask/chameleon
+
+	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
+		/obj/item/grenade/f13/frag = 1,
+		/obj/item/pda = 1,
+		/obj/item/storage/bag/money/small/wastelander = 1,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
+		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
+		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
+		/obj/item/card/id/syndicate/anyone =1
+		)
+
+/datum/outfit/loadout/asgt_ballistics
+	name = "Frontline Operator"
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m5mm = 2,
+		)
+
+/datum/outfit/loadout/asgt_laser
 	name = "Support Rifleman"
 	suit_store = /obj/item/gun/energy/laser/plasma
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		)
+
+/datum/outfit/loadout/asgt_fool
+	name = "Fool"
+	suit_store = /obj/item/melee/powered/ripper
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -453,7 +524,7 @@
 /datum/job/enclave/enclavesci
 	title = "Enclave Scientist"
 	flag = F13USSCIENTIST
-	total_positions = 1
+	total_positions = 2
 	spawn_positions = 3
 	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Casper mountain range. You're responsible for the maintenance of the base and field studies, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
 	supervisors = "Enclave Research and Development Division."
@@ -475,15 +546,13 @@
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/grenade/chem_grenade/cleaner = 1,
 		/obj/item/pda = 1,
-		/obj/item/gun/energy/gammagun = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple =2,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/clothing/head/beret/enclave/science = 1,
 		/obj/item/clothing/mask/chameleon = 1,
-		/obj/item/card/id/syndicate/anyone =1
+		/obj/item/card/id/syndicate/anyone = 1,
 		)
 
 /datum/outfit/job/enclave/noncombat/enclavesci/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -550,7 +619,7 @@
 
 //Bunker Duty
 /datum/job/enclave/f13BDUTY
-	title = "Enclave Bunker Duty"
+	title = "Enclave Vault Dweller"
 	flag = F13USBDUTY
 	total_positions = 3
 	spawn_positions = 6
@@ -570,7 +639,7 @@
 		)
 
 /datum/outfit/job/enclave/noncombat/f13BDUTY
-	name = "Enclave Bunker Duty"
+	name = "Enclave Vault Dweller"
 	jobtype = /datum/job/enclave/f13BDUTY
 	id = /obj/item/card/id/dogtag/enclave/trooper
 	glasses = /obj/item/clothing/glasses/sunglasses/big
