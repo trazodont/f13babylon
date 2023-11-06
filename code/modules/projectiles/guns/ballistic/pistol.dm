@@ -191,6 +191,7 @@
 	name = "Advanced 9mm autopistol"
 	desc = "Ye sons of the self-loader, weep over Browning, who clothed you in steel, with mechanical delights, who put reliability upon your designs. An utter affront to any gunsmith, a modified Browning Hi-Power that fires fully automatic - with a permanently attached muzzle brake."
 	icon_state = "m93r"
+	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 2
 	burst_size = 2
 	burst_shot_delay = 2.5
@@ -207,16 +208,14 @@
 		if(0)
 			select += 1
 			burst_size = 2
-			spread = 9
+			spread = 3
 			recoil = 0.1
-			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
 			spread = 1
 			recoil = 0
-			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
