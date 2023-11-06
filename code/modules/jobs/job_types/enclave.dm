@@ -179,6 +179,7 @@
 	suit_store = /obj/item/gun/energy/laser/plasma/glock
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/melee/powered/ripper/prewar = 1,
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
