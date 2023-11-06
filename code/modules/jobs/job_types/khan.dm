@@ -246,6 +246,7 @@
 		/datum/outfit/loadout/courtesanb,
 		)
 
+/*
 //=========================================================== LOADOUT DATUMS ===========================================================
 
 /datum/outfit/job/khan/enforcer
@@ -472,3 +473,5 @@
 	/obj/item/clothing/under/suit/black_really = 1,
 	/obj/item/clothing/gloves/color/white = 1,
 	)
+
+*/
