@@ -527,8 +527,8 @@
 
 // Inquisitorial axe			Keywords: Damage 6/32, AP 0.9, SPEAR REACH, BACK SLOT ENABLED
 /obj/item/twohanded/inquis_spear
-	name = "Inquisitorial polearm"
-	desc = "An odd looking spear of sorts, tipped with what appears to be a plasma chamber. In theory, this should splash the target with plasma on each hit. Does it work, however?"
+	name = "Paladin polearm"
+	desc = "An well-shaped pole-arm made of pre-war alloy, tipped with what seems to be a plasma chamber. Made by the Brotherhood of Steel to reward its most valiant Star Paladins."
 	icon = 'icons/fallout/objects/melee/twohanded.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/melee2h_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/melee2h_righthand.dmi'
@@ -542,7 +542,7 @@
 	force = 32
 	armour_penetration = 0.9
 	max_reach = 2
-	throwforce = 1//WHY WOULD YOU THROW THIS?
+	throwforce = 10//Lets see who loses it first for tossing it
 	throw_speed = 1
 	throw_range = 1
 	var/equipsound = 'sound/f13weapons/equipsounds/declonequip.ogg'
