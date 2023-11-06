@@ -353,7 +353,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/steak/plain/human
 	tastes = list("tender meat" = 1)
-	foodtype = MEAT | GROSS
+	foodtype = MEAT | GROSS | LONGPORK
 
 /obj/item/reagent_containers/food/snacks/meat/steak/penguin
 	name = "penguin steak"
