@@ -527,7 +527,7 @@
 
 // Inquisitorial axe			Keywords: Damage 6/32, AP 0.9, SPEAR REACH, BACK SLOT ENABLED
 /obj/item/twohanded/inquis_spear
-	name = "Paladin polearm"
+	name = "Paladin Polearm"
 	desc = "An well-shaped pole-arm made of pre-war alloy, tipped with what seems to be a plasma chamber. Made by the Brotherhood of Steel to reward its most valiant Star Paladins."
 	icon = 'icons/fallout/objects/melee/twohanded.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/melee2h_lefthand.dmi'
@@ -539,7 +539,7 @@
 	sharpness = SHARP_POINTY
 	slot_flags = ITEM_SLOT_BACK
 	block_parry_data = /datum/block_parry_data/smith_generic //data is in finished items file
-	force = 32
+	force = 20
 	armour_penetration = 0.9
 	max_reach = 2
 	throwforce = 10//Lets see who loses it first for tossing it
