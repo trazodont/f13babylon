@@ -457,6 +457,10 @@
 	icon_state = "t60helmet[light_on]"
 	item_state = "t60helmet[light_on]"
 
+/obj/item/clothing/head/helmet/f13/power_armor/t60/bos
+	name = "Brotherhood T-60a power helmet"
+	desc = "A T-60a helmet with the sigil of the Brotherhood of Steel marked on the side."
+
 /obj/item/clothing/head/helmet/f13/power_armor/t60/pineapple
 	name = "degraded T-60a power helmet"
 	desc = "The T-60 powered helmet, equipped with targetting software suite, Friend-or-Foe identifiers, dynamic HuD, and an internal music player. This suit is heavily degraded." //reskin of head knight armor

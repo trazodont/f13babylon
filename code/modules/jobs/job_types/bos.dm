@@ -187,10 +187,6 @@ Proctor
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
-	gunsmith_one = TRUE
-	gunsmith_two = TRUE
-	gunsmith_three = TRUE
-	gunsmith_four = TRUE
 	description = "You are the foremost experienced scribe remaining in this bunker. Your role is to ensure the safekeeping and proper usage of technology within the Brotherhood. You are also the lead medical and engineering expert in this Chapter. Delegate your tasks to your Scribes."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -219,13 +215,17 @@ Proctor
 //	ADD_TRAIT(H, TRAIT_POOR_AIM, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AER9)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AEP7)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/dks)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/sniper)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
 
 /datum/outfit/job/bos/f13headscribe
 	name = "Proctor"
 	jobtype = /datum/job/bos/f13headscribe
 	chemwhiz = TRUE
+	gunsmith_one = TRUE
+	gunsmith_two = TRUE
+	gunsmith_three = TRUE
+	gunsmith_four = TRUE
 	uniform = 		/obj/item/clothing/under/syndicate/brotherhood
 	accessory = 	/obj/item/clothing/accessory/bos/headscribe
 	glasses =       /obj/item/clothing/glasses/sunglasses
@@ -508,12 +508,8 @@ Senior Scribe
 /datum/job/bos/f13seniorscribe
 	title = "Senior Scribe"
 	flag = F13SENIORSCRIBE
-	chemwiz = TRUE
 	total_positions = 1
 	spawn_positions = 1
-	gunsmith_one = TRUE
-	gunsmith_two = TRUE
-	gunsmith_three = TRUE
 	description = "You are the bunker's seniormost scientific expert in the bunker, sans the Proctor themselves. You can be trained in medicine or engineering, while also having extensive studies of the old world to assist in pinpointing what technology would be useful to the Brotherhood and its interests."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -560,6 +556,9 @@ Senior Scribe
 	name =	"Senior Scribe"
 	jobtype =	/datum/job/bos/f13seniorscribe
 	chemwhiz =	TRUE
+	gunsmith_one = TRUE
+	gunsmith_two = TRUE
+	gunsmith_three = TRUE
 	uniform =	/obj/item/clothing/under/syndicate/brotherhood
 	shoes =	/obj/item/clothing/shoes/combat
 	belt =	/obj/item/storage/belt/utility/full/engi
@@ -577,7 +576,7 @@ Senior Scribe
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer9/recharger = 1,
 		/obj/item/stock_parts/cell/ammo/breeder = 2,
-		/obj/item/book/granter/crafting_recipe/blueprint/dks = 1,
+		/obj/item/book/granter/crafting_recipe/blueprint/sniper = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/marksman = 1,
 		/obj/item/storage/belt/utility/full/engi,
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1,
@@ -665,8 +664,8 @@ Scribe
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/aer9 = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/aep7 = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/wattz1k = 1
-		/obj/item/clothing/accessory/bos/scribe = 1,
+		/obj/item/book/granter/crafting_recipe/blueprint/wattz1k = 1,
+		/obj/item/clothing/accessory/bos/scribe = 1
 	)
 
 /datum/outfit/loadout/scribec
