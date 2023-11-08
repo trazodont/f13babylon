@@ -1,6 +1,6 @@
 // 40mm (Grenade Launcher
 
-/obj/item/projectile/bullet/rocket/a40mm
+/obj/item/projectile/bullet/rocket/a40mmHE
 	name ="40mm HE grenade"
 	desc = "Oh no."
 	icon_state= "bolter"
@@ -17,7 +17,7 @@
 
 //40mm tear gas
 
-/obj/item/projectile/bullet/a40mmg
+/obj/item/projectile/bullet/a40mmCS
 	name ="40mm CS grenade"
 	icon_state = "bolter"
 	damage_type = STAMINA
@@ -39,7 +39,7 @@
 
 // 40mm HEDP (Grenade Launcher
 
-/obj/item/projectile/bullet/rocket/a40mm
+/obj/item/projectile/bullet/rocket/a40mmHEDP
 	name ="40mm HEDP grenade"
 	desc = "Oh no."
 	icon_state= "bolter"
@@ -55,7 +55,7 @@
 
 // 40mm Smoke
 
-/obj/item/projectile/bullet/a40mmg
+/obj/item/projectile/bullet/a40mmS
 	name ="40mm Smoke grenade"
 	icon_state = "bolter"
 	damage_type = STAMINA
@@ -77,7 +77,7 @@
 
 // 40mm Baton
 
-/obj/item/projectile/bullet/rocket/a40mm
+/obj/item/projectile/bullet/rocket/a40mmM
 	name ="40mm METAL grenade"
 	desc = "Oh no."
 	icon_state= "bolter"
@@ -92,7 +92,7 @@
 
 // 40mm Flashbang
 
-/obj/item/projectile/bullet/rocket/a40mm
+/obj/item/projectile/bullet/rocket/a40mmF
 	name ="40mm Flash grenade"
 	desc = "Oh no."
 	icon_state= "bolter"
@@ -107,7 +107,7 @@
 
 // 40mm Incend
 
-/obj/item/projectile/bullet/rocket/a40mm
+/obj/item/projectile/bullet/rocket/a40mmI
 	name ="40mm INCENDARY grenade"
 	desc = "Oh no."
 	icon_state= "bolter"
