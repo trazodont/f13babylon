@@ -15165,8 +15165,8 @@
 /area/f13/city)
 "ovP" = (
 /obj/structure/table,
-/obj/item/ammo_box/a40mmg,
-/obj/item/ammo_box/a40mmg,
+/obj/item/ammo_box/a40mmCS,
+/obj/item/ammo_box/a40mmCS,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
