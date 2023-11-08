@@ -17,3 +17,5 @@ jeckieboy = Administrator
 tzula = Administrator
 duckymomo = Administrator
 oprime = Coder
+k4rl = Coder
+OyVey = Coder

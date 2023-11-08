@@ -24,7 +24,7 @@ $include policy.txt
 SERVERNAME Fallout 13: Yellowstone
 
 ## Server tagline: This will appear right below the server's title.
-SERVERTAGLINE [18+] The fourth furry-friendly Fallout server! HRP
+SERVERTAGLINE [18+] The first furry-friendly Fallout server! MRP/HRP
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 SERVERSQLNAME f13ysql
@@ -54,13 +54,13 @@ ADMIN_LEGACY_SYSTEM
 
 ##Uncomment this to have admin ranks only loaded from the legacy admin_ranks.txt
 ##If enabled, each time admins are loaded ranks the database will be updated with the current ranks and their flags
-#LOAD_LEGACY_RANKS_ONLY
+# LOAD_LEGACY_RANKS_ONLY
 
 ## Comment this out if you want to use the SQL based banning system. The legacy systems use the files in the data folder. You need to set up your database to use the SQL based system.
 #BAN_LEGACY_SYSTEM
 
 ## Comment this out to stop locally connected clients from being given the almost full access !localhost! admin rank
-ENABLE_LOCALHOST_RANK
+#ENABLE_LOCALHOST_RANK
 
 ## Comment this out if you want to use the SQL based mentor system, the legacy system uses mentors.txt.
 ## You need to set up your database to use the SQL based system.
@@ -210,7 +210,7 @@ VOTE_AUTOTRANSFER_INTERVAL 0
 VOTE_AUTOTRANSFER_MAXIMUM -1
 
 ## prevents dead players from voting or starting votes
-# NO_DEAD_VOTE
+NO_DEAD_VOTE
 
 ## players' votes default to "No vote" (otherwise,  default to "No change")
 DEFAULT_NO_VOTE
@@ -260,7 +260,7 @@ CHECK_RANDOMIZER
 
 ## set a server location for world reboot. Don't include the byond://, just give the address and port.
 ## Don't set this to the same server, BYOND will automatically restart players to the server when it has restarted.
-# SERVER ss13.example.com:2506
+# SERVER ss13.f13yellowstone-game.net:5555
 
 ## forum address
 # FORUMURL https://citadel-station.net/forum/
@@ -400,7 +400,7 @@ AUTOCONVERT_NOTES
 ANNOUNCE_ADMIN_LOGOUT
 
 ## Uncomment to have an admin message sent anytime an admin connects to a round in play, you can edit the messages in admin.dm
-#ANNOUNCE_ADMIN_LOGIN
+ANNOUNCE_ADMIN_LOGIN
 
 ## Map rotation
 ## You should edit maps.txt to match your configuration when you enable this.
@@ -533,14 +533,14 @@ DEFAULT_VIEW 15x15
 ### NOTE FOR WINDOWS HOSTS: This requires you to be running dreamdaemon as an administrator for it to work at all. TGS3 handles this automatically, and honestly there's no reason not to be using TGS3 if you're hosting on Windows.
 ### NOTE FOR LINUX HOSTS: This requires manual setup of iptables. Beware that improper configuration of this can and will irreversibly fuck up a server, so please don't tinker with it if you don't know what you're doing.
 ## Enabled
-#FAIL2TOPIC_ENABLED
+# FAIL2TOPIC_ENABLED
 ## Minimum wait time in deciseconds between valid requests 
 FAIL2TOPIC_RATE_LIMIT 10
 ## Number of requests after breaching rate limit that triggers a ban
 FAIL2TOPIC_MAX_FAILS 5
 ## Firewall rule name used on physical server
 ## FOR LINUX HOSTS: This is used as the chain name. The iptables chain doesn't get created or hooked up to INPUT automatically, so you'll have to get that set up yourself. Recommended name: BYOND
-FAIL2TOPIC_RULE_NAME _dd_fail2topic
+# FAIL2TOPIC_RULE_NAME _dd_fail2topic
 
 ## Enable automatic profiling - Byond 513.1506 and newer only.
 #AUTO_PROFILE
@@ -554,7 +554,7 @@ CENTCOM_BAN_DB https://centcom.melonmesa.com/ban/search
 ## 0 Disables Border Control
 ## 1 Puts Border Control into 'learning mode' and will have it automatically whitelist new connections
 ## 2 Puts Border Control into 'enforcing mode' and will have it deny connections that are not already whitelisted.
-BORDER_CONTROL 0
+BORDER_CONTROL 1
 
 ## If the server border control rejects clients entirely, or lets them into lobby only.
 ## 0 Border control rejects an unauthenticated client entirely

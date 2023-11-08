@@ -31,7 +31,7 @@
 	name = "human burger"
 	desc = "A bloody burger."
 	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 4)
-	foodtype = MEAT | GRAIN | GROSS
+	foodtype = MEAT | GRAIN | LONGPORK
 
 /obj/item/reagent_containers/food/snacks/burger/human/CheckParts(list/parts_list)
 	..()

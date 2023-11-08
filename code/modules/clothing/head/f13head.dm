@@ -359,7 +359,7 @@
 	desc = "It's a T-45b power armor helmet."
 	icon_state = "t45bhelmet"
 	item_state = "t45bhelmet"
-	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 55, "bullet" = 60, "laser" = 45, "energy" = 20, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45d
@@ -368,7 +368,7 @@
 	icon_state = "t45dhelmet0"
 	item_state = "t45dhelmet0"
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list("melee" = 72.5, "bullet" = 72.5, "laser" = 72.5, "energy" = 25, "bomb" = 65, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 40)
+	armor = list("melee" = 60, "bullet" = 65, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d
 
 //Fluff Helmet
@@ -428,7 +428,7 @@
 	desc = "It's a T-51b power helmet, typically used by the Brotherhood. It looks somewhat charming."
 	icon_state = "t51bhelmet0"
 	item_state = "t51bhelmet0"
-	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 27, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 70)
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 65, "energy" = 40, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t51b
 
@@ -449,13 +449,17 @@
 	desc = "The T-60 powered helmet, equipped with targetting software suite, Friend-or-Foe identifiers, dynamic HuD, and an internal music player."
 	icon_state = "t60helmet0"
 	item_state = "t60helmet0"
-	armor = list("melee" = 80, "bullet" = 70, "laser" = 80, "energy" = 30, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 50, "wound" = 80)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 50, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 50, "wound" = 50)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t60
 
 /obj/item/clothing/head/helmet/f13/power_armor/t60/update_icon_state()
 	icon_state = "t60helmet[light_on]"
 	item_state = "t60helmet[light_on]"
+
+/obj/item/clothing/head/helmet/f13/power_armor/t60/bos
+	name = "Brotherhood T-60a power helmet"
+	desc = "A T-60a helmet with the sigil of the Brotherhood of Steel marked on the side."
 
 /obj/item/clothing/head/helmet/f13/power_armor/t60/pineapple
 	name = "degraded T-60a power helmet"

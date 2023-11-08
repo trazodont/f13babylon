@@ -153,11 +153,6 @@
 	desc = "A dog tag that associates one with the NCROSI."
 	icon_state = "ncrdogtagrecruit"
 
-/obj/item/card/id/dogtag/ncrht
-	name = "heavy trooper's tags"
-	desc = "A dog tag proving the elite status of the heavy trooper."
-	icon_state = "ncrdogtagrecruit"
-
 /obj/item/card/id/dogtag/ncrsergeant
 	name = "sergeant's tags"
 	desc = "A chevron decorated dog tag showing NCO-ship."

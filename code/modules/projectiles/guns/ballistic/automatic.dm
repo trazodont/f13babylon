@@ -1013,8 +1013,8 @@
 	recoil = 0.2
 	extra_speed = 250 //Get a load of this guy.
 	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
+	zoom_amt = 8
+	zoom_out_amt = 9
 	icon_state = "MONITOR"
 	item_state = "BAR"
 	extra_damage = -3
@@ -1293,10 +1293,10 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 
-	//Police rifle			Keywords: BDF, 5mm, Semi-auto, 30 round magazine
+	//Renamed Police Rifle			Keywords: NCR, 5mm, Semi-auto, 30 round magazine
 /obj/item/gun/ballistic/automatic/assault_carbine/policerifle
-	name = "Police Rifle"
-	desc = "A pre-war Rifle that has been constantly repaired and rebuilt by the Bighorn Police Department. Held together by duct tape and prayers, it somehow still shoots."
+	name = "R92 Assault Rifle"
+	desc = "A pre-War rifle maintained and upkept by the Gun Runners. This one has seen a fair few battles."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
