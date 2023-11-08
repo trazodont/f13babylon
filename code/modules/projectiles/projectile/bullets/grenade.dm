@@ -65,7 +65,7 @@
 
 /obj/item/projectile/bullet/a40mmS/Initialize()
 	. = ..()
-	src.smoke = new /datum/effect_system/smoke_spread/bad/smoke
+	src.smoke = new /datum/effect_system/smoke_spread/smoke
 	src.smoke.attach(src)
 	smoke.set_up(4, src)
 
