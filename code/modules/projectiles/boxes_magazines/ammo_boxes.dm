@@ -527,16 +527,52 @@
 	max_ammo = 6
 	w_class = WEIGHT_CLASS_NORMAL
 
-/obj/item/ammo_box/a40mm
-	name = "ammo box (40mm grenades)"
+/obj/item/ammo_box/a40mmHE
+	name = "ammo box (40mm HE grenades)"
 	caliber = "40mm"
 	icon_state = "40mm"
 	ammo_type = /obj/item/ammo_casing/a40mm
 	max_ammo = 4
 	multiple_sprites = 1
 
-/obj/item/ammo_box/a40mmg
-	name = "ammo box (40mm teargas grenades)"
+/obj/item/ammo_box/a40mmHEDP
+	name = "ammo box (40mm HEDP grenades)"
+	caliber = "40mm"
+	icon_state = "40mm"
+	ammo_type = /obj/item/ammo_casing/a40mm
+	max_ammo = 4
+	multiple_sprites = 1
+
+/obj/item/ammo_box/a40mmCS
+	name = "ammo box (40mm CS grenades)"
+	icon_state = "40mmtg"
+	ammo_type = /obj/item/ammo_casing/a40mmg
+	max_ammo = 4
+	multiple_sprites = 1
+
+/obj/item/ammo_box/a40mmS
+	name = "ammo box (40mm SMOKE grenades)"
+	icon_state = "40mmtg"
+	ammo_type = /obj/item/ammo_casing/a40mmg
+	max_ammo = 4
+	multiple_sprites = 1
+
+/obj/item/ammo_box/a40mmM
+	name = "ammo box (40mm METAL grenades)"
+	icon_state = "40mmtg"
+	ammo_type = /obj/item/ammo_casing/a40mmg
+	max_ammo = 4
+	multiple_sprites = 1
+
+/obj/item/ammo_box/a40mmF
+	name = "ammo box (40mm FLASH grenades)"
+	icon_state = "40mmtg"
+	ammo_type = /obj/item/ammo_casing/a40mmg
+	max_ammo = 4
+	multiple_sprites = 1
+
+/obj/item/ammo_box/a40mmI
+	name = "ammo box (40mm INCENDARY grenades)"
 	icon_state = "40mmtg"
 	ammo_type = /obj/item/ammo_casing/a40mmg
 	max_ammo = 4
