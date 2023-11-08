@@ -119,5 +119,3 @@
 	explosion(target, -1, -1, 0, 0, 0, flame_range = 8)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
 	return BULLET_ACT_HIT
-	playsound(src.loc, 'sound/effects/smoke.ogg', 50, 1, -3)
-	smoke.start()
