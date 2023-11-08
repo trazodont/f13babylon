@@ -165,7 +165,7 @@
 #define F13USSPECIALIST	(1<<7)
 #define F13USPRIVATE	(1<<8)
 #define F13USBDUTY		(1<<9)
-#define F13USIS			(1<<10)
+#define F13USMAJ			(1<<10)
 
 #define FOLLOWERS		(1<<12)
 

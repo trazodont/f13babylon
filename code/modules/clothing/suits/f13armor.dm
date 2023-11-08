@@ -1039,7 +1039,7 @@
 
 /obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
 	name = "sniper riot gear"
-	desc = "A customized and well-worn suit of riot gear with parts of the suit reinforced with leather armor and slain Centurion armor pieces by the wearer. A sniper's veil is wrapped around the neck."
+	desc = "A customised variant of a pre-War National Guard riot gear. This one seems to be patch-worked more than the rest."
 	icon_state = "foxranger"
 	item_state = "foxranger"
 

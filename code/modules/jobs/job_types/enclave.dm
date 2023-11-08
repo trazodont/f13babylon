@@ -54,7 +54,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Sleeping Giant mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
+	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
 	Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week."
 	supervisors = "Enclave Upper Echelon."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
@@ -62,8 +62,7 @@
 	exp_requirements = 0
 
 	loadout_options = list(
-		/datum/outfit/loadout/cpt_ballistics, // G11 and Plasma Glock
-		/datum/outfit/loadout/cpt_plasma, //Plasma Rifle and 14mm
+		/datum/outfit/loadout/cpt_ballistics, // G11E and Plasma Glock
 		/datum/outfit/loadout/cpt_flamer, //Flamer+el captain
 		)
 
@@ -102,15 +101,6 @@
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
 
-/datum/outfit/loadout/cpt_plasma // needs a better loadout here!
-	name = "Heavy"
-	suit_store = /obj/item/gun/energy/laser/plasma
-	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/gun/ballistic/automatic/pistol/pistol14/custom = 1,
-		/obj/item/ammo_box/magazine/m14mm = 1,
-		)
-
 /datum/outfit/loadout/cpt_flamer
 	name = "Support Lead"
 	suit_store = /obj/item/m2flamethrowertank
@@ -139,22 +129,25 @@
 	total_positions = 1
 	spawn_positions = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Sleeping Giant mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
-	Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week."
-	supervisors = "The Captain and the Upper Echelons."
+	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
+	Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week. You can either be a commanding officer on the frontlines, or an IS advisor to the Captain; handling bunker matters and maybe diplomacy at his request. You don't supercede the Captain, though. If your Captain is acting unruly, complain to your supervisors."
+	supervisors = "The Captain, or the Supervisor (For IS!)."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
 	req_admin_notify = 1
 	exp_requirements = 0
 
+	loadout_options = list(
+		/datum/outfit/loadout/lt_is, // Special Plasma Pistol
+		/datum/outfit/loadout/lt_frontline // Powerfist + 14mm SMG
+		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt
 	name = "Enclave Lieutenant"
 	jobtype = /datum/job/enclave/enclavelt
-
 	head = /obj/item/clothing/head/helmet/f13/enclave/officer
 	uniform = /obj/item/clothing/under/f13/enclave/officer
-	suit = /obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
-	accessory = /obj/item/clothing/accessory/enclave/first_lieutenant
+	suit = null
+	accessory = /obj/item/clothing/accessory/enclave/second_lieutenant
 	id = /obj/item/card/id/dogtag/enclave/officer
 	ears = /obj/item/radio/headset/headset_enclave/command
 	l_pocket = /obj/item/clothing/mask/chameleon
@@ -168,10 +161,9 @@
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
-		/obj/item/gun/energy/laser/plasma/glock = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/melee/powered/ripper/prewar = 1
+		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
+
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -184,7 +176,24 @@
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
+/datum/outfit/loadout/lt_is
+	name = "Internal Security Advisor"
+	suit = /obj/item/clothing/suit/armor/f13/enclavetrenchcoat
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	backpack_contents = list(
+		/obj/item/gun/energy/laser/plasma/pistol/remnant/is = 1,
+		/obj/item/clothing/accessory/cia_badge = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2
+		)
 
+/datum/outfit/loadout/lt_frontline
+	name = "Frontline Commanding Officer"
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg14
+	suit = /obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
+	backpack_contents = list(
+		/obj/item/melee/powerfist/f13 = 1,
+		/obj/item/ammo_box/magazine/smg14 = 2
+	)
 
 // Gunnery Sergeant
 
@@ -194,7 +203,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Sleeping Giant mountain range. Second in command after Lieutenant, your role is to direct their orders directly to the Sergeants and regular troops."
+	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Second in command after Lieutenant, your role is to direct their orders directly to the Sergeants and regular troops."
 	supervisors = "The Lieutenant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13gysergeant
 	exp_requirements = 0
@@ -261,7 +270,7 @@
 	flag = F13USSGT
 	total_positions = 1
 	spawn_positions = 2
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Sleeping Giant mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
+	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	exp_requirements = 0
@@ -325,7 +334,7 @@
 	flag = F13USCPL
 	total_positions = 2
 	spawn_positions = 2
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Sleeping Giant mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
+	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Sergeants, Gunnery Sergeants, and Lieutenants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavecpl
 	exp_requirements = 0
@@ -396,7 +405,7 @@
 	flag = F13USSPECIALIST
 	total_positions = 2
 	spawn_positions = 2
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Sleeping Giant mountain range. You are an operative for the remnants of the Enclave. You, unlike the normal Privates, have recieved specialist training in either engineering or medicine."
+	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You are an operative for the remnants of the Enclave. You, unlike the normal Privates, have recieved specialist training in either engineering or medicine."
 	supervisors = "The Lieutenant and the Sergeants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13specialist
 	exp_requirements = 0
@@ -465,7 +474,7 @@
 	flag = F13USPRIVATE
 	total_positions = 4
 	spawn_positions = 4
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Sleeping Giant mountain range. You are an enlisted member of the Enclave. Obey your Lieutenant. They set the Enclave's policies. Unfortunately, you've not yet received your PA training."
+	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You are an enlisted member of the Enclave. Obey your Lieutenant. They set the Enclave's policies. Unfortunately, you've not yet received your PA training."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
 	exp_type = EXP_TYPE_FALLOUT
 	exp_requirements = 0
@@ -506,7 +515,7 @@
 	flag = F13USSCIENTIST
 	total_positions = 2
 	spawn_positions = 2
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Sleeping Giant mountain range. You're responsible for the maintenance of the base and field studies, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
+	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You're responsible for the maintenance of the base and field studies, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
 	supervisors = "Lieutenants, Captains and the Enclave Research & Development Division."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavesci
 	exp_requirements = 0
@@ -558,7 +567,7 @@
 	flag = F13USSCIENTIST
 	total_positions = 1
 	spawn_positions = 1
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Sleeping Giant mountain range. You're responsible for the operation of your assigned aircraft on base and within field operations. Support the First Lieutenant."
+	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You're responsible for the operation of your assigned aircraft on base and within field operations. Support the First Lieutenant."
 	supervisors = "Enclave Upper Echelon, Air Force Division."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavepilot
 	req_admin_notify = 1
@@ -603,7 +612,7 @@
 	flag = F13USBDUTY
 	total_positions = 3
 	spawn_positions = 6
-	description = "You're a small garrison within a side entrance of a far larger complex. This complex sits within the Sleeping Giant mountain range. You're a non-combatant, skilled in a field outside of exterior operations. Given your value, you aren't permitted to engage in conflict."
+	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You're a non-combatant, skilled in a field outside of exterior operations. Given your value, you aren't permitted to engage in conflict."
 	enforces = "You are not permited to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface."
 	supervisors = "Everyone else."
 	outfit = /datum/outfit/job/enclave/noncombat/f13BDUTY
@@ -687,33 +696,30 @@
 // Internal Security. Takes the role of general Security Detail.
 // RP job primarily. Gets the incredibly rare and powerful plasma rifle, alongside a subtype of the Enclave Remnant plasma pistol.
 // Not a big deal. This has the RP flag
-/datum/job/enclave/enc_is
-	title = "Enclave Internal Security"
-	flag = F13USIS
+/datum/job/enclave/enc_maj
+	title = "Major"
+	flag = F13USMAJ
 	total_positions = 0
 	spawn_positions = 0
-	description = "As Internal Security, you answer to no one, aside from high-command directly. Despite that, you're tasked to maintain order and security within the bunker. Assist the Science division with experiments when possible, and further the Lieutenant's goals."
-	enforces = "You are not permited to leave the base under any circumstance. You cannot join any raids or battles on the surface."
+	description = "As a Major, you are the voice of the Upper Echelons of Black Hills, and the supervisor of operations in the region. Ensure operations are smooth on the surface, but do not interfere. You are a supervisor, and an important person. Only intervene under extreme circumstances; rarely."
+	enforces = "You are not permited to leave the base under any circumstance. You cannot join any raids or battles on the surface. You cannot boss around the Captain unless absolutely necessary."
 	supervisors = "United States Secret Service"
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
-	outfit = /datum/outfit/job/enclave/noncombat/enc_is
+	outfit = /datum/outfit/job/enclave/noncombat/enc_maj
 	roleplay_exclusive_notify = 1
 	req_admin_notify = 1
 	exp_requirements = 2500//Well above Lieutenant for good reason. It's RP exclusive, and comes with some heavy perks.
 
-	loadout_options = list(
-		/datum/outfit/loadout/is_twolt,
-		/datum/outfit/loadout/is_lt,
-		)
 
-/datum/outfit/job/enclave/noncombat/enc_is
-	name = "Enclave Internal Security"
-	jobtype = /datum/job/enclave/enc_is
+/datum/outfit/job/enclave/noncombat/enc_maj
+	name = "Major"
+	jobtype = /datum/job/enclave/enc_maj
 	id = /obj/item/card/id/dogtag/enclave/officer
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	uniform = /obj/item/clothing/under/f13/enclave/officer
 	head = /obj/item/clothing/head/f13/enclave
 	suit = /obj/item/clothing/suit/armor/f13/enclavetrenchcoat
+	accessory = /obj/item/clothing/accessory/enclave/major
 
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
@@ -726,7 +732,7 @@
 		/obj/item/storage/survivalkit_aid_adv = 1,
 		)
 
-/datum/outfit/job/enclave/noncombat/enc_is/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/enclave/noncombat/enc_maj/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -734,20 +740,6 @@
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
-
-/datum/outfit/loadout/is_twolt
-	name = "Second Lieutenant"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/cia_badge = 1,
-		/obj/item/clothing/accessory/enclave/second_lieutenant = 1,
-		)
-
-/datum/outfit/loadout/is_lt
-	name = "First Lieutenant"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/cia_badge = 1,
-		/obj/item/clothing/accessory/enclave/first_lieutenant = 1,
-		)
 
 
 // Enclave Citizen

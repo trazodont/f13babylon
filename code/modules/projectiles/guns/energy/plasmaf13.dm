@@ -41,6 +41,8 @@
 /obj/item/gun/energy/laser/plasma/pistol/remnant/is
 	name ="custom plasma pistol"
 	desc = "An eagle is stamped to the underside of the grip. Where'd this come from?"
+	extra_damage = 7
+	extra_penetration = 0.05
 
 /obj/item/gun/energy/laser/plasma/pistol/worn/gutsy
 	name ="\improper integrated plasma pistol"
