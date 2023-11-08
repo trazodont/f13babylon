@@ -699,6 +699,11 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/AEP7)
 
+/obj/item/book/granter/crafting_recipe/blueprint/wattz1k
+	name = "wattz1000 blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/wattz1k)
+
 /obj/item/book/granter/crafting_recipe/blueprint/leveraction
 	name = "lever action shotgun blueprint"
 	icon_state = "blueprint2"

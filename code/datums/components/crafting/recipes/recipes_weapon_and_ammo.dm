@@ -1175,6 +1175,20 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
+//wattz1k
+/datum/crafting_recipe/wattz1k
+	name = "Wattz 1000"
+	result = /obj/item/gun/energy/laser/wattz
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/advanced_crafting_components/lenses = 2,
+				/obj/item/stack/crafting/metalparts = 2,
+				/obj/item/stack/crafting/electronicparts = 2
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
 
 //recharger weapons, followers of the apocalypse
 /datum/crafting_recipe/rechargerpistol
