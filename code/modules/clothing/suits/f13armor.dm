@@ -160,6 +160,13 @@
 	slowdown = 0.06
 	strip_delay = 5
 
+/obj/item/clothing/suit/armor/f13/metalarmor/steelbib/ncra
+	name = "NCR reinforced steel breastplate"
+	desc = "A steel breastplate, reinforced with padding and coloured in tan. Worn by Heavy Gunners of the New California Republic Army."
+	icon_state = "steel_bib_ncra"
+	item_state = "steel_bib_ncra"
+	armor = list("melee" = 30, "bullet" = 47.5, "laser" = 40, "energy" = 15, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
+
 //Combat armor (Faction specific is on f13factionarmor.dm)
 /obj/item/clothing/suit/armor/f13/combat
 	name = "combat armor"

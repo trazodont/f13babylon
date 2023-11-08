@@ -476,3 +476,10 @@
 /obj/item/clothing/head/helmet/armyhelmet/heavy/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
+
+
+/obj/item/clothing/head/helmet/armyhelmet/heavy/ncra
+	name = "NCR heavy steel helmet"
+	desc = "A visor'd steel helmet, inspired by pre-War designs. This one is coloured in tan, and is usually worn by Heavy Gunners of the New California Republic Army."
+	icon_state = "ncrarmyhelmetheavy"
+	item_state = "ncrarmyhelmetheavy"
