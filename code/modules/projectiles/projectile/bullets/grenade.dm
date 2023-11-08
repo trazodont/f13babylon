@@ -25,13 +25,13 @@
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
 	var/datum/effect_system/smoke_spread/bad/smoke
 
-/obj/item/projectile/bullet/a40mmg/Initialize()
+/obj/item/projectile/bullet/a40mmCS/Initialize()
 	. = ..()
 	src.smoke = new /datum/effect_system/smoke_spread/teargas
 	src.smoke.attach(src)
 	smoke.set_up(4, src)
 
-/obj/item/projectile/bullet/a40mmg/Destroy()
+/obj/item/projectile/bullet/a40mmCS/Destroy()
 	QDEL_NULL(smoke)
 	return ..()
 
@@ -63,13 +63,13 @@
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
 	var/datum/effect_system/smoke_spread/bad/smoke
 
-/obj/item/projectile/bullet/a40mmg/Initialize()
+/obj/item/projectile/bullet/a40mmS/Initialize()
 	. = ..()
 	src.smoke = new /datum/effect_system/smoke_spread/bad/smoke
 	src.smoke.attach(src)
 	smoke.set_up(4, src)
 
-/obj/item/projectile/bullet/a40mmg/Destroy()
+/obj/item/projectile/bullet/a40mmS/Destroy()
 	QDEL_NULL(smoke)
 	return ..()
 
