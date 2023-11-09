@@ -94,9 +94,9 @@
 	name = "Demon"
 	icon_state = "demon"
 
-/datum/sprite_accessory/deco_wings/dragon
-	name = "Dragon"
-	icon_state = "dragon"
+/datum/sprite_accessory/deco_wings/mechdragon
+	name = "MechaDragon"
+	icon_state = "mechdragon"
 
 /datum/sprite_accessory/deco_wings/dragonalt
 	name = "Dragon Alt"
@@ -277,10 +277,12 @@
 	icon_state = "sepulchre"
 
 /datum/sprite_accessory/deco_wings/sepulchre
-	name = "Sepulchre Alt"
-	icon_state = "sepulchrealt"
+	name = "Sepulchre - AltDragon"
+	icon_state = "dragon2"
 	color_src = MATRIXED
-	matrixed_sections = MATRIX_RED
+	matrixed_sections = MATRIX_RED_BLUE
+	extra = TRUE // Revelation Edit: Red-blue matrix handled on tertiary mutant color. Unfortunately the limit on what we can do.
+	extra_color_src = MUTCOLORS3
 
 /datum/sprite_accessory/deco_wings/succubus
 	name = "Succubus"
