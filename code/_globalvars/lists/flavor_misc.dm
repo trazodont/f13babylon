@@ -159,13 +159,11 @@ GLOBAL_LIST_INIT(security_depts_prefs, list(SEC_DEPT_RANDOM, SEC_DEPT_NONE, SEC_
 #define DDUFFELBAG "Department Duffel Bag"
 GLOBAL_LIST_INIT(backbaglist, list(DBACKPACK, DSATCHEL, DDUFFELBAG, //everything after this point is a non-department backpack
 	"Hiking Backpack" = /obj/item/storage/backpack,
-	"Service Backpack" = /obj/item/storage/backpack/enclave,
 	"Grey Duffel Bag" = /obj/item/storage/backpack/duffelbag,
 	"Grey Satchel" = /obj/item/storage/backpack/satchel,
 	"Leather Satchel" = /obj/item/storage/backpack/satchel/leather,
 	"Bone Satchel" = /obj/item/storage/backpack/satchel/bone,
 	"Old Satchel" = /obj/item/storage/backpack/satchel/old,
-	"Service Satchel" = /obj/item/storage/backpack/satchel/enclave
 	))
 
 //Suit/Skirt
