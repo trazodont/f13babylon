@@ -1513,7 +1513,7 @@
 	name = "grenade launcher and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/revolver/grenadelauncher,
-				/obj/item/ammo_box/a40mm
+				/obj/item/ammo_box/a40mmHE
 	)
 
 /obj/effect/spawner/bundle/f13/medicinestick
@@ -1608,7 +1608,7 @@
 				/obj/item/ammo_box/a762/doublestacked,
 				/obj/item/stock_parts/cell/ammo/mfc,
 				/obj/item/ammo_casing/caseless/rocket,
-				/obj/item/ammo_box/a40mm
+				/obj/item/ammo_box/a40mmHE
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4/Initialize(mapload) //on mapload, pick how many shit to spawn
@@ -1629,7 +1629,7 @@
 				/obj/item/ammo_casing/caseless/rocket/big,
 				/obj/item/ammo_casing/caseless/rocket/incendiary = 10,
 				/obj/item/ammo_casing/caseless/rocket/chem = 3,
-				/obj/item/ammo_box/a40mm
+				/obj/item/ammo_box/a40mmHE
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5/Initialize(mapload) //on mapload, pick how many shit to spawn
