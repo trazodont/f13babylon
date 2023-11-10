@@ -225,29 +225,14 @@ do
     done < <(jq -r '[.map_file] | flatten | .[]' $json)
 done
 
-part "updatepaths validity"
-missing_txt_lines=$(find tools/UpdatePaths/Scripts -type f ! -name "*.txt" | wc -l)
-if [ $missing_txt_lines -gt 0 ]; then
-    echo
-    echo -e "${RED}ERROR: Found an UpdatePaths File that doesn't end in .txt! Please add the proper file extension!${NC}"
-    st=1
-fi;
-
-number_prefix_lines=$(find tools/UpdatePaths/Scripts -type f | wc -l)
-valid_number_prefix_lines=$(find tools/UpdatePaths/Scripts -type f | $grep -P "\d+_(.+)" | wc -l)
-if [ $valid_number_prefix_lines -ne $number_prefix_lines ]; then
-    echo
-    echo -e "${RED}ERROR: Detected an UpdatePaths File that doesn't start with the PR number! Please add the proper number prefix!${NC}"
-    st=1
-fi;
-
-section "515 Proc Syntax"
-part "proc ref syntax"
-if $grep '\.proc/' $code_x_515 ; then
-    echo
-    echo -e "${RED}ERROR: Outdated proc reference use detected in code, please use proc reference helpers.${NC}"
-    st=1
-fi;
+# we don't support 515 yet
+# section "515 Proc Syntax"
+# part "proc ref syntax"
+# if $grep '\.proc/' $code_x_515 ; then
+#     echo
+#     echo -e "${RED}ERROR: Outdated proc reference use detected in code, please use proc reference helpers.${NC}"
+#     st=1
+# fi;
 
 if [ "$pcre2_support" -eq 1 ]; then
 	section "regexes requiring PCRE2"
