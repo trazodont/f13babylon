@@ -33,12 +33,12 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_TRIBAL, src)
-	ADD_TRAIT(H, TRAIT_BERSERKER, src)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
+	ADD_TRAIT(H, TRAIT_BERSERKER,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/set_vrboard/den)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/trail_carbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
@@ -380,10 +380,10 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_MEDICALGRADUATE, src)
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+	ADD_TRAIT(H, TRAIT_MEDICALGRADUATE,  REF(src))
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
 
 //SENIOR =================================================================
 
@@ -404,9 +404,9 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_SELF_AWARE,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 //SMITH =================================================================

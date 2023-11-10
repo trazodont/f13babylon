@@ -106,7 +106,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, src)
+	ADD_TRAIT(H, TRAIT_LONGPORKLOVER,  REF(src))
 
 	H.social_faction = FACTION_RAIDERS
 
@@ -435,11 +435,11 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
-	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_SELF_AWARE,  REF(src))
+	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
+	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	add_verb(H, /mob/living/proc/creategang)
 	H.social_faction = FACTION_RAIDERS//Probably not needed twice, but may as well.
