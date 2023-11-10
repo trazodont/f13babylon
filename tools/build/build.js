@@ -20,6 +20,7 @@ const NODE_VERSION_TARGET = parseInt(require('fs')
   .match(/NODE_VERSION=(\d+)/)[1]);
 if (NODE_VERSION < NODE_VERSION_TARGET) {
   console.error('Your current Node.js version is out of date.');
+  console.error(`You are using Node.js ${NODE_VERSION}, but we require ${NODE_VERSION_TARGET}.`);
   console.error('You have two options:');
   console.error('  a) Go to https://nodejs.org/ and install the latest LTS release of Node.js');
   console.error('  b) Uninstall Node.js (our build system automatically downloads one)');
