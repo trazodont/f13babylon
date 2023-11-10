@@ -105,7 +105,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, src)
+	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, REF(src))
 
 	H.social_faction = FACTION_RAIDERS
 

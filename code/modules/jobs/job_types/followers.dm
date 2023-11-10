@@ -69,15 +69,15 @@ Administrator
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_CYBERNETICIST_EXPERT, src)
-	ADD_TRAIT(H, TRAIT_CYBERNETICIST, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, REF(src))
+	ADD_TRAIT(H, TRAIT_GENERIC, REF(src))
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER, REF(src))
+	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER, REF(src))
+	ADD_TRAIT(H, TRAIT_CYBERNETICIST_EXPERT, REF(src))
+	ADD_TRAIT(H, TRAIT_CYBERNETICIST, REF(src))
 
 /datum/outfit/job/followers/f13leadpractitioner
 	name =	"Followers Administrator"
@@ -142,12 +142,12 @@ Practitioner
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_MEDICALGRADUATE, src)
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
-	ADD_TRAIT(H, TRAIT_CYBERNETICIST, src)
+	ADD_TRAIT(H, TRAIT_MEDICALGRADUATE, REF(src))
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER, REF(src))
+	ADD_TRAIT(H, TRAIT_GENERIC, REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_MID, REF(src))
+	ADD_TRAIT(H, TRAIT_CYBERNETICIST, REF(src))
 
 	//the follower practitioner doesn't need access because it's already set in the /datum/job/follower
 	//personally, I don't think a practitioner should have more access than a volunteer.

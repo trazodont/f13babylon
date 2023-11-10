@@ -200,10 +200,10 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, REF(src))
+	ADD_TRAIT(H, TRAIT_SELF_AWARE, REF(src))
 	if(H.mind)
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
@@ -230,7 +230,7 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/dks)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gladius)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/spatha)
