@@ -286,7 +286,7 @@
 	assignment = "Slave brand"
 	uses_overlays = FALSE
 
-/obj/item/card/id/legionbrand/Initialize()
+/obj/item/card/id/legionbrand/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
@@ -342,7 +342,7 @@
 	uses_overlays = FALSE
 	access = list(ACCESS_KHAN)
 
-/obj/item/card/id/khantattoo/Initialize()
+/obj/item/card/id/khantattoo/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
@@ -356,7 +356,7 @@
 	uses_overlays = FALSE
 	access = list(ACCESS_KHAN, ACCESS_BAR, ACCESS_CLINIC, ACCESS_GATEWAY, ACCESS_MINT_VAULT, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS, ACCESS_CLONING)
 
-/obj/item/card/id/khanleadertattoo/Initialize()
+/obj/item/card/id/khanleadertattoo/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
@@ -370,7 +370,7 @@
 	uses_overlays = FALSE
 	access = list(ACCESS_KHAN)
 
-/obj/item/card/id/khan_courttattoo/Initialize()
+/obj/item/card/id/khan_courttattoo/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
@@ -382,7 +382,7 @@
 	assignment = "gang tattoo"
 	uses_overlays = FALSE
 
-/obj/item/card/id/outcasttattoo/Initialize()
+/obj/item/card/id/outcasttattoo/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 

@@ -423,7 +423,7 @@
 	name = "Followers Robot"
 	icon_state = "Cyborg"
 
-/obj/effect/landmark/start/f13/followersrobot/Initialize()
+/obj/effect/landmark/start/f13/followersrobot/Initialize(mapload)
 	..()
 	GLOB.special_borg_start += loc
 	return INITIALIZE_HINT_QDEL
