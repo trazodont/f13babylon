@@ -36,8 +36,7 @@ jobs:
         run: |
           sudo bash tools/ci/install_libgit2.sh
           cargo install ripgrep --features pcre2
-          sudo apt install python3.9 python3-pip python3-venv
-          sudo ln -s /usr/bin/python3.9 /usr/bin/python3
+          sudo apt install python3 python3-{pip,venv}
           pip3 install setuptools
           bash tools/ci/install_node.sh
           bash tools/ci/install_spaceman_dmm.sh dreamchecker
