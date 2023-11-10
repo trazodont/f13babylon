@@ -3,7 +3,7 @@ set -euo pipefail
 
 source dependencies.sh
 
-mkdir -p ~/.byond/bin
-wget -O ~/.byond/bin/libauxmos.so "https://github.com/${AUXMOS_REPOSITORY}/releases/download/${AUXMOS_VERSION}/libauxmos.so"
-chmod +x ~/.byond/bin/libauxmos.so
-ldd ~/.byond/bin/libauxmos.so
+mkdir -p "$HOME/BYOND/bin"
+wget -O "$HOME/BYOND/bin/libauxmos.so" "https://github.com/${AUXMOS_REPOSITORY}/releases/download/${AUXMOS_VERSION}/libauxmos.so"
+chmod +x "$HOME/BYOND/bin/libauxmos.so"
+ldd "$HOME/BYOND/bin/libauxmos.so"
