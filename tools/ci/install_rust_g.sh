@@ -3,7 +3,10 @@ set -euo pipefail
 
 source dependencies.sh
 
-mkdir -p "$HOME/BYOND/bin"
-wget -O "$HOME/BYOND/bin/librust_g.so" "https://github.com/tgstation/rust-g/releases/download/$RUST_G_VERSION/librust_g.so"
-chmod +x "$HOME/BYOND/bin/librust_g.so"
+git clone https://github.com/tgstation/rust-g
+cd rust-g
+git checkout "$RUST_G_VERSION"
+cargo build --release
+
+cp target/release/librust_g.so "$HOME/BYOND/bin/librust_g.so"
 ldd "$HOME/BYOND/bin/librust_g.so"
