@@ -3,17 +3,7 @@ set -euo pipefail
 
 source dependencies.sh
 
-git clone https://github.com/tgstation/rust-g
-cd rust-g
-git checkout "$RUST_G_VERSION"
-
-sudo dpkg --add-architecture i386
-sudo apt update
-sudo apt install zlib1g-dev:i386
-
-rustup target add i686-unknown-linux-gnu
-export PKG_CONFIG_ALLOW_CROSS=1
-cargo build --release --target i686-unknown-linux-gnu
-
-cp target/release/librust_g.so "$HOME/BYOND/bin/librust_g.so"
-ldd "$HOME/BYOND/bin/librust_g.so"
+mkdir -p ~/.byond/bin
+wget -O ~/.byond/bin/librust_g.so "https://github.com/tgstation/rust-g/releases/download/$RUST_G_VERSION/librust_g.so"
+chmod +x ~/.byond/bin/librust_g.so
+ldd ~/.byond/bin/librust_g.so
