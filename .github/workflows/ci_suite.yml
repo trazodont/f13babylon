@@ -148,7 +148,7 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt update || true
-          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386 libssl-dev:i386 pkg-config
+          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386 libssl-dev:i386 pkg-config libz-dev:i386
           bash tools/ci/install_rust_g.sh
           bash tools/ci/install_auxmos.sh
 
