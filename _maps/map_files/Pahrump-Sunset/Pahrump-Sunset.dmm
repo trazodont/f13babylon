@@ -290,6 +290,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/effect/landmark/start/f13/khan_court,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
 "abh" = (
@@ -27310,6 +27311,13 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/west)
+"fdA" = (
+/obj/effect/landmark/start/f13/khan_chemist,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "fdP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human,
@@ -56727,6 +56735,11 @@
 /obj/structure/showcase/horrific_experiment,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building/museum)
+"wWm" = (
+/obj/effect/overlay/rockfloor_side,
+/obj/effect/landmark/start/f13/khan_court,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/building)
 "wWt" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt{
@@ -91724,7 +91737,7 @@ ajF
 aMZ
 acC
 acC
-acC
+fdA
 acJ
 acJ
 ajF
@@ -98660,7 +98673,7 @@ qmV
 xyU
 xyU
 ffb
-abI
+wWm
 uaU
 qeT
 dAO
