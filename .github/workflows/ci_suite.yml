@@ -22,9 +22,15 @@ jobs:
         with:
           path: ~/SpacemanDMM
           key: ${{ runner.os }}-spacemandmm-${{ secrets.CACHE_PURGE_KEY }}
+      - name: Restore Rust cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.cargo
+          key: ${{ runner.os }}-rust
       - name: Install Tools
         run: |
           sudo bash tools/ci/install_libgit2.sh
+          cargo install ripgrep --features pcre2
           pip3 install setuptools
           bash tools/ci/install_node.sh
           bash tools/ci/install_spaceman_dmm.sh dreamchecker
