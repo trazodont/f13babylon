@@ -82,64 +82,6 @@ jobs:
           python3 tools/ci/template_dm_generator.py
           tools/build/build dm -DCIBUILDING -DCITESTING -DALL_MAPS
 
-  auxmos:
-    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
-    name: Build Auxmos
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          repository: 'sunset-wasteland/auxmos'
-          ref: 'v2.3.1'
-          path: 'auxmos'
-
-      - name: Cache cargo registry
-        uses: actions/cache@v2
-        with:
-          path: ~/.cargo/registry
-          key: auxmos-registry-${{ hashFiles('auxmos/Cargo.lock') }}
-
-      - name: Cache cargo index
-        uses: actions/cache@v2
-        with:
-          path: ~/.cargo/git
-          key: auxmos-index-${{ hashFiles('auxmos/Cargo.lock') }}
-
-      - name: Cache cargo build
-        id: auxmos-cache
-        uses: actions/cache@v2
-        with:
-          path: auxmos/target
-          key: auxmos-build-target-${{ hashFiles('auxmos/Cargo.lock') }}
-
-      - name: Install Ubuntu Deps
-        if: steps.auxmos-cache.outputs.cache-hit != 'true'
-        run: |
-          sudo dpkg --add-architecture i386
-          sudo apt-get update
-          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386
-
-      - uses: actions-rs/toolchain@v1
-        if: steps.auxmos-cache.outputs.cache-hit != 'true'
-        with:
-          profile: minimal
-          toolchain: ${{env.toolchain}}
-          target: ${{env.target}}
-          override: true
-
-      - name: Build
-        if: steps.auxmos-cache.outputs.cache-hit != 'true'
-        run: |
-          cargo build --manifest-path auxmos/Cargo.toml --target=${{env.target}} --release --verbose
-          ldd auxmos/target/${{env.target}}/release/libauxmos.so
-      
-      - name: Upload libauxmos artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: libauxmos
-          path: auxmos/target/${{env.target}}/release/libauxmos.so
-
   run_all_tests:
     if: ( !contains(github.event.head_commit.message, '[ci skip]') )
     name: Integration Tests
@@ -155,14 +97,17 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/setup-node@v3
         with:
           node-version: 14
+
       - name: Restore BYOND cache
         uses: actions/cache@v2
         with:
           path: ~/BYOND
           key: ${{ runner.os }}-byond-${{ secrets.CACHE_PURGE_KEY }}
+
       - name: Restore Yarn cache
         uses: actions/cache@v2
         with:
@@ -172,11 +117,25 @@ jobs:
             ${{ runner.os }}-build-${{ secrets.CACHE_PURGE_KEY }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+
       - name: Restore Rust cache
         uses: actions/cache@v3
         with:
           path: ~/.cargo
           key: ${{ runner.os }}-rust
+
+      - name: Restore Auxmos cache
+        uses: actions/cache@v3
+        with:
+          path: ~/auxmos
+          key: auxmos-build-${{ hashFiles('~/auxmos/Cargo.lock') }}
+      
+      - name: Restore Rust-G cache
+        uses: actions/cache@v3
+        with:
+          path: ~/rust-g
+          key: rustg-build-${{ hashFiles('~/rust-g/Cargo.lock') }}
+
       - name: Setup database
         run: |
           sudo systemctl start mysql
@@ -184,15 +143,15 @@ jobs:
           mysql -u root -proot tg_ci < SQL/tgstation_schema.sql
           mysql -u root -proot -e 'CREATE DATABASE tg_ci_prefixed;'
           mysql -u root -proot tg_ci_prefixed < SQL/tgstation_schema_prefixed.sql
-      - name: Build rust-g
+
+      - name: Build Rust-G and Auxmos
         run: |
           sudo dpkg --add-architecture i386
           sudo apt update || true
+          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386 libssdl-dev:i386 pkg-config
           bash tools/ci/install_rust_g.sh
-      - name: Install auxmos
-        run: |
-          sudo apt update || true
           bash tools/ci/install_auxmos.sh
+
       - name: Compile and run tests
         run: |
           bash tools/ci/install_node.sh
