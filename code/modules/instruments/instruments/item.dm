@@ -103,7 +103,7 @@
 	item_state = "synth"
 	allowed_instrument_ids = "piano"
 
-/obj/item/instrument/piano_synth/Initialize(mapload)
+/obj/item/instrument/piano_synth/Initialize()
 	. = ..()
 	song.allowed_instrument_ids = get_allowed_instrument_ids()
 
@@ -155,7 +155,7 @@
 	force = 0
 	attack_verb = list("played","jazzed","trumpeted","mourned","dooted","spooked")
 
-/obj/item/instrument/trumpet/spectral/Initialize(mapload)
+/obj/item/instrument/trumpet/spectral/Initialize()
 	. = ..()
 	AddComponent(/datum/component/spooky)
 
@@ -178,7 +178,7 @@
 	force = 0
 	attack_verb = list("played","jazzed","saxxed","mourned","dooted","spooked")
 
-/obj/item/instrument/saxophone/spectral/Initialize(mapload)
+/obj/item/instrument/saxophone/spectral/Initialize()
 	. = ..()
 	AddComponent(/datum/component/spooky)
 
@@ -201,7 +201,7 @@
 	force = 0
 	attack_verb = list("played","jazzed","tromboned","mourned","dooted","spooked")
 
-/obj/item/instrument/trombone/spectral/Initialize(mapload)
+/obj/item/instrument/trombone/spectral/Initialize()
 	. = ..()
 	AddComponent(/datum/component/spooky)
 

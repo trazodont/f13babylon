@@ -12,7 +12,7 @@
 	arms_required = 1
 	var/override_movespeed = FALSE
 
-/obj/vehicle/ridden/wheelchair/Initialize(mapload)
+/obj/vehicle/ridden/wheelchair/Initialize()
 	. = ..()
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
 	D.vehicle_move_delay = 0

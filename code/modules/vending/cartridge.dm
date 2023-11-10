@@ -21,7 +21,7 @@
 	extra_price = PRICE_ALMOST_ONE_GRAND
 	payment_department = ACCOUNT_SRV
 
-/obj/machinery/vending/cart/Initialize(mapload)
+/obj/machinery/vending/cart/Initialize()
 	. = ..()
 	cost_multiplier_per_dept = list("[ACCESS_CHANGE_IDS]" = 0)
 

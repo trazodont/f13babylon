@@ -39,7 +39,7 @@
 	slowdown = 0.5
 	floor_variance = 30
 
-/turf/open/floor/plating/asteroid/basalt/wasteland/Initialize(mapload)
+/turf/open/floor/plating/asteroid/basalt/wasteland/Initialize()
 	.=..()
 	if(prob(floor_variance))
 		icon_state = "[environment_type][rand(0,6)]"
@@ -68,7 +68,7 @@
 	icon_state = "puddle-oil"
 	dispensedreagent = /datum/reagent/oil
 
-/obj/structure/sink/oil_well/Initialize(mapload)
+/obj/structure/sink/oil_well/Initialize()
 	.=..()
 	create_reagents(20)
 	reagents.add_reagent(dispensedreagent, 20)

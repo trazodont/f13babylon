@@ -1,4 +1,4 @@
-/mob/living/Initialize(mapload)
+/mob/living/Initialize()
 	. = ..()
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,

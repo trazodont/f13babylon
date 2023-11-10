@@ -120,7 +120,7 @@
 	stored_files = null
 	return ..()
 
-/obj/item/computer_hardware/hard_drive/Initialize(mapload)
+/obj/item/computer_hardware/hard_drive/Initialize()
 	. = ..()
 	install_default_programs()
 

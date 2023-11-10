@@ -32,7 +32,7 @@
 	speak_chance = 1
 	unique_name = TRUE
 
-/mob/living/simple_animal/pet/bumbles/Initialize(mapload)
+/mob/living/simple_animal/pet/bumbles/Initialize()
 	. = ..()
 	add_verb(src, /mob/living/proc/lay_down)
 

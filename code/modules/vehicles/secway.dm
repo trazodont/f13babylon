@@ -12,7 +12,7 @@
 	var/last_tick = 0
 	var/list/progressbars_by_rider = list()
 
-/obj/vehicle/ridden/secway/Initialize(mapload)
+/obj/vehicle/ridden/secway/Initialize()
 	. = ..()
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
 	D.vehicle_move_delay = 1

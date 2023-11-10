@@ -695,7 +695,7 @@
 	duration = 1 MINUTES
 	layer = LOW_SIGIL_LAYER
 
-/obj/effect/temp_visual/glowing_rune/Initialize(mapload)
+/obj/effect/temp_visual/glowing_rune/Initialize()
 	. = ..()
 	pixel_y = rand(-6,6)
 	pixel_x = rand(-6,6)

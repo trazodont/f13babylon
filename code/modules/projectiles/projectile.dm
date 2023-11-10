@@ -162,7 +162,7 @@
 	/// For telling whether we want to roll for bone breaking or lacerations if we're bothering with wounds
 	sharpness = SHARP_NONE
 
-/obj/item/projectile/Initialize(mapload)
+/obj/item/projectile/Initialize()
 	. = ..()
 
 	permutated = list()

@@ -12,7 +12,7 @@
 	icon_state = "alienpod1"
 	tiled_dirt = FALSE
 
-/turf/open/floor/plating/abductor/Initialize(mapload)
+/turf/open/floor/plating/abductor/Initialize()
 	. = ..()
 	icon_state = "alienpod[rand(1,9)]"
 
@@ -56,7 +56,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/plating/ashplanet/Initialize(mapload)
+/turf/open/floor/plating/ashplanet/Initialize()
 	if(smooth)
 		var/matrix/M = new
 		M.Translate(-4, -4)
@@ -101,7 +101,7 @@
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
-/turf/open/floor/plating/ashplanet/wateryrock/Initialize(mapload)
+/turf/open/floor/plating/ashplanet/wateryrock/Initialize()
 	icon_state = "[icon_state][rand(1, 9)]"
 	. = ..()
 
@@ -161,7 +161,7 @@
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
-/turf/open/floor/plating/ironsand/Initialize(mapload)
+/turf/open/floor/plating/ironsand/Initialize()
 	. = ..()
 	icon_state = "ironsand[rand(1,15)]"
 
@@ -188,7 +188,7 @@
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
-/turf/open/floor/plating/ice/Initialize(mapload)
+/turf/open/floor/plating/ice/Initialize()
 	. = ..()
 	MakeSlippery(TURF_WET_PERMAFROST, INFINITY, 0, INFINITY, TRUE)
 

@@ -5,7 +5,7 @@
 	clockwork_desc = "A trap that shouldn't exist, and you should report this as a bug."
 	var/list/wired_to
 
-/obj/structure/destructible/clockwork/trap/Initialize(mapload)
+/obj/structure/destructible/clockwork/trap/Initialize()
 	. = ..()
 	wired_to = list()
 
@@ -80,7 +80,7 @@
 	break_message = "<span class='warning'>The trigger breaks apart!</span>"
 	density = FALSE
 
-/obj/structure/destructible/clockwork/trap/trigger/Initialize(mapload)
+/obj/structure/destructible/clockwork/trap/trigger/Initialize()
 	. = ..()
 	for(var/obj/structure/destructible/clockwork/trap/T in get_turf(src))
 		if(!istype(T, /obj/structure/destructible/clockwork/trap/trigger))

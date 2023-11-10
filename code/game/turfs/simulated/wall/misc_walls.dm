@@ -10,7 +10,7 @@
 	explosion_block = 10
 	girder_type = /obj/structure/girder/cult
 
-/turf/closed/wall/mineral/cult/Initialize(mapload)
+/turf/closed/wall/mineral/cult/Initialize()
 	new /obj/effect/temp_visual/cult/turf(src)
 	. = ..()
 
@@ -60,7 +60,7 @@
 	var/heated
 	var/obj/effect/clockwork/overlay/wall/realappearance
 
-/turf/closed/wall/clockwork/Initialize(mapload)
+/turf/closed/wall/clockwork/Initialize()
 	. = ..()
 	new /obj/effect/temp_visual/ratvar/wall(src)
 	new /obj/effect/temp_visual/ratvar/beam(src)

@@ -33,7 +33,7 @@
 	var/opening_time = 2
 	var/closing_time = 4
 
-/obj/structure/simple_door/Initialize(mapload)
+/obj/structure/simple_door/Initialize()
 	. = ..()
 	icon_state = door_type
 

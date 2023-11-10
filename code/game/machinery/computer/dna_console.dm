@@ -201,7 +201,7 @@
 
 	eject_disk(user)
 
-/obj/machinery/computer/scan_consolenew/Initialize(mapload)
+/obj/machinery/computer/scan_consolenew/Initialize()
 	. = ..()
 
 	// Connect with a nearby DNA Scanner on init

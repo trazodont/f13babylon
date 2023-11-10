@@ -33,7 +33,7 @@
 
 	footstep_type = FOOTSTEP_MOB_CLAW
 
-/mob/living/simple_animal/hostile/hivebot/Initialize(mapload)
+/mob/living/simple_animal/hostile/hivebot/Initialize()
 	. = ..()
 	deathmessage = "[src] blows apart!"
 

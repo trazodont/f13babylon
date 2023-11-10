@@ -11,7 +11,7 @@
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	layer = OPEN_DOOR_LAYER
 
-/obj/machinery/turnstile/Initialize(mapload)
+/obj/machinery/turnstile/Initialize()
 	. = ..()
 	icon_state = "turnstile"
 

@@ -35,7 +35,7 @@
 	detonation_damage = 90
 	wielded = 1
 
-/obj/item/kinetic_crusher/Initialize(mapload)
+/obj/item/kinetic_crusher/Initialize()
 	. = ..()
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
 	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)

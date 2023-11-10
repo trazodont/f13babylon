@@ -83,7 +83,7 @@
 	animal_species = /mob/living/simple_animal/pet/dog/corgi/exoticcorgi
 	nofur = TRUE
 
-/mob/living/simple_animal/pet/dog/Initialize(mapload)
+/mob/living/simple_animal/pet/dog/Initialize()
 	. = ..()
 	var/area/dog_area = get_area(src)
 	if(!dog_area)
@@ -94,11 +94,11 @@
 		D.update_owner(src)
 		break
 
-/mob/living/simple_animal/pet/dog/corgi/Initialize(mapload)
+/mob/living/simple_animal/pet/dog/corgi/Initialize()
 	. = ..()
 	regenerate_icons()
 
-/mob/living/simple_animal/pet/dog/corgi/exoticcorgi/Initialize(mapload)
+/mob/living/simple_animal/pet/dog/corgi/exoticcorgi/Initialize()
 		. = ..()
 		var/newcolor = rgb(rand(0, 255), rand(0, 255), rand(0, 255))
 		add_atom_colour(newcolor, FIXED_COLOUR_PRIORITY)
@@ -342,7 +342,7 @@
 	var/memory_saved = FALSE
 	var/saved_head //path
 
-/mob/living/simple_animal/pet/dog/corgi/Ian/Initialize(mapload)
+/mob/living/simple_animal/pet/dog/corgi/Ian/Initialize()
 	. = ..()
 	//parent call must happen first to ensure IAN
 	//is not in nullspace when child puppies spawn

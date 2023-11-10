@@ -15,7 +15,7 @@
 
 	light_color = LIGHT_COLOR_RED
 
-/obj/machinery/computer/prisoner/gulag_teleporter_computer/Initialize(mapload)
+/obj/machinery/computer/prisoner/gulag_teleporter_computer/Initialize()
 	. = ..()
 	scan_machinery()
 

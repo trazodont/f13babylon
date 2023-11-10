@@ -15,7 +15,7 @@
 	var/const/max_signs = 4
 
 
-/obj/structure/janitorialcart/Initialize(mapload)
+/obj/structure/janitorialcart/Initialize()
 	. = ..()
 	create_reagents(500, OPENCONTAINER)
 

@@ -652,7 +652,7 @@
 	var/datum/radio_frequency/radio_connection
 	var/hearing_range = 1
 
-/obj/item/integrated_circuit/input/signaler/Initialize(mapload)
+/obj/item/integrated_circuit/input/signaler/Initialize()
 	..()
 	return INITIALIZE_HINT_LATELOAD
 
@@ -741,7 +741,7 @@
 	power_draw_per_use = 50
 	var/address
 
-/obj/item/integrated_circuit/input/ntnet_packet/Initialize(mapload)
+/obj/item/integrated_circuit/input/ntnet_packet/Initialize()
 	. = ..()
 	var/datum/component/ntnet_interface/net = LoadComponent(/datum/component/ntnet_interface)
 	address = net.hardware_id
@@ -789,7 +789,7 @@
 	power_draw_per_use = 50
 	var/address
 
-/obj/item/integrated_circuit/input/ntnet_advanced/Initialize(mapload)
+/obj/item/integrated_circuit/input/ntnet_advanced/Initialize()
 	. = ..()
 	var/datum/component/ntnet_interface/net = LoadComponent(/datum/component/ntnet_interface)
 	address = net.hardware_id

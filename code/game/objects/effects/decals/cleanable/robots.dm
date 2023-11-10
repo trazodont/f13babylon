@@ -53,7 +53,7 @@
 	bloodiness = BLOOD_AMOUNT_PER_DECAL
 	beauty = -100
 
-/obj/effect/decal/cleanable/oil/Initialize(mapload)
+/obj/effect/decal/cleanable/oil/Initialize()
 	. = ..()
 	reagents.add_reagent(/datum/reagent/oil, 30)
 	reagents.add_reagent(/datum/reagent/liquidgibs/oil, 5)
@@ -64,6 +64,6 @@
 
 /obj/effect/decal/cleanable/oil/slippery
 
-/obj/effect/decal/cleanable/oil/slippery/Initialize(mapload)
+/obj/effect/decal/cleanable/oil/slippery/Initialize()
 	. = ..()
 	AddComponent(/datum/component/slippery, 80, (NO_SLIP_WHEN_WALKING | SLIDE))

@@ -58,10 +58,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
-	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
-	ADD_TRAIT(H, TRAIT_FEARLESS,  REF(src)) //no phobias for legion!
-	ADD_TRAIT(H, TRAIT_BERSERKER,  REF(src))
+	ADD_TRAIT(H, TRAIT_TRIBAL, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_FEARLESS, src) //no phobias for legion!
+	ADD_TRAIT(H, TRAIT_BERSERKER, src)
 
 /obj/item/storage/box/legate
 	name = "legate belongings"
@@ -100,10 +100,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
-	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_IRONFIST, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legate	// 14mm Pistol, Goliath
@@ -170,8 +170,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 
@@ -209,10 +209,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
-	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_IRONFIST, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
@@ -307,10 +307,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_IRONFIST, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
 	name = "Legion Veteran Decanus"
@@ -409,10 +409,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_IRONFIST, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 	name = "Prime Decanus"
@@ -496,8 +496,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
 	name = "Legion Recruit Decanus"
@@ -577,10 +577,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_IRONFIST, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
@@ -661,9 +661,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	. = ..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_SILENT_STEP,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
 
 
 
@@ -741,9 +741,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
 	name = "Veteran Legionnaire"
@@ -834,8 +834,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 	name = "Prime Legionnaire"
@@ -909,7 +909,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	. = ..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 	name = "Recruit Legionnaire"
@@ -983,7 +983,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
+	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
 // FORGE MASTER
 
@@ -1027,8 +1027,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/dks)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gladius)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/spatha)
@@ -1098,9 +1098,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_SURGERY_LOW,  REF(src))
-	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
+	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/legionuniform)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warpaint)
 
@@ -1186,7 +1186,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
+	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
 /datum/outfit/job/CaesarsLegion/slave
 	name = "Legion Slave"
@@ -1268,11 +1268,11 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
-	ADD_TRAIT(H, TRAIT_SILENT_STEP,  REF(src))
-	ADD_TRAIT(H, TRAIT_INSANE_AIM,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
+	ADD_TRAIT(H, TRAIT_INSANE_AIM, src)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator
@@ -1331,10 +1331,10 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
-	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_TRIBAL, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 */
 

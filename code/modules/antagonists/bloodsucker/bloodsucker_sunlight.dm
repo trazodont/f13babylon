@@ -12,7 +12,7 @@
 	var/time_til_cycle = 0
 	var/nightime_duration = 900 //15 Minutes
 
-/obj/effect/sunlight/Initialize(mapload)
+/obj/effect/sunlight/Initialize()
 	. = ..()
 	countdown()
 	hud_tick()

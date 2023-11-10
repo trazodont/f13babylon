@@ -364,7 +364,7 @@
 	. = ..()
 	. += "<span class='notice'>Alt-click to switch tubes.</span>"
 
-/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/Initialize(mapload)
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/Initialize()
 	. = ..()
 	if (!alternate_magazine)
 		alternate_magazine = new mag_type(src)

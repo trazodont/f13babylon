@@ -382,7 +382,7 @@
 	var/challenge = FALSE
 	var/moved = FALSE
 
-/obj/item/circuitboard/computer/syndicate_shuttle/Initialize(mapload)
+/obj/item/circuitboard/computer/syndicate_shuttle/Initialize()
 	. = ..()
 	GLOB.syndicate_shuttle_boards += src
 

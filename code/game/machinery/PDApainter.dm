@@ -31,7 +31,7 @@
 	if(storedpda)
 		. += "[initial(icon_state)]-closed"
 
-/obj/machinery/pdapainter/Initialize(mapload)
+/obj/machinery/pdapainter/Initialize()
 	. = ..()
 	var/list/blocked = list(
 		/obj/item/pda/ai/pai,

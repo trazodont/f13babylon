@@ -12,7 +12,7 @@
 	var/obj/item/mmi/brain = null
 	var/can_deconstruct = TRUE
 
-/obj/structure/AIcore/Initialize(mapload)
+/obj/structure/AIcore/Initialize()
 	. = ..()
 	laws = new
 	laws.set_laws_config()
@@ -67,7 +67,7 @@
 		return
 	return ..()
 
-/obj/structure/AIcore/latejoin_inactive/Initialize(mapload)
+/obj/structure/AIcore/latejoin_inactive/Initialize()
 	. = ..()
 	GLOB.latejoin_ai_cores += src
 

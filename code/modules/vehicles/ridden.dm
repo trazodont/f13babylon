@@ -8,7 +8,7 @@
 	var/legs_required = 1
 	var/arms_required = 0	//why not?
 
-/obj/vehicle/ridden/Initialize(mapload)
+/obj/vehicle/ridden/Initialize()
 	. = ..()
 	LoadComponent(/datum/component/riding)
 

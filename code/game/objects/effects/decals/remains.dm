@@ -5,7 +5,7 @@
 	var/list/obj/item/debris_result = list(/obj/item/stack/sheet/bone)
 	var/drop_amount = 1
 
-/obj/effect/decal/remains/Initialize(mapload)
+/obj/effect/decal/remains/Initialize()
 	if(isemptylist(debris_result))
 		return INITIALIZE_HINT_QDEL
 	. = ..()

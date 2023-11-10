@@ -17,7 +17,7 @@
 /obj/item/gun/energy/pulse/prize
 	pin = /obj/item/firing_pin
 
-/obj/item/gun/energy/pulse/prize/Initialize(mapload)
+/obj/item/gun/energy/pulse/prize/Initialize()
 	. = ..()
 	GLOB.poi_list += src
 	var/turf/T = get_turf(src)

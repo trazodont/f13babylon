@@ -20,7 +20,7 @@
 	var/ignore_suit_sensor_level = FALSE // Do we find people even if their suit sensors are turned off
 	var/alert = FALSE // TRUE to display things more seriously
 
-/obj/item/pinpointer/Initialize(mapload)
+/obj/item/pinpointer/Initialize()
 	. = ..()
 	GLOB.pinpointer_list += src
 

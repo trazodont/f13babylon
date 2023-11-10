@@ -14,7 +14,7 @@
 	var/recharging = FALSE
 	var/gun_charger = FALSE
 
-/obj/item/inducer/Initialize(mapload)
+/obj/item/inducer/Initialize()
 	. = ..()
 	if(!cell && cell_type)
 		cell = new cell_type
@@ -180,7 +180,7 @@
 	powertransfer = 500
 	opened = TRUE
 
-/obj/item/inducer/sci/Initialize(mapload)
+/obj/item/inducer/sci/Initialize()
 	. = ..()
 	update_icon()
 
@@ -199,11 +199,11 @@
 	cell_type = null
 	opened = TRUE
 
-/obj/item/inducer/sci/combat/dry/Initialize(mapload) //Just in case
+/obj/item/inducer/sci/combat/dry/Initialize() //Just in case
 	. = ..()
 	update_icon()
 
-/obj/item/inducer/sci/combat/Initialize(mapload)
+/obj/item/inducer/sci/combat/Initialize()
 	. = ..()
 	update_icon()
 

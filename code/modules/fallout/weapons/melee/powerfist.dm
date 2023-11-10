@@ -266,7 +266,7 @@
 
 	var/obj/item/sword
 
-/obj/item/shishkebabpack/Initialize(mapload)
+/obj/item/shishkebabpack/Initialize()
 	. = ..()
 	sword = make_sword()
 
@@ -363,7 +363,7 @@
 
 	var/obj/item/shishkebabpack/tank
 
-/obj/item/weapon/melee/shishkebab/Initialize(mapload)
+/obj/item/weapon/melee/shishkebab/Initialize()
 	. = ..()
 	tank = loc
 	if(!istype(tank))

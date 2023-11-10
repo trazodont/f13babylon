@@ -6,7 +6,7 @@
 	cooldown_per_use = 10
 	var/volume = 0
 
-/obj/item/integrated_circuit/reagent/Initialize(mapload)
+/obj/item/integrated_circuit/reagent/Initialize()
 	. = ..()
 	if(volume)
 		create_reagents(volume)
@@ -75,7 +75,7 @@
 	var/transfer_amount = 10
 	var/busy = FALSE
 
-/obj/item/integrated_circuit/reagent/injector/Initialize(mapload)
+/obj/item/integrated_circuit/reagent/injector/Initialize()
 	. = ..()
 	ENABLE_BITFIELD(reagents.reagents_holder_flags, OPENCONTAINER)
 
@@ -271,7 +271,7 @@
 	activators = list("push ref" = IC_PINTYPE_PULSE_OUT)
 	spawn_flags = IC_SPAWN_DEFAULT|IC_SPAWN_RESEARCH
 
-/obj/item/integrated_circuit/reagent/storage/Initialize(mapload)
+/obj/item/integrated_circuit/reagent/storage/Initialize()
 	. = ..()
 	ENABLE_BITFIELD(reagents.reagents_holder_flags, OPENCONTAINER)
 
@@ -301,7 +301,7 @@
 	complexity = 8
 	spawn_flags = IC_SPAWN_RESEARCH
 
-/obj/item/integrated_circuit/reagent/storage/cryo/Initialize(mapload)
+/obj/item/integrated_circuit/reagent/storage/cryo/Initialize()
 	. = ..()
 	ENABLE_BITFIELD(reagents.reagents_holder_flags, NO_REACT)
 
@@ -520,7 +520,7 @@
 	else
 		power_draw_idle = 0
 
-/obj/item/integrated_circuit/reagent/storage/heater/Initialize(mapload)
+/obj/item/integrated_circuit/reagent/storage/heater/Initialize()
 	.=..()
 	START_PROCESSING(SScircuit, src)
 
@@ -572,7 +572,7 @@
 	var/smoke_radius = 5
 	var/notified = FALSE
 
-/obj/item/integrated_circuit/reagent/smoke/Initialize(mapload)
+/obj/item/integrated_circuit/reagent/smoke/Initialize()
 	. = ..()
 	ENABLE_BITFIELD(reagents.reagents_holder_flags, OPENCONTAINER)
 
@@ -630,7 +630,7 @@
 	power_draw_per_use = 15
 	var/busy = FALSE
 
-/obj/item/integrated_circuit/reagent/extinguisher/Initialize(mapload)
+/obj/item/integrated_circuit/reagent/extinguisher/Initialize()
 	.=..()
 	ENABLE_BITFIELD(reagents.reagents_holder_flags, OPENCONTAINER)
 	set_pin_data(IC_OUTPUT,2, src)

@@ -23,7 +23,7 @@
 		list(name = "Protocols"),
 	)
 
-/obj/machinery/nanite_program_hub/Initialize(mapload)
+/obj/machinery/nanite_program_hub/Initialize()
 	. = ..()
 	update_techweb()
 

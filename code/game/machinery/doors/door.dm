@@ -55,7 +55,7 @@
 		return TRUE
 	return ..()
 
-/obj/machinery/door/Initialize(mapload)
+/obj/machinery/door/Initialize()
 	. = ..()
 	set_init_door_layer()
 	update_freelook_sight()

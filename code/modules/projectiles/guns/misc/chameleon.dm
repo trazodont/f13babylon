@@ -25,7 +25,7 @@
 	var/can_hitscan = FALSE
 	var/hitscan_mode = FALSE
 
-/obj/item/gun/energy/laser/chameleon/Initialize(mapload)
+/obj/item/gun/energy/laser/chameleon/Initialize()
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/gun

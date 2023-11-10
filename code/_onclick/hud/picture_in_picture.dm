@@ -14,7 +14,7 @@
 	var/mutable_appearance/standard_background
 	var/const/max_dimensions = 10
 
-/obj/screen/movable/pic_in_pic/Initialize(mapload)
+/obj/screen/movable/pic_in_pic/Initialize()
 	. = ..()
 	make_backgrounds()
 

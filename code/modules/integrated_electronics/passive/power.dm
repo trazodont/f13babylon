@@ -101,7 +101,7 @@
 	var/multi = 1
 	var/lfwb =TRUE
 
-/obj/item/integrated_circuit/passive/power/chemical_cell/Initialize(mapload)
+/obj/item/integrated_circuit/passive/power/chemical_cell/Initialize()
 	. = ..()
 	create_reagents(volume, OPENCONTAINER)
 

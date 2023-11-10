@@ -41,7 +41,7 @@
 	var/has_snowflake_deadsprite
 	var/moduleselect_alternate_icon
 
-/obj/item/robot_module/Initialize(mapload)
+/obj/item/robot_module/Initialize()
 	. = ..()
 	for(var/i in basic_modules)
 		var/obj/item/I = new i(src)
@@ -437,7 +437,7 @@
 			return FALSE
 	return ..()
 
-/obj/item/robot_module/security/Initialize(mapload)
+/obj/item/robot_module/security/Initialize()
 	. = ..()
 	if(!CONFIG_GET(flag/weaken_secborg))
 		for(var/obj/item/gun/energy/disabler/cyborg/pewpew in basic_modules)

@@ -5,7 +5,7 @@
 	var/obj/item/clothing/head/hooded/hood
 	var/hoodtype = /obj/item/clothing/head/hooded/winterhood //so the chaplain hoodie or other hoodies can override this
 
-/obj/item/clothing/suit/hooded/Initialize(mapload)
+/obj/item/clothing/suit/hooded/Initialize()
 	. = ..()
 	hood = MakeHelmet()
 
@@ -137,7 +137,7 @@
 	. += "Alt-click on [src] to toggle the [togglename]."
 
 //Hardsuit toggle code
-/obj/item/clothing/suit/space/hardsuit/Initialize(mapload)
+/obj/item/clothing/suit/space/hardsuit/Initialize()
 	. = ..()
 	helmet = MakeHelmet()
 

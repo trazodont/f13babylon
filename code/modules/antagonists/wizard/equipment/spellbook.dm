@@ -604,7 +604,7 @@
 	else
 		. += "It appears to have no author."
 
-/obj/item/spellbook/Initialize(mapload)
+/obj/item/spellbook/Initialize()
 	. = ..()
 	prepare_spells()
 

@@ -48,7 +48,7 @@
 
 /obj/item/clothing/mask/gas/welding/up
 
-/obj/item/clothing/mask/gas/welding/up/Initialize(mapload)
+/obj/item/clothing/mask/gas/welding/up/Initialize()
 	. = ..()
 	visor_toggling()
 

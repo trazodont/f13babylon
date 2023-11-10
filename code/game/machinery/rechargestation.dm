@@ -14,13 +14,13 @@
 	var/recharge_speed
 	var/repairs
 
-/obj/machinery/recharge_station/Initialize(mapload)
+/obj/machinery/recharge_station/Initialize()
 	. = ..()
 	update_icon()
 
 /obj/machinery/recharge_station/upgraded
 
-/obj/machinery/recharge_station/upgraded/Initialize(mapload)
+/obj/machinery/recharge_station/upgraded/Initialize()
 	. = ..()
 	component_parts = list()
 	component_parts += new /obj/item/circuitboard/machine/cyborgrecharger(null)
@@ -31,7 +31,7 @@
 
 /obj/machinery/recharge_station/fullupgrade
 
-/obj/machinery/recharge_station/fullupgrade/Initialize(mapload)
+/obj/machinery/recharge_station/fullupgrade/Initialize()
 	. = ..()
 	component_parts = list()
 	component_parts += new /obj/item/circuitboard/machine/cyborgrecharger(null)

@@ -130,7 +130,7 @@
 	state_open = TRUE
 	density = FALSE
 
-/obj/machinery/suit_storage_unit/Initialize(mapload)
+/obj/machinery/suit_storage_unit/Initialize()
 	. = ..()
 	wires = new /datum/wires/suit_storage_unit(src)
 	if(suit_type)

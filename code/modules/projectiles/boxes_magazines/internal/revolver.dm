@@ -41,7 +41,7 @@
 	caliber = "needle"
 	max_ammo = 10
 
-/obj/item/ammo_box/magazine/internal/rus357/Initialize(mapload)
+/obj/item/ammo_box/magazine/internal/rus357/Initialize()
 	stored_ammo += new ammo_type(src)
 	. = ..()
 

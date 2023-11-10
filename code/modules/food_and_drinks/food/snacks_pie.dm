@@ -162,7 +162,7 @@
 	foodtype = GRAIN | VEGETABLES
 
 
-/obj/item/reagent_containers/food/snacks/pie/plump_pie/Initialize(mapload)
+/obj/item/reagent_containers/food/snacks/pie/plump_pie/Initialize()
 	. = ..()
 	var/fey = prob(10)
 	if(fey)

@@ -16,7 +16,7 @@
 /obj/structure/timeddoor/onetwozerominutes
 	deletion_time = 120 MINUTES
 
-/obj/structure/timeddoor/Initialize(mapload)
+/obj/structure/timeddoor/Initialize()
 	. = ..()
 	addtimer(CALLBACK(src, .proc/timeddeletedoor), deletion_time)
 

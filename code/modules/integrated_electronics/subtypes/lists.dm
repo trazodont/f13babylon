@@ -359,7 +359,7 @@
 	spawn_flags = IC_SPAWN_DEFAULT|IC_SPAWN_RESEARCH
 	var/number_of_pins = 16
 
-/obj/item/integrated_circuit/lists/constructor/Initialize(mapload)
+/obj/item/integrated_circuit/lists/constructor/Initialize()
 	for(var/i = 1 to number_of_pins)
 		inputs["input [i]"] = IC_PINTYPE_ANY // This is just a string since pins don't get built until ..() is called.
 	complexity = number_of_pins / 2
@@ -405,7 +405,7 @@
 	spawn_flags = IC_SPAWN_DEFAULT|IC_SPAWN_RESEARCH
 	var/number_of_pins = 16
 
-/obj/item/integrated_circuit/lists/deconstructor/Initialize(mapload)
+/obj/item/integrated_circuit/lists/deconstructor/Initialize()
 	for(var/i = 1 to number_of_pins)
 		outputs["output [i]"] = IC_PINTYPE_ANY // This is just a string since pins don't get built until ..() is called.
 	complexity = number_of_pins / 2

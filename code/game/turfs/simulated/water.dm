@@ -22,7 +22,7 @@
 
 // Fortuna edit. Below is Largely ported from citadels HRP branch
 
-/turf/open/water/Initialize(mapload)
+/turf/open/water/Initialize()
 	. = ..()
 	update_icon()
 	// Moved from /turf/open/indestructible/ground/outside/desert to reduce lag.

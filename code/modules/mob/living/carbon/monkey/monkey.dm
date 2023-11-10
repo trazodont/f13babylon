@@ -167,7 +167,7 @@
 /mob/living/carbon/monkey/angry
 	aggressive = TRUE
 
-/mob/living/carbon/monkey/angry/Initialize(mapload)
+/mob/living/carbon/monkey/angry/Initialize()
 	. = ..()
 	if(prob(10))
 		var/obj/item/clothing/head/helmet/justice/escape/helmet = new(src)

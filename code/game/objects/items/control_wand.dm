@@ -15,7 +15,7 @@
 	var/region_access = 1 //See access.dm
 	var/list/access_list
 
-/obj/item/door_remote/Initialize(mapload)
+/obj/item/door_remote/Initialize()
 	. = ..()
 	access_list = get_region_accesses(region_access)
 	AddComponent(/datum/component/ntnet_interface)

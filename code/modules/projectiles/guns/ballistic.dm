@@ -11,7 +11,7 @@
 	var/magazine_wording = "magazine"
 	var/en_bloc = 0
 
-/obj/item/gun/ballistic/Initialize(mapload)
+/obj/item/gun/ballistic/Initialize()
 	. = ..()
 	if(!spawnwithmagazine)
 		update_icon()

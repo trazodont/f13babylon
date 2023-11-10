@@ -31,7 +31,7 @@
 	var/boltslocked = TRUE
 	var/list/affecting_areas
 
-/obj/machinery/door/firedoor/Initialize(mapload)
+/obj/machinery/door/firedoor/Initialize()
 	. = ..()
 	CalculateAffectingAreas()
 	UpdateAdjacencyFlags()

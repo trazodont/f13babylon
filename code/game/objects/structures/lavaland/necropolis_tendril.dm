@@ -30,7 +30,7 @@
 	mob_types = list(/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/icewing)
 
 GLOBAL_LIST_INIT(tendrils, list())
-/obj/structure/spawner/lavaland/Initialize(mapload)
+/obj/structure/spawner/lavaland/Initialize()
 	. = ..()
 	emitted_light = new(loc)
 	for(var/F in RANGE_TURFS(1, src))
@@ -78,7 +78,7 @@ GLOBAL_LIST_INIT(tendrils, list())
 	density = TRUE
 	var/obj/effect/light_emitter/tendril/emitted_light
 
-/obj/effect/collapse/Initialize(mapload)
+/obj/effect/collapse/Initialize()
 	. = ..()
 	emitted_light = new(loc)
 	visible_message("<span class='boldannounce'>The tendril writhes in fury as the earth around it begins to crack and break apart! Get back!</span>")

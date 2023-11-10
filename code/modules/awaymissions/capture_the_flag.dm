@@ -33,7 +33,7 @@
 	QDEL_NULL(reset)
 	return ..()
 
-/obj/item/ctf/Initialize(mapload)
+/obj/item/ctf/Initialize()
 	. = ..()
 	if(!reset)
 		reset = new reset_path(get_turf(src))
@@ -164,7 +164,7 @@
 	var/static/arena_reset = FALSE
 	var/static/list/people_who_want_to_play = list()
 
-/obj/machinery/capture_the_flag/Initialize(mapload)
+/obj/machinery/capture_the_flag/Initialize()
 	. = ..()
 	GLOB.poi_list |= src
 

@@ -56,7 +56,7 @@
 
 /obj/item/clothing/shoes/magboots/advance/debug
 
-/obj/item/clothing/shoes/magboots/advance/debug/Initialize(mapload)
+/obj/item/clothing/shoes/magboots/advance/debug/Initialize()
 	. = ..()
 	var/mob/living/L = loc
 	if(istype(L))

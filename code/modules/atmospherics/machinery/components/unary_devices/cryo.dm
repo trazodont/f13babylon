@@ -39,7 +39,7 @@
 	fair_market_price = 10
 	payment_department = ACCOUNT_MED
 
-/obj/machinery/atmospherics/components/unary/cryo_cell/Initialize(mapload)
+/obj/machinery/atmospherics/components/unary/cryo_cell/Initialize()
 	. = ..()
 	initialize_directions = dir
 

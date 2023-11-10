@@ -49,7 +49,7 @@
 	bluespace_capable = TRUE
 	cooldown = 90
 
-/obj/machinery/shuttle/engine/Initialize(mapload)
+/obj/machinery/shuttle/engine/Initialize()
 	. = ..()
 	check_setup()
 

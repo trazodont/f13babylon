@@ -61,7 +61,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 	else
 		set_light(1.4, 0.7, "#ffda37")
 
-/obj/machinery/msgterminal/Initialize(mapload)
+/obj/machinery/msgterminal/Initialize()
 	. = ..()
 	GLOB.allTerminals += src
 	switch(terminalType)

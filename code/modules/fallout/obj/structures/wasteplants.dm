@@ -5,7 +5,7 @@
 	desc = "Some dry, virtually dead grass."
 	icon_state = "tall_grass_1"
 
-/obj/structure/flora/grass/wasteland/Initialize(mapload)
+/obj/structure/flora/grass/wasteland/Initialize()
 	. = ..()
 	icon_state = "tall_grass_[rand(1,8)]"
 
@@ -33,7 +33,7 @@
 	obj_integrity = 100
 	max_integrity = 100
 
-/obj/structure/flora/tree/wasteland/Initialize(mapload)
+/obj/structure/flora/tree/wasteland/Initialize()
 	. = ..()
 	icon_state = "deadtree_[rand(1,6)]"
 	AddComponent(/datum/component/largetransparency, y_offset = 1)
@@ -184,7 +184,7 @@
 	log_amount = 3
 	icon_state = "joshua_1"
 
-/obj/structure/flora/tree/joshua/Initialize(mapload)
+/obj/structure/flora/tree/joshua/Initialize()
 	. = ..()
 	icon_state = "joshua_[rand(1,4)]"
 	AddComponent(/datum/component/largetransparency, y_offset = 1)

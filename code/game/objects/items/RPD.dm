@@ -530,7 +530,7 @@ GLOBAL_LIST_INIT(fluid_duct_recipes, list(
 	category = PLUMBING_CATEGORY
 	locked = TRUE
 
-/obj/item/pipe_dispenser/plumbing/Initialize(mapload)
+/obj/item/pipe_dispenser/plumbing/Initialize()
 	. = ..()
 	spark_system = new
 	spark_system.set_up(5, 0, src)

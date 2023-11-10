@@ -246,7 +246,7 @@
 	///Tracked image
 	var/image/img
 
-/obj/effect/reality_smash/Initialize(mapload)
+/obj/effect/reality_smash/Initialize()
 	. = ..()
 	img = image(icon, src, image_state, OBJ_LAYER)
 	generate_name()

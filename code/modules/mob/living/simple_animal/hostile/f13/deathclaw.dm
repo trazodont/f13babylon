@@ -125,7 +125,7 @@
 	footstep_type = FOOTSTEP_MOB_HEAVY
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/deathclaw = 6)
 
-/mob/living/simple_animal/hostile/deathclaw/legendary/Initialize(mapload)
+/mob/living/simple_animal/hostile/deathclaw/legendary/Initialize()
 	. = ..()
 	if(prob(37))
 		guaranteed_butcher_results = list(/obj/item/melee/unarmed/deathclawgauntlet = 1)

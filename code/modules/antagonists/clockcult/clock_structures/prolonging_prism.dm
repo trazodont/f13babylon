@@ -19,7 +19,7 @@
 	var/static/delay_cost_increase = 1000
 	var/static/delay_remaining = 0
 
-/obj/structure/destructible/clockwork/powered/prolonging_prism/Initialize(mapload)
+/obj/structure/destructible/clockwork/powered/prolonging_prism/Initialize()
 	. = ..()
 	if(!SSshuttle.getDock("emergency_home"))
 		return INITIALIZE_HINT_QDEL

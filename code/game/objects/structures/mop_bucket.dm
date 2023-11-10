@@ -8,7 +8,7 @@
 	drag_delay = 0 SECONDS //encourage people to clean things.
 
 
-/obj/structure/mopbucket/Initialize(mapload)
+/obj/structure/mopbucket/Initialize()
 	. = ..()
 	create_reagents(500, OPENCONTAINER)
 

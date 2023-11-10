@@ -6,7 +6,7 @@
 	anchored = TRUE
 	var/popped = FALSE
 
-/obj/effect/fun_balloon/Initialize(mapload)
+/obj/effect/fun_balloon/Initialize()
 	. = ..()
 	SSobj.processing |= src
 
@@ -109,7 +109,7 @@
 	timeleft = 0
 	var/list/warp_points
 
-/obj/effect/forcefield/arena_shuttle/Initialize(mapload)
+/obj/effect/forcefield/arena_shuttle/Initialize()
 	. = ..()
 	for(var/obj/effect/landmark/shuttle_arena_safe/exit in GLOB.landmarks_list)
 		warp_points += exit

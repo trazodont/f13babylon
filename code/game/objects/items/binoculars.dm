@@ -25,7 +25,7 @@
 	else
 		to_chat(user, "<span class='warning'>You can't calculate coordinates without proper equipment!</span>")
 
-/obj/item/binoculars/Initialize(mapload)
+/obj/item/binoculars/Initialize()
 	. = ..()
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
 	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)

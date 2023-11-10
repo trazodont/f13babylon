@@ -9,7 +9,7 @@
 	point_return = 25
 
 
-/obj/structure/blob/node/Initialize(mapload)
+/obj/structure/blob/node/Initialize()
 	GLOB.blob_nodes += src
 	START_PROCESSING(SSobj, src)
 	. = ..()

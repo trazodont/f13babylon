@@ -15,7 +15,7 @@
 	light_on = FALSE
 
 
-/obj/structure/furnace/Initialize(mapload)
+/obj/structure/furnace/Initialize()
 	. = ..()
 	create_reagents(250, TRANSPARENT)
 	START_PROCESSING(SSobj, src)

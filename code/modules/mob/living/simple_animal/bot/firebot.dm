@@ -39,7 +39,7 @@
 	var/extinguish_fires = TRUE
 	var/stationary_mode = FALSE
 
-/mob/living/simple_animal/bot/firebot/Initialize(mapload)
+/mob/living/simple_animal/bot/firebot/Initialize()
 	. = ..()
 	update_icon()
 	var/datum/job/engineer/J = new/datum/job/engineer

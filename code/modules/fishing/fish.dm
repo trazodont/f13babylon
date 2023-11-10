@@ -95,7 +95,7 @@
 	icon_state = "clownfish"
 	secondary_drop = /obj/item/fishyegg/clownfish
 
-/obj/item/fishy/clownfish/Initialize(mapload)
+/obj/item/fishy/clownfish/Initialize()
 	. = ..()
 	AddComponent(/datum/component/slippery, 80) //clownfish really do be soap though
 

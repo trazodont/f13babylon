@@ -15,7 +15,7 @@
 
 	var/obj/item/toner/ink = null
 
-/obj/item/airlock_painter/Initialize(mapload)
+/obj/item/airlock_painter/Initialize()
 	. = ..()
 	ink = new /obj/item/toner(src)
 
@@ -170,7 +170,7 @@
 	. = ..()
 	ui_interact(user)
 
-/obj/item/airlock_painter/decal/Initialize(mapload)
+/obj/item/airlock_painter/decal/Initialize()
 	. = ..()
 	ink = new /obj/item/toner/large(src)
 
@@ -232,7 +232,7 @@
 	name = "extreme decal painter"
 	icon_state = "decal_sprayer_ex"
 
-/obj/item/airlock_painter/decal/debug/Initialize(mapload)
+/obj/item/airlock_painter/decal/debug/Initialize()
 	. = ..()
 	ink = new /obj/item/toner/extreme(src)
 
@@ -311,7 +311,7 @@
 	. = ..()
 	ui_interact(user)
 
-/obj/item/airlock_painter/tile/Initialize(mapload)
+/obj/item/airlock_painter/tile/Initialize()
 	. = ..()
 	ink = new /obj/item/toner/large(src)
 

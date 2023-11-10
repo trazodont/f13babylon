@@ -14,7 +14,7 @@
 	limb_integrity = 0 // disabled for most exo-suits
 	mutantrace_variation = STYLE_DIGITIGRADE
 
-/obj/item/clothing/suit/Initialize(mapload)
+/obj/item/clothing/suit/Initialize()
 	. = ..()
 	if(!allowed)
 		allowed = GLOB.f13_coat_allowed
@@ -287,7 +287,7 @@
 	slowdown = 0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/Initialize(mapload)
+/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -302,7 +302,7 @@
 	slowdown = 0.08
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored/Initialize(mapload)
+/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -328,7 +328,7 @@
 	slowdown = 0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/coat/Initialize(mapload)
+/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/coat/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

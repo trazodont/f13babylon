@@ -26,7 +26,7 @@
 	debug_power = 80
 	bombcheck = FALSE
 
-/obj/item/gun/blastcannon/Initialize(mapload)
+/obj/item/gun/blastcannon/Initialize()
 	. = ..()
 	if(!pin)
 		pin = new

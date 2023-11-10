@@ -32,7 +32,7 @@
 
 	var/list/atmos_overlay_types //gas IDs of current active gas overlays
 
-/turf/open/Initialize(mapload)
+/turf/open/Initialize()
 	if(!blocks_air)
 
 		air = new(2500,src)

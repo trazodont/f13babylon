@@ -17,7 +17,7 @@
 	var/convert_range = 10
 	obj_flags = CAN_BE_HIT | DANGEROUS_POSSESSION
 
-/obj/structure/destructible/clockwork/massive/ratvar/Initialize(mapload)
+/obj/structure/destructible/clockwork/massive/ratvar/Initialize()
 	. = ..()
 	GLOB.ratvar_awakens++
 	for(var/obj/O in GLOB.all_clockwork_objects)

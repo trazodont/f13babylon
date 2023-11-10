@@ -277,7 +277,7 @@
 	level = 1
 	component_type = /datum/component/storage/concrete/secret_satchel
 
-/obj/item/storage/backpack/satchel/flat/Initialize(mapload)
+/obj/item/storage/backpack/satchel/flat/Initialize()
 	. = ..()
 	SSpersistence.new_secret_satchels += src
 
@@ -310,7 +310,7 @@
 	var/list/reward_all_of_these = list() //use paths!
 	var/revealed = FALSE
 
-/obj/item/storage/backpack/satchel/flat/secret/Initialize(mapload)
+/obj/item/storage/backpack/satchel/flat/secret/Initialize()
 	. = ..()
 
 	if(isfloorturf(loc) && !isplatingturf(loc))

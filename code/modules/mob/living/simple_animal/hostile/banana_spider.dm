@@ -31,7 +31,7 @@
 	var/projectile_density = TRUE		//griffons get shot
 	del_on_death = TRUE
 
-/mob/living/simple_animal/banana_spider/Initialize(mapload)
+/mob/living/simple_animal/banana_spider/Initialize()
 	. = ..()
 	var/area/A = get_area(src)
 	if(A)
@@ -104,6 +104,6 @@
 	juice_results = list(/datum/reagent/consumable/banana = 0)
 
 
-/obj/item/reagent_containers/food/snacks/deadbanana_spider/Initialize(mapload)
+/obj/item/reagent_containers/food/snacks/deadbanana_spider/Initialize()
 	. = ..()
 	AddComponent(/datum/component/slippery, 20)

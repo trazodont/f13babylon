@@ -32,7 +32,7 @@
 	)
 	return usable_stacks[cover_stack.merge_type]
 
-/obj/structure/nest/Initialize(mapload)
+/obj/structure/nest/Initialize()
 	. = ..()
 	// list() faction, so we don't overwrite it
 	AddComponent(/datum/component/spawner/ranged, mob_types, spawn_time, list(), spawn_text, max_mobs, _spawn_sound = spawnsound, _infinite = infinite, _range = radius)

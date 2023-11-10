@@ -49,7 +49,7 @@
 	var/obj/item/stock_parts/cell/cell
 	var/bloodiness = 0
 
-/mob/living/simple_animal/bot/mulebot/Initialize(mapload)
+/mob/living/simple_animal/bot/mulebot/Initialize()
 	. = ..()
 	wires = new /datum/wires/mulebot(src)
 //	var/datum/job/cargo_tech/J = new/datum/job/cargo_tech

@@ -16,7 +16,7 @@
 	light_color = "#DAAA18"
 	var/star_light_star_bright = FALSE //If this stargazer can see starlight
 
-/obj/structure/destructible/clockwork/stargazer/Initialize(mapload)
+/obj/structure/destructible/clockwork/stargazer/Initialize()
 	. = ..()
 	START_PROCESSING(SSprocessing, src)
 

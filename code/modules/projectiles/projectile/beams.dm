@@ -58,7 +58,7 @@
 	wound_bonus = 0
 	damage = 25
 
-/obj/item/projectile/beam/laser/hellfire/Initialize(mapload)
+/obj/item/projectile/beam/laser/hellfire/Initialize()
 	. = ..()
 	transform *= 2
 
@@ -582,7 +582,7 @@
 /obj/item/projectile/beam/laser/laer/hitscan
 	hitscan = TRUE
 
-/obj/item/projectile/beam/laser/laer/hitscan/Initialize(mapload)
+/obj/item/projectile/beam/laser/laer/hitscan/Initialize()
 	. = ..()
 	transform *= 2
 

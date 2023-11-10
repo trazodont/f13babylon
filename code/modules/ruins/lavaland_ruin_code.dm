@@ -7,7 +7,7 @@
 /obj/item/disk/design_disk/adv/knight_gear
 	name = "Magic Disk of Smithing"
 
-/obj/item/disk/design_disk/adv/knight_gear/Initialize(mapload)
+/obj/item/disk/design_disk/adv/knight_gear/Initialize()
 	. = ..()
 	var/datum/design/knight_armour/A = new
 	var/datum/design/knight_helmet/H = new
@@ -33,7 +33,7 @@
 	icon_state = "datadisk1"
 	max_blueprints = 1
 
-/obj/item/disk/design_disk/plant_disk/Initialize(mapload)
+/obj/item/disk/design_disk/plant_disk/Initialize()
 	. = ..()
 	var/datum/design/diskplantgene/P = new
 	blueprints[1] = P
@@ -46,7 +46,7 @@
 	icon_state = "datadisk1"
 	max_blueprints = 1
 
-/obj/item/disk/design_disk/golem_shell/Initialize(mapload)
+/obj/item/disk/design_disk/golem_shell/Initialize()
 	. = ..()
 	var/datum/design/golem_shell/G = new
 	blueprints[1] = G
@@ -158,7 +158,7 @@
 	important_info = "DO NOT abandon the base."
 	outfit = /datum/outfit/lavaland_syndicate/comms
 
-/obj/effect/mob_spawn/human/lavaland_syndicate/comms/space/Initialize(mapload)
+/obj/effect/mob_spawn/human/lavaland_syndicate/comms/space/Initialize()
 	. = ..()
 	if(prob(90)) //only has a 10% chance of existing, otherwise it'll just be a NPC syndie.
 		new /mob/living/simple_animal/hostile/syndicate/ranged(get_turf(src))
@@ -170,7 +170,7 @@
 	mask = /obj/item/clothing/mask/chameleon/gps
 	suit = /obj/item/clothing/suit/armor/vest
 
-/obj/item/clothing/mask/chameleon/gps/Initialize(mapload)
+/obj/item/clothing/mask/chameleon/gps/Initialize()
 	. = ..()
 	new /obj/item/gps/internal/lavaland_syndicate_base(src)
 

@@ -132,7 +132,7 @@
 	smooth = SMOOTH_FALSE
 	//canSmoothWith = list(/turf/closed/wall/mineral/wood, /obj/structure/falsewall/wood)
 
-/turf/closed/wall/mineral/wood/Initialize(mapload)
+/turf/closed/wall/mineral/wood/Initialize()
 	. = ..()
 	for(var/turf/closed/wall/mineral/wood/W in range(src,1))
 		W.relativewall()

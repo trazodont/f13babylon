@@ -72,6 +72,6 @@
 	icon_state = "tracks"
 	random_icon_states = null
 
-/obj/effect/decal/cleanable/blood/xtracks/Initialize(mapload)
+/obj/effect/decal/cleanable/blood/xtracks/Initialize()
 	add_blood_DNA(list("UNKNOWN DNA" = "X*"))
 	. = ..()

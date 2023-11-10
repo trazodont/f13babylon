@@ -26,7 +26,7 @@
 
 	var/cooldown
 
-/obj/machinery/pool/drain/Initialize(mapload)
+/obj/machinery/pool/drain/Initialize()
 	START_PROCESSING(SSfastprocess, src)
 	whirling_mobs = list()
 	return ..()

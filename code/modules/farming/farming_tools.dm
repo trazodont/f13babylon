@@ -74,7 +74,7 @@
 		return
 	return ..()
 
-/obj/item/reagent_containers/glass/bucket/Initialize(mapload)
+/obj/item/reagent_containers/glass/bucket/Initialize()
 	. = ..()
 	update_icon()
 
@@ -207,7 +207,7 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
 
-/obj/item/hatchet/Initialize(mapload)
+/obj/item/hatchet/Initialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 70, 100)
 
@@ -254,7 +254,7 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	var/swiping = FALSE
 
-/obj/item/scythe/Initialize(mapload)
+/obj/item/scythe/Initialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 90, 105)
 

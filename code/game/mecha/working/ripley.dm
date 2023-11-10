@@ -20,7 +20,7 @@
 	..()
 	update_icon()
 /*
-/obj/mecha/working/ripley/Initialize(mapload)
+/obj/mecha/working/ripley/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate,3,/obj/item/stack/sheet/animalhide/goliath_hide,list("melee" = 10, "bullet" = 5, "laser" = 5))
 */
@@ -57,7 +57,7 @@
 	wreckage = /obj/structure/mecha_wreckage/ripley/deathripley
 	step_energy_drain = 0
 
-/obj/mecha/working/ripley/deathripley/Initialize(mapload)
+/obj/mecha/working/ripley/deathripley/Initialize()
 	. = ..()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/hydraulic_clamp/kill
 	ME.attach(src)
@@ -65,7 +65,7 @@
 /obj/mecha/working/ripley/deathripley/real
 	desc = "OH SHIT IT'S THE DEATHSQUAD WE'RE ALL GONNA DIE. FOR REAL"
 
-/obj/mecha/working/ripley/deathripley/real/Initialize(mapload)
+/obj/mecha/working/ripley/deathripley/real/Initialize()
 	. = ..()
 	for(var/obj/item/mecha_parts/mecha_equipment/E in equipment)
 		E.detach()
@@ -115,7 +115,7 @@
 	name = "\improper APLU \"Miner\""
 	obj_integrity = 75 //Low starting health
 
-/obj/mecha/working/ripley/mining/Initialize(mapload)
+/obj/mecha/working/ripley/mining/Initialize()
 	. = ..()
 	if(cell)
 		cell.charge = FLOOR(cell.charge * 0.25, 1) //Starts at very low charge

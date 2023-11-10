@@ -11,7 +11,7 @@
 	bound_width = 64
 	resistance_flags = INDESTRUCTIBLE
 
-/obj/structure/billboard/Initialize(mapload)
+/obj/structure/billboard/Initialize()
 	. = ..()
 	AddComponent(/datum/component/largetransparency, x_size = 1, y_size = 1)
 

@@ -157,7 +157,7 @@
 	var/faction = null
 	var/removing
 
-/obj/item/flag/Initialize(mapload)
+/obj/item/flag/Initialize()
 	. = ..()
 	AddComponent(/datum/component/largetransparency, y_size = 1)
 

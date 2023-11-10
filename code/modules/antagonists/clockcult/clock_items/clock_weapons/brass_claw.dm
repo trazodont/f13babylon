@@ -26,7 +26,7 @@
 	var/damage_per_combo = 2
 	var/maximum_combo_damage = 18 //33 damage on max stacks. Usually the target will already be dead by then but if they somehow aren't, better to have this capped
 
-/obj/item/clockwork/brass_claw/Initialize(mapload)
+/obj/item/clockwork/brass_claw/Initialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 60, 80)
 

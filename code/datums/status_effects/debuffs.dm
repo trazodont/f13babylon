@@ -812,7 +812,7 @@
 /obj/effect/temp_visual/curse
 	icon_state = "curse"
 
-/obj/effect/temp_visual/curse/Initialize(mapload)
+/obj/effect/temp_visual/curse/Initialize()
 	. = ..()
 	deltimer(timerid)
 

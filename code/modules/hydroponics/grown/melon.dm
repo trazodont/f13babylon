@@ -61,7 +61,7 @@
 	wine_flavor = "divinity"
 
 /*
-/obj/item/reagent_containers/food/snacks/grown/holymelon/Initialize(mapload)
+/obj/item/reagent_containers/food/snacks/grown/holymelon/Initialize()
 	. = ..()
 	var/uses = 1
 	if(seed)

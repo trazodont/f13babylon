@@ -103,7 +103,7 @@
 	return SSshuttle.is_in_shuttle_bounds(src)
 
 /*
-/turf/open/space/transit/Initialize(mapload)
+/turf/open/space/transit/Initialize()
 	. = ..()
 	update_icon()
 	for(var/atom/movable/AM in src)

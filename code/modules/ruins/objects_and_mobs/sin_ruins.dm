@@ -48,7 +48,7 @@
 	anchored = FALSE
 	density = TRUE
 
-/obj/structure/cursed_money/Initialize(mapload)
+/obj/structure/cursed_money/Initialize()
 	. = ..()
 	addtimer(CALLBACK(src, .proc/collapse), 600)
 

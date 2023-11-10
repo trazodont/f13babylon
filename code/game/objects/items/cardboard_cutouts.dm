@@ -15,7 +15,7 @@
 	/// If the cutout actually appears as what it portray and not a discolored version
 	var/deceptive = FALSE
 
-/obj/item/cardboard_cutout/Initialize(mapload)
+/obj/item/cardboard_cutout/Initialize()
 	. = ..()
 	if(possible_appearances)
 		return

@@ -29,7 +29,7 @@
 	smoke_action.Remove(user)
 	zoom_action.Remove(user)
 
-/obj/mecha/combat/marauder/loaded/Initialize(mapload)
+/obj/mecha/combat/marauder/loaded/Initialize()
 	. = ..()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/energy/pulse(src)
 	ME.attach(src)
@@ -54,7 +54,7 @@
 	force = 65
 	max_equip = 5
 
-/obj/mecha/combat/marauder/seraph/Initialize(mapload)
+/obj/mecha/combat/marauder/seraph/Initialize()
 	. = ..()
 	var/obj/item/mecha_parts/mecha_equipment/ME
 	ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot(src)
@@ -76,7 +76,7 @@
 	wreckage = /obj/structure/mecha_wreckage/mauler
 	max_equip = 5
 
-/obj/mecha/combat/marauder/mauler/loaded/Initialize(mapload)
+/obj/mecha/combat/marauder/mauler/loaded/Initialize()
 	. = ..()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg(src)
 	ME.attach(src)

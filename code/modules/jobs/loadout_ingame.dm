@@ -56,7 +56,7 @@
 	icon_state = "random_loot"
 	item_flags = DROPDEL
 
-/obj/item/loadout_token/Initialize(mapload)
+/obj/item/loadout_token/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 

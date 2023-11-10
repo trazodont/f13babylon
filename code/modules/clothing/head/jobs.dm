@@ -98,7 +98,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/detective
 	dog_fashion = /datum/dog_fashion/head/detective
 
-/obj/item/clothing/head/fedora/det_hat/Initialize(mapload)
+/obj/item/clothing/head/fedora/det_hat/Initialize()
 	. = ..()
 	new /obj/item/reagent_containers/food/drinks/flask/det(src)
 
@@ -127,7 +127,7 @@
 	dog_fashion = /datum/dog_fashion/head/beret
 	dynamic_hair_suffix = ""
 
-/obj/item/clothing/head/beret/Initialize(mapload)
+/obj/item/clothing/head/beret/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -155,7 +155,7 @@
 	desc = "That was white fabric. <i>Was.</i>"
 	dog_fashion = null //THIS IS FOR SLAUGHTER, NOT PUPPIES
 
-/obj/item/clothing/head/beret/highlander/Initialize(mapload)
+/obj/item/clothing/head/beret/highlander/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, HIGHLANDER)
 

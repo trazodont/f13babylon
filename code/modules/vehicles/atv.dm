@@ -6,7 +6,7 @@
 	key_type = /obj/item/key
 	var/static/mutable_appearance/atvcover
 
-/obj/vehicle/ridden/atv/Initialize(mapload)
+/obj/vehicle/ridden/atv/Initialize()
 	. = ..()
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
 	D.vehicle_move_delay = 1
@@ -34,7 +34,7 @@
 	scan_range = 7
 	density = FALSE
 
-/obj/vehicle/ridden/atv/turret/Initialize(mapload)
+/obj/vehicle/ridden/atv/turret/Initialize()
 	. = ..()
 	turret = new(loc)
 	turret.base = src

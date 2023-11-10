@@ -26,12 +26,12 @@
 	var/active = 0
 	var/saber_color
 
-/obj/item/holo/esword/green/Initialize(mapload)
+/obj/item/holo/esword/green/Initialize()
 	. = ..()
 	saber_color = "green"
 
 
-/obj/item/holo/esword/red/Initialize(mapload)
+/obj/item/holo/esword/red/Initialize()
 	. = ..()
 	saber_color = "red"
 
@@ -40,7 +40,7 @@
 		return ..()
 	return ..()
 
-/obj/item/holo/esword/Initialize(mapload)
+/obj/item/holo/esword/Initialize()
 	. = ..()
 	saber_color = pick("red","blue","green","purple")
 

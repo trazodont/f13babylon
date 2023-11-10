@@ -9,7 +9,7 @@
 	var/range = 4
 
 
-/obj/machinery/computer/pod/Initialize(mapload)
+/obj/machinery/computer/pod/Initialize()
 	. = ..()
 	for(var/obj/machinery/mass_driver/M in range(range, src))
 		if(M.id == id)

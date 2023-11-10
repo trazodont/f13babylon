@@ -21,7 +21,7 @@ Just leaving this here for quick copy-pasting, for future contributors.
 	mutantrace_variation = STYLE_DIGITIGRADE
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
-/obj/item/clothing/suit/f13/goner/Initialize(mapload)
+/obj/item/clothing/suit/f13/goner/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

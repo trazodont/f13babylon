@@ -45,7 +45,7 @@
 	throwforce = 10
 	obj_flags = UNIQUE_RENAME
 
-/obj/item/multitool/chaplain/Initialize(mapload)
+/obj/item/multitool/chaplain/Initialize()
 	. = ..()
 	AddComponent(/datum/component/anti_magic, TRUE, TRUE, FALSE, null, null, FALSE)
 
@@ -130,7 +130,7 @@
 	var/mob/camera/aiEye/remote/ai_detector/eye
 	var/datum/action/item_action/toggle_multitool/toggle_action
 
-/obj/item/multitool/ai_detect/Initialize(mapload)
+/obj/item/multitool/ai_detect/Initialize()
 	. = ..()
 	START_PROCESSING(SSobj, src)
 	eye = new /mob/camera/aiEye/remote/ai_detector()

@@ -25,7 +25,7 @@
 	var/victims_needed = 10 //Citadel change from 25 to 10
 	var/ascend_bonus = 15
 
-/obj/item/his_grace/Initialize(mapload)
+/obj/item/his_grace/Initialize()
 	. = ..()
 	START_PROCESSING(SSprocessing, src)
 	GLOB.poi_list += src

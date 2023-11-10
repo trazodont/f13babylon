@@ -15,7 +15,7 @@
 	var/cooldown = 0
 	var/pulseicon = "plutonium_core_pulse"
 
-/obj/item/nuke_core/Initialize(mapload)
+/obj/item/nuke_core/Initialize()
 	. = ..()
 	START_PROCESSING(SSobj, src)
 
@@ -191,7 +191,7 @@
 	item_state = "supermattersliver"
 	pulseicon = "sm_croc"
 
-/obj/item/nuke_core/supermatter_sliver/supermatter_crocs/Initialize(mapload)
+/obj/item/nuke_core/supermatter_sliver/supermatter_crocs/Initialize()
 	. = ..()
 	set_light(5, 7, COLOR_ASSEMBLY_YELLOW)
 
@@ -241,7 +241,7 @@
 	usesound = 'sound/weapons/bladeslice.ogg'
 	var/usesLeft
 
-/obj/item/scalpel/supermatter/Initialize(mapload)
+/obj/item/scalpel/supermatter/Initialize()
 	. = ..()
 	usesLeft = rand(2, 4)
 

@@ -14,7 +14,7 @@
 	var/spawn_text = "emerges from"
 	var/faction = list("hostile")
 
-/obj/structure/spawner/Initialize(mapload)
+/obj/structure/spawner/Initialize()
 	. = ..()
 	AddComponent(/datum/component/spawner, mob_types, spawn_time, faction, spawn_text, max_mobs)
 

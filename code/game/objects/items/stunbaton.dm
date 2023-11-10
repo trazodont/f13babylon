@@ -289,7 +289,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	var/obj/item/assembly/igniter/sparkler
 
-/obj/item/melee/baton/cattleprod/Initialize(mapload)
+/obj/item/melee/baton/cattleprod/Initialize()
 	. = ..()
 	sparkler = new (src)
 	sparkler.activate_cooldown = 5

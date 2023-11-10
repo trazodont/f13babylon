@@ -77,7 +77,7 @@
 	var/turfverb = "uproot"
 	tiled_dirt = FALSE
 
-/turf/open/floor/grass/Initialize(mapload)
+/turf/open/floor/grass/Initialize()
 	. = ..()
 	update_icon()
 
@@ -172,7 +172,7 @@
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	slowdown = 0
 
-/turf/open/floor/grass/snow/basalt/Initialize(mapload)
+/turf/open/floor/grass/snow/basalt/Initialize()
 	. = ..()
 	if(prob(15))
 		icon_state = "basalt[rand(0, 12)]"
@@ -193,7 +193,7 @@
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
-/turf/open/floor/grass/fakebasalt/Initialize(mapload)
+/turf/open/floor/grass/fakebasalt/Initialize()
 	. = ..()
 	if(prob(15))
 		icon_state = "basalt[rand(0, 12)]"
@@ -221,7 +221,7 @@
 	. = ..()
 	. += "<span class='notice'>There's a <b>small crack</b> on the edge of it.</span>"
 
-/turf/open/floor/carpet/Initialize(mapload)
+/turf/open/floor/carpet/Initialize()
 	. = ..()
 	update_icon()
 
@@ -386,7 +386,7 @@
 	plane = PLANE_SPACE
 	tiled_dirt = FALSE
 
-/turf/open/floor/fakespace/Initialize(mapload)
+/turf/open/floor/fakespace/Initialize()
 	. = ..()
 	icon_state = SPACE_ICON_STATE
 

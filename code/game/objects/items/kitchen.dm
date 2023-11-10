@@ -78,7 +78,7 @@
 	bare_wound_bonus = 10
 	custom_price = PRICE_NORMAL
 
-/obj/item/kitchen/knife/Initialize(mapload)
+/obj/item/kitchen/knife/Initialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 80 - force, 100, force - 10) //bonus chance increases depending on force
 

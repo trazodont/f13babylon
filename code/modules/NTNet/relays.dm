@@ -92,7 +92,7 @@
 			update_icon()
 			return TRUE
 
-/obj/machinery/ntnet_relay/Initialize(mapload)
+/obj/machinery/ntnet_relay/Initialize()
 	uid = gl_uid++
 	component_parts = list()
 

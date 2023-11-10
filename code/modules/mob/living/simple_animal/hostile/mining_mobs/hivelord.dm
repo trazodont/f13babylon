@@ -89,7 +89,7 @@
 	del_on_death = 1
 	var/swarming = FALSE
 
-/mob/living/simple_animal/hostile/asteroid/hivelordbrood/Initialize(mapload)
+/mob/living/simple_animal/hostile/asteroid/hivelordbrood/Initialize()
 	. = ..()
 	if(swarming)
 		AddComponent(/datum/component/swarming) //oh god not the bees
@@ -123,7 +123,7 @@
 	var/dwarf_mob = FALSE
 	var/mob/living/carbon/human/stored_mob
 
-/mob/living/simple_animal/hostile/asteroid/hivelord/legion/random/Initialize(mapload)
+/mob/living/simple_animal/hostile/asteroid/hivelord/legion/random/Initialize()
 	. = ..()
 	if(prob(5))
 		new /mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf(loc)
@@ -264,7 +264,7 @@
 	see_in_dark = 8
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 
-/mob/living/simple_animal/hostile/big_legion/Initialize(mapload)
+/mob/living/simple_animal/hostile/big_legion/Initialize()
 	.=..()
 	AddComponent(/datum/component/spawner, list(/mob/living/simple_animal/hostile/asteroid/hivelord/legion), 200, faction, "peels itself off from", 3)
 
@@ -284,7 +284,7 @@
 	. = ..()
 	H.dna.add_mutation(DWARFISM)
 
-/obj/effect/mob_spawn/human/corpse/damaged/legioninfested/Initialize(mapload)
+/obj/effect/mob_spawn/human/corpse/damaged/legioninfested/Initialize()
 	var/type = pickweight(list("Miner" = 45, "Ashwalker" = 10, "Golem" = 10,"Clown" = 10, pick(list("Shadow", "YeOlde","Operative", "Cultist", "Lavaknight")) = 4, "Assistant" = 20, "Beelegion" = 1))
 	switch(type)
 		if("Miner")

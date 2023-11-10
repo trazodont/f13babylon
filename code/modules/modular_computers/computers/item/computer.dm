@@ -48,7 +48,7 @@
 	var/comp_light_color			//The color of that light
 
 
-/obj/item/modular_computer/Initialize(mapload)
+/obj/item/modular_computer/Initialize()
 	. = ..()
 	START_PROCESSING(SSobj, src)
 	if(!physical)

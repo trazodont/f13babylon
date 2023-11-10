@@ -5,7 +5,7 @@
 	icon_state = "generic_camera"
 	var/allowed_area = null
 
-/mob/camera/aiEye/remote/xenobio/Initialize(mapload)
+/mob/camera/aiEye/remote/xenobio/Initialize()
 	var/area/A = get_area(loc)
 	allowed_area = A.name
 	. = ..()
@@ -41,7 +41,7 @@
 
 	light_color = LIGHT_COLOR_PINK
 
-/obj/machinery/computer/camera_advanced/xenobio/Initialize(mapload)
+/obj/machinery/computer/camera_advanced/xenobio/Initialize()
 	. = ..()
 	slime_place_action = new
 	slime_up_action = new

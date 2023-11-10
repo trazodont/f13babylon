@@ -7,7 +7,7 @@
 	attachable = TRUE
 	var/armed = FALSE
 
-/obj/item/assembly/mousetrap/Initialize(mapload)
+/obj/item/assembly/mousetrap/Initialize()
 	. = ..()
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,

@@ -357,10 +357,10 @@
 			PDA.update_style(preference_source)
 
 	if(chemwhiz == TRUE)
-		ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
+		ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 
 	if(pa_wear == TRUE)
-		ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+		ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
 	if(vb_pilot == TRUE)
 		ADD_TRAIT(H, TRAIT_PILOT, "vb_pilot")

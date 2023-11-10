@@ -22,7 +22,7 @@
 	if(!has_buckled_mobs())
 		. += "<span class='notice'>Drag your sprite to sit in it.</span>"
 
-/obj/structure/chair/Initialize(mapload)
+/obj/structure/chair/Initialize()
 	. = ..()
 	if(!anchored)	//why would you put these on the shuttle?
 		addtimer(CALLBACK(src, .proc/RemoveFromLatejoin), 0)
@@ -338,7 +338,7 @@
 	item_chair = null
 	var/mutable_appearance/armrest
 
-/obj/structure/chair/comfy/Initialize(mapload)
+/obj/structure/chair/comfy/Initialize()
 	armrest = GetArmrest()
 	armrest.layer = ABOVE_MOB_LAYER
 	armrest.plane = MOB_PLANE

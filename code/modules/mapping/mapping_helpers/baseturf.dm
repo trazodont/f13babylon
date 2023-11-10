@@ -8,7 +8,7 @@
 
 	layer = POINT_LAYER
 
-/obj/effect/baseturf_helper/Initialize(mapload)
+/obj/effect/baseturf_helper/Initialize()
 	. = ..()
 	return INITIALIZE_HINT_LATELOAD
 

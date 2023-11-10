@@ -20,7 +20,7 @@
 	var/busy_message
 	var/message_cooldown = 0
 
-/obj/machinery/nanite_chamber/Initialize(mapload)
+/obj/machinery/nanite_chamber/Initialize()
 	. = ..()
 	occupant_typecache = GLOB.typecache_living
 

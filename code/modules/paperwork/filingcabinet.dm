@@ -187,7 +187,7 @@ GLOBAL_LIST_EMPTY(employmentCabinets)
 	icon_state = "employmentcabinet"
 	var/virgin = TRUE
 
-/obj/structure/filingcabinet/employment/Initialize(mapload)
+/obj/structure/filingcabinet/employment/Initialize()
 	. = ..()
 	GLOB.employmentCabinets += src
 

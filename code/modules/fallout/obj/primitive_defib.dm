@@ -10,7 +10,7 @@
 	item_state = "defibunit"
 	cell = /obj/item/stock_parts/cell/high
 
-/obj/item/defibrillator/primitive/Initialize(mapload)
+/obj/item/defibrillator/primitive/Initialize()
 	. = ..()
 	paddles = make_paddlesprim()
 	update_power()

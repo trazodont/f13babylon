@@ -72,7 +72,7 @@ Difficulty: Medium
 
 	footstep_type = FOOTSTEP_MOB_HEAVY
 
-/mob/living/simple_animal/hostile/megafauna/dragon/Initialize(mapload)
+/mob/living/simple_animal/hostile/megafauna/dragon/Initialize()
 	smallsprite.Grant(src)
 	. = ..()
 	internal = new/obj/item/gps/internal/dragon(src)
@@ -298,7 +298,7 @@ Difficulty: Medium
 	duration = 9
 	pixel_z = DRAKE_SWOOP_HEIGHT
 
-/obj/effect/temp_visual/fireball/Initialize(mapload)
+/obj/effect/temp_visual/fireball/Initialize()
 	. = ..()
 	animate(src, pixel_z = 0, time = duration)
 

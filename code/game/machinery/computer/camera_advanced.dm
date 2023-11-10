@@ -14,7 +14,7 @@
 
 	light_color = LIGHT_COLOR_RED
 
-/obj/machinery/computer/camera_advanced/Initialize(mapload)
+/obj/machinery/computer/camera_advanced/Initialize()
 	. = ..()
 	for(var/i in networks)
 		networks -= i

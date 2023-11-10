@@ -89,7 +89,7 @@ Nothing else in the console has ID requirements.
 				linked_imprinter = D
 				D.linked_console = src
 
-/obj/machinery/computer/rdconsole/Initialize(mapload)
+/obj/machinery/computer/rdconsole/Initialize()
 	. = ..()
 	update_techweb()
 	stored_research.consoles_accessing[src] = TRUE
@@ -1153,7 +1153,7 @@ Nothing else in the console has ID requirements.
 	req_access = null
 	req_access_txt = "29"
 
-/obj/machinery/computer/rdconsole/robotics/Initialize(mapload)
+/obj/machinery/computer/rdconsole/robotics/Initialize()
 	. = ..()
 	if(circuit)
 		circuit.name = "R&D Console - Robotics (Computer Board)"

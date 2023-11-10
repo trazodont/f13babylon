@@ -23,12 +23,12 @@
 	. = ..()
 	AddComponent(/datum/component/uplink, owner, FALSE, TRUE, null, tc_amount)
 
-/obj/item/uplink/nuclear/Initialize(mapload)
+/obj/item/uplink/nuclear/Initialize()
 	. = ..()
 	var/datum/component/uplink/hidden_uplink = GetComponent(/datum/component/uplink)
 	hidden_uplink.set_gamemode(/datum/game_mode/nuclear)
 
-/obj/item/uplink/nuclear_restricted/Initialize(mapload)
+/obj/item/uplink/nuclear_restricted/Initialize()
 	. = ..()
 	var/datum/component/uplink/hidden_uplink = GetComponent(/datum/component/uplink)
 	hidden_uplink.allow_restricted = FALSE

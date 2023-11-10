@@ -13,7 +13,7 @@
 	// Loading the same shuttle map at a different time will produce distinct area instances.
 	unique = FALSE
 
-/area/shuttle/Initialize(mapload)
+/area/shuttle/Initialize()
 	if(!canSmoothWithAreas)
 		canSmoothWithAreas = type
 	. = ..()

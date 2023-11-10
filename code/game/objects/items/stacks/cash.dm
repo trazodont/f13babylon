@@ -14,7 +14,7 @@
 	grind_results = list(/datum/reagent/cellulose = 10)
 	var/value = 0
 
-/obj/item/stack/spacecash/Initialize(mapload)
+/obj/item/stack/spacecash/Initialize()
 	. = ..()
 	update_desc()
 

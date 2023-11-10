@@ -62,7 +62,7 @@
 	icon_state = "asteroid0"
 	tiled_dirt = FALSE
 
-/turf/open/floor/holofloor/asteroid/Initialize(mapload)
+/turf/open/floor/holofloor/asteroid/Initialize()
 	icon_state = "asteroid[rand(0, 12)]"
 	. = ..()
 
@@ -72,7 +72,7 @@
 	icon_state = "basalt0"
 	tiled_dirt = FALSE
 
-/turf/open/floor/holofloor/basalt/Initialize(mapload)
+/turf/open/floor/holofloor/basalt/Initialize()
 	. = ..()
 	if(prob(15))
 		icon_state = "basalt[rand(0, 12)]"
@@ -83,7 +83,7 @@
 	icon = 'icons/turf/space.dmi'
 	icon_state = "0"
 
-/turf/open/floor/holofloor/space/Initialize(mapload)
+/turf/open/floor/holofloor/space/Initialize()
 	icon_state = SPACE_ICON_STATE // so realistic
 	. = ..()
 
@@ -94,11 +94,11 @@
 	bullet_bounce_sound = null
 	tiled_dirt = FALSE
 
-/turf/open/floor/holofloor/hyperspace/Initialize(mapload)
+/turf/open/floor/holofloor/hyperspace/Initialize()
 	icon_state = "speedspace_ns_[(x + 5*y + (y%2+1)*7)%15+1]"
 	. = ..()
 
-/turf/open/floor/holofloor/hyperspace/ns/Initialize(mapload)
+/turf/open/floor/holofloor/hyperspace/ns/Initialize()
 	. = ..()
 	icon_state = "speedspace_ns_[(x + 5*y + (y%2+1)*7)%15+1]"
 
@@ -113,7 +113,7 @@
 	bullet_bounce_sound = null
 	tiled_dirt = FALSE
 
-/turf/open/floor/holofloor/carpet/Initialize(mapload)
+/turf/open/floor/holofloor/carpet/Initialize()
 	. = ..()
 	addtimer(CALLBACK(src, /atom/.proc/update_icon), 1)
 
@@ -171,6 +171,6 @@
 	canSmoothWith = list(/turf/open/floor/plating/ice/smooth, /turf/open/floor/plating/ice, /turf/open/floor/holofloor/ice)
 	baseturfs = /turf/open/floor/holofloor/ice/smooth
 
-/turf/open/floor/holofloor/ice/Initialize(mapload)
+/turf/open/floor/holofloor/ice/Initialize()
 	. = ..()
 	MakeSlippery(TURF_WET_PERMAFROST, INFINITY, 0, INFINITY, TRUE)

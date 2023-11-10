@@ -15,7 +15,7 @@
 	var/obj/machinery/teleport/station/power_station
 	var/calibrated //Calibration prevents mutation
 
-/obj/machinery/teleport/hub/Initialize(mapload)
+/obj/machinery/teleport/hub/Initialize()
 	. = ..()
 	link_power_station()
 
@@ -100,7 +100,7 @@
 /obj/machinery/teleport/hub/proc/is_ready()
 	. = !panel_open && !(stat & (BROKEN|NOPOWER)) && power_station && power_station.engaged && !(power_station.stat & (BROKEN|NOPOWER))
 
-/obj/machinery/teleport/hub/syndicate/Initialize(mapload)
+/obj/machinery/teleport/hub/syndicate/Initialize()
 	. = ..()
 	component_parts += new /obj/item/stock_parts/matter_bin/super(null)
 	RefreshParts()
@@ -120,7 +120,7 @@
 	var/list/linked_stations = list()
 	var/efficiency = 0
 
-/obj/machinery/teleport/station/Initialize(mapload)
+/obj/machinery/teleport/station/Initialize()
 	. = ..()
 	link_console_and_hub()
 

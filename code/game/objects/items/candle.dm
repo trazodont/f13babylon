@@ -18,7 +18,7 @@
 	var/heats_space = TRUE
 
 
-/obj/item/candle/Initialize(mapload)
+/obj/item/candle/Initialize()
 	. = ..()
 	if(start_lit)
 		light()

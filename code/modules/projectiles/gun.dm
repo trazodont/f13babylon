@@ -255,7 +255,7 @@ ATTACHMENTS
 
 	var/automatic = 0 //can gun use it, 0 is no, anything above 0 is the delay between clicks in ds
 
-/obj/item/gun/Initialize(mapload)
+/obj/item/gun/Initialize()
 	. = ..()
 	if(no_pin_required)
 		pin = null
@@ -1196,7 +1196,7 @@ CODE FOR ASSAULT RIFE WITH GRENADE LAUNCHER ATTACHED
 	automatic_burst_overlay = FALSE
 	var/obj/item/gun/ballistic/revolver/grenadelauncher/underbarrel
 
-/obj/item/gun/ballistic/automatic/m90/Initialize(mapload)
+/obj/item/gun/ballistic/automatic/m90/Initialize()
 	. = ..()
 	underbarrel = new /obj/item/gun/ballistic/revolver/grenadelauncher(src)
 	update_icon()
@@ -1204,7 +1204,7 @@ CODE FOR ASSAULT RIFE WITH GRENADE LAUNCHER ATTACHED
 /obj/item/gun/ballistic/automatic/m90/unrestricted
 	pin = /obj/item/firing_pin
 
-/obj/item/gun/ballistic/automatic/m90/unrestricted/Initialize(mapload)
+/obj/item/gun/ballistic/automatic/m90/unrestricted/Initialize()
 	. = ..()
 	underbarrel = new /obj/item/gun/ballistic/revolver/grenadelauncher/unrestricted(src)
 	update_icon()

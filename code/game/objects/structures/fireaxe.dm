@@ -13,7 +13,7 @@
 	var/open = FALSE
 	var/obj/item/twohanded/fireaxe/fireaxe
 
-/obj/structure/fireaxecabinet/Initialize(mapload)
+/obj/structure/fireaxecabinet/Initialize()
 	. = ..()
 	fireaxe = new
 	update_icon()

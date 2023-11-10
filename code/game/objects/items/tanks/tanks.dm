@@ -64,7 +64,7 @@
 	H.update_action_buttons_icon()
 
 
-/obj/item/tank/Initialize(mapload)
+/obj/item/tank/Initialize()
 	. = ..()
 
 	air_contents = new(volume) //liters

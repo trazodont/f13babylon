@@ -54,7 +54,7 @@ field_generator power level display
 		. += "+p[power_level]"
 
 
-/obj/machinery/field/generator/Initialize(mapload)
+/obj/machinery/field/generator/Initialize()
 	. = ..()
 	fields = list()
 	connected_gens = list()

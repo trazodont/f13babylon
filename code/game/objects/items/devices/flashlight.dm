@@ -19,7 +19,7 @@
 	light_on = FALSE
 	var/on = FALSE
 
-/obj/item/flashlight/Initialize(mapload)
+/obj/item/flashlight/Initialize()
 	. = ..()
 	if(icon_state == "[initial(icon_state)]-on")
 		on = TRUE
@@ -442,7 +442,7 @@
 	rad_flags = RAD_NO_CONTAMINATE
 	var/fuel = 0
 
-/obj/item/flashlight/glowstick/Initialize(mapload)
+/obj/item/flashlight/glowstick/Initialize()
 	fuel = rand(1000, 1500)
 	light_color = color
 	. = ..()

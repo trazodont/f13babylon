@@ -10,7 +10,7 @@
 	var/times_spoken_to = 0
 	var/list/shenanigans = list()
 
-/obj/structure/speaking_tile/Initialize(mapload)
+/obj/structure/speaking_tile/Initialize()
 	. = ..()
 	var/json_file = file("data/npc_saves/Poly.json")
 	if(!fexists(json_file))
@@ -124,7 +124,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/glass = 500)
 
-/obj/item/rupee/Initialize(mapload)
+/obj/item/rupee/Initialize()
 	. = ..()
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,

@@ -33,7 +33,7 @@
 	var/girder_type = /obj/structure/girder/displaced
 	var/opening = FALSE
 
-/obj/structure/falsewall/Initialize(mapload)
+/obj/structure/falsewall/Initialize()
 	. = ..()
 	air_update_turf(TRUE)
 

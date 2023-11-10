@@ -110,7 +110,7 @@
 			qdel(bait)
 			visible_message("<span class='notice'>[src] examines [bait] closer, and telekinetically shatters the pen.</span>")
 
-/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/random/Initialize(mapload)
+/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/random/Initialize()
 	. = ..()
 	if(prob(1))
 		if(prob(75))

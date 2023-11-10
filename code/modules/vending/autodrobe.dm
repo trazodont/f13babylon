@@ -139,7 +139,7 @@
 	extra_price = PRICE_ALMOST_EXPENSIVE
 	payment_department = ACCOUNT_SRV
 
-/obj/machinery/vending/autodrobe/Initialize(mapload)
+/obj/machinery/vending/autodrobe/Initialize()
 	. = ..()
 	cost_multiplier_per_dept = list("[ACCESS_THEATRE]" = 0)
 

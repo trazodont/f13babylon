@@ -89,7 +89,7 @@ Difficulty: Hard
 			INVOKE_ASYNC(src, .proc/triple_charge)
 
 
-/mob/living/simple_animal/hostile/megafauna/bubblegum/Initialize(mapload)
+/mob/living/simple_animal/hostile/megafauna/bubblegum/Initialize()
 	. = ..()
 	for(var/mob/living/simple_animal/hostile/megafauna/bubblegum/B in GLOB.mob_list)
 		if(B != src)

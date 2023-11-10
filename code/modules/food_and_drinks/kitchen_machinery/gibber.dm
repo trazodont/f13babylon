@@ -17,7 +17,7 @@
 	var/meat_quality = 35 //food_quality of meat produced
 
 
-/obj/machinery/gibber/Initialize(mapload)
+/obj/machinery/gibber/Initialize()
 	. = ..()
 	add_overlay("grjam")
 

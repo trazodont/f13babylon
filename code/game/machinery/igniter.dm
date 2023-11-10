@@ -40,7 +40,7 @@
 			location.hotspot_expose(700,10,1)
 	return 1
 
-/obj/machinery/igniter/Initialize(mapload)
+/obj/machinery/igniter/Initialize()
 	. = ..()
 	icon_state = "igniter[on]"
 
@@ -70,7 +70,7 @@
 /obj/machinery/sparker/toxmix
 	id = INCINERATOR_TOXMIX_IGNITER
 
-/obj/machinery/sparker/Initialize(mapload)
+/obj/machinery/sparker/Initialize()
 	. = ..()
 	spark_system = new /datum/effect_system/spark_spread
 	spark_system.set_up(2, 1, src)

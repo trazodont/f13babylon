@@ -33,7 +33,7 @@
 	var/recalls_remaining = 1
 	var/recalling
 
-/obj/structure/destructible/clockwork/massive/celestial_gateway/Initialize(mapload)
+/obj/structure/destructible/clockwork/massive/celestial_gateway/Initialize()
 	. = ..()
 	INVOKE_ASYNC(src, .proc/spawn_animation)
 	glow = new(get_turf(src))

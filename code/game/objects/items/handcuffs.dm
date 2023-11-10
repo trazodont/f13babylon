@@ -252,7 +252,7 @@
 	var/armed = FALSE
 	var/trap_damage = 30
 
-/obj/item/restraints/legcuffs/beartrap/Initialize(mapload)
+/obj/item/restraints/legcuffs/beartrap/Initialize()
 	. = ..()
 	icon_state = "[initial(icon_state)][armed]"
 	

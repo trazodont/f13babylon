@@ -41,7 +41,7 @@
 		addtimer(CALLBACK(src, .proc/refresh), 20) //Wait a bit so we can find the one below, then get powering
 	return TRUE
 
-/obj/machinery/power/deck_relay/Initialize(mapload)
+/obj/machinery/power/deck_relay/Initialize()
 	. = ..()
 	addtimer(CALLBACK(src, .proc/find_relays), 30)
 	addtimer(CALLBACK(src, .proc/refresh), 50) //Wait a bit so we can find the one below, then get powering
