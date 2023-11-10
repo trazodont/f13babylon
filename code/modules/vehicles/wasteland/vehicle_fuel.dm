@@ -11,7 +11,7 @@
 	var/idle_wasting = 0.5
 	var/move_wasting = 0.1
 
-/obj/vehicle/ridden/fuel/Initialize()
+/obj/vehicle/ridden/fuel/Initialize(mapload)
 	. = ..()
 	fuel_holder = new(max_fuel, fuel)
 

@@ -7,7 +7,7 @@
 	invisibility = INVISIBILITY_ABSTRACT // nope cant see this shit
 	anchored = TRUE
 
-/obj/effect/step_trigger/Initialize()
+/obj/effect/step_trigger/Initialize(mapload)
 	. = ..()
 
 	var/static/list/loc_connections = list(

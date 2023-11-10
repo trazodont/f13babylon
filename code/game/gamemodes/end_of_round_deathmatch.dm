@@ -4,7 +4,7 @@ GLOBAL_LIST_INIT(eord_arsenal, list(
 	/obj/item/melee/onehanded/machete,
 ))
 
-/obj/effect/landmark/deathmatch/Initialize()
+/obj/effect/landmark/deathmatch/Initialize(mapload)
 	. = ..()
 	GLOB.deathmatch_spawn_points += loc
 	return INITIALIZE_HINT_QDEL
