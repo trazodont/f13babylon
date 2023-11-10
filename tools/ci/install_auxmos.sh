@@ -11,6 +11,7 @@ else
 	cd ~/rust-g
 	git fetch origin
 fi
+git fetch --all
 git reset --hard
 git checkout ${AUXMOS_VERSION}
 
