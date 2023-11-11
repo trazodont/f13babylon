@@ -1,6 +1,6 @@
 // rust_g.dm - DM API for rust_g extension library
 
-#define RUSTG_OVERRIDE_BUILTINS
+// #define RUSTG_OVERRIDE_BUILTINS
 #ifndef RUST_G
 
 /* This comment bypasses grep checks */ /var/__rust_g
@@ -14,16 +14,13 @@
 			__rust_g = "librust_g.so"
 	
 	if(!fexists(__rust_g))
-		world.log << "Rust-G: Failed to locate library at [__rust_g]. Aborting launch."
-		del world
-		sleep
+		world.log << "Rust-G: Failed to locate library at [__rust_g]."
+		return
 
 	try
 		world.log << "Rust-G: [rustg_get_version()]"
 	catch
-		world.log << "Rust-G: Failed to load. Aborting launch."
-		del world
-		sleep
+		world.log << "Rust-G: Failed to load."
 
 #define RUST_G (__rust_g || __detect_rust_g())
 #endif
