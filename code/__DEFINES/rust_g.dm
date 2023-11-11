@@ -16,12 +16,14 @@
 	if(!fexists(__rust_g))
 		world.log << "Rust-G: Failed to locate library at [__rust_g]. Aborting launch."
 		del world
+		sleep
 
 	try
 		world.log << "Rust-G: [rustg_get_version()]"
 	catch
 		world.log << "Rust-G: Failed to load. Aborting launch."
 		del world
+		sleep
 
 #define RUST_G (__rust_g || __detect_rust_g())
 #endif
