@@ -18,7 +18,7 @@
 		del world
 
 	try
-		world.log << "Rust-G: [rust_g_version()]"
+		world.log << "Rust-G: [rustg_get_version()]"
 	catch
 		world.log << "Rust-G: Failed to load. Aborting launch."
 		del world
