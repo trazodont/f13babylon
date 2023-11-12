@@ -151,7 +151,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
-	exp_requirements = 0
+	exp_requirements = 600
 
 	loadout_options = list(
 		/datum/outfit/loadout/ncrcptmelee,	// Lucky

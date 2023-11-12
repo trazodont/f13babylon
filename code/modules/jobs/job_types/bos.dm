@@ -97,7 +97,7 @@ Head Paladin
 */
 
 /datum/job/bos/f13sentinel
-	title = "Senior Paladin"
+	title = "Head Paladin"
 	flag = F13SENTINEL
 	head_announce = list("Security")
 	total_positions = 1
@@ -108,7 +108,8 @@ Head Paladin
 	supervisors = "the Elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 0
+	exp_requirements = 600
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/sentheavy, //Minigun
@@ -184,15 +185,15 @@ Proctor
 	title = "Head Scribe"
 	flag = F13HEADSCRIBE
 	head_announce = list("Security")
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the foremost experienced scribe remaining in this bunker. Your role is to ensure the safekeeping and proper usage of technology within the Brotherhood. You are also the lead medical and engineering expert in this Chapter. Delegate your tasks to your Scribes."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 0
+	exp_requirements = 600
 
 
 	outfit = /datum/outfit/job/bos/f13headscribe
@@ -249,8 +250,8 @@ Head Knight
 	title = "Head Knight"
 	flag = F13KNIGHTCAPTAIN
 	head_announce = list("Security")
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the Head Knight, leader of your respective caste in the Chapter. Your knowledge of pre-war tactics, and you have advanced combat training and experience. You are in charge of the detachment's internal security, and your Knights. Delegate to them as necessary."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -513,7 +514,7 @@ Senior Scribe
 	supervisors = "the Proctor"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 0
+	exp_requirements = 600
 
 	outfit = /datum/outfit/job/bos/f13seniorscribe
 
@@ -685,7 +686,7 @@ Scribe
 		)
 
 /*
-Senior Knight
+
 */
 
 /datum/job/bos/f13seniorknight
@@ -698,7 +699,7 @@ Senior Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Knight-Captains"
 	selection_color = "#95a5a6"
-	exp_requirements = 0
+	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/sknighta, //R93
