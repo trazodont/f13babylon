@@ -423,7 +423,7 @@
 	name = "Enclave Specialist"
 	jobtype = /datum/job/enclave/f13specialist
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
+	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
 	accessory = /obj/item/clothing/accessory/enclave/specialist
 
 	backpack_contents = list(
@@ -492,7 +492,7 @@
 	jobtype = /datum/job/enclave/enclavespy
 	accessory = /obj/item/clothing/accessory/enclave/private_firstclass
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
+	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
