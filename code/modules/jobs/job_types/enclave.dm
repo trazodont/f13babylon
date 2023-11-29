@@ -188,7 +188,6 @@
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan
 	suit = /obj/item/clothing/suit/armor/f13/usmcriot
 	backpack_contents = list(
-
 		/obj/item/ammo_box/magazine/m14mm  = 3
 	)
 
