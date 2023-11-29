@@ -6,6 +6,7 @@
 
 	access = list(ACCESS_ENCLAVE, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	minimal_access = list(ACCESS_ENCLAVE, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
+	blacklisted_quirks = list(/datum/quirk/straight_edge)
 	forbids = "Enclave taboos: Aiding the Brotherhood, NCR, or Legion in any way if it will not get you more than it gets them. Revealing your affiliation with the Enclave to outsiders if not directly ordered to. Killing fellow Americans."
 	enforces = "Enclave rules: Stay in uniform. Act mature and respectful. Obey orders given to you that do not harm fellow Americans. Maintain secrecy of your bunker's whereabouts."
 	objectivesList = list("Rapid Reaction Corps Logistics advisory: Collect resources, attrition is depleting our reserves.", "Rapid Reaction Corps Research advisory: Capture human subjects for experiments, alive.")
@@ -44,6 +45,7 @@
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
+	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE, REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
 
@@ -85,7 +87,6 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone =1
 		)
 
@@ -154,7 +155,6 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/mask/chameleon = 1
@@ -223,7 +223,6 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3,
@@ -295,7 +294,6 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
 		/obj/item/clothing/mask/chameleon = 1
 		)
@@ -368,8 +366,6 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone =1
 		)
 
@@ -450,7 +446,7 @@
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/midsurgery = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
+		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		)
 
@@ -504,7 +500,6 @@
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/pda = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/clothing/mask/chameleon = 1,
 		/obj/item/card/id/syndicate/anyone =1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1
