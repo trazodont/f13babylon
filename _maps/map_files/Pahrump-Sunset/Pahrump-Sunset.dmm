@@ -3625,7 +3625,7 @@
 	},
 /area/f13/wasteland/bighorn)
 "aok" = (
-/obj/structure/closet/fridge,
+/obj/structure/closet/fridge/meat,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -12292,7 +12292,9 @@
 /turf/open/floor/wood/wood_wide,
 /area/f13/city/bighorn)
 "aSk" = (
-/obj/machinery/deepfryer,
+/obj/machinery/deepfryer{
+	dir = 4
+	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "aSl" = (
@@ -24351,6 +24353,13 @@
 	dir = 8
 	},
 /area/f13/building/hospital)
+"cQG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/deepfryer{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/bar,
+/area/f13/city/bighorn)
 "cQJ" = (
 /obj/machinery/smartfridge/bottlerack/grownbin,
 /turf/open/indestructible/ground/outside/dirt,
@@ -25705,11 +25714,11 @@
 	},
 /area/f13/building/massfusion)
 "dEZ" = (
-/obj/structure/window/fulltile/wood,
-/obj/structure/curtain{
-	color = "#845f58"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/unpowered/securedoor{
+	name = "The Blue Oyster";
+	req_one_access_txt = "137"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/city/bighorn)
 "dFh" = (
@@ -32281,7 +32290,7 @@
 	dir = 8;
 	light_color = "#d8b1b1"
 	},
-/obj/item/kirbyplants/random,
+/obj/machinery/vending/dinnerware,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/city/bighorn)
 "hkf" = (
@@ -43436,7 +43445,9 @@
 	},
 /area/f13/wasteland/heaven)
 "ndJ" = (
-/obj/machinery/deepfryer,
+/obj/machinery/deepfryer{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "blueyellowfull"
 	},
@@ -56662,7 +56673,6 @@
 	},
 /area/f13/wasteland/hospital)
 "tYn" = (
-/obj/structure/closet/fridge,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/item/reagent_containers/food/condiment/yeast,
@@ -56676,6 +56686,7 @@
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/structure/closet/fridge/standard,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -73729,7 +73740,7 @@ blI
 swr
 swr
 swr
-hVN
+blI
 swr
 swr
 aTw
@@ -73986,7 +73997,7 @@ bnQ
 bnI
 buy
 bvN
-dSo
+cQG
 hjN
 cdm
 aTw
