@@ -160,7 +160,7 @@
 	message_admins("[key_name_admin(usr)] [base_message]")
 	var/datum/admin_help/AH = admin_ticket_log(ckey, "[key_name(usr)] [base_message]")
 
-	var/is_temp_ban = duration == -1
+	var/is_temp_ban = duration != -1
 	SSdiscord.send_to_ban_channel(
 		"**BAN** | `[bankey]` | [(is_temp_ban ? "TEMP | [duration]m" : "PERM")] | [(job || "SERVER")] | ADMIN `[key_name(usr, include_name = FALSE)]` | [reason]"
 	)
