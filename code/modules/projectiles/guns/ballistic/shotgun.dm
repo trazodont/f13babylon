@@ -328,7 +328,7 @@
 	icon_state = "shotgunlever"
 	item_state = "shotgunlever"
 	icon_prefix = "shotgunlever"
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/lever
 	fire_delay = 3
 	slowdown = 0.25
 	recoil = 2.1
