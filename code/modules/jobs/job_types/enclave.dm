@@ -15,7 +15,7 @@
 	id = null
 	ears = /obj/item/radio/headset/headset_enclave
 	glasses = /obj/item/clothing/glasses/night/f13/enclave
-	box = /obj/item/storage/survivalkit_adv
+	box = /obj/item/storage/survivalkit/advanced
 
 /datum/outfit/job/enclave/peacekeeper
 	id = /obj/item/card/id/dogtag/enclave/trooper
@@ -25,7 +25,6 @@
 	satchel = /obj/item/storage/backpack/satchel/enclave
 	belt = /obj/item/storage/belt/military/assault/enclave
 	uniform = /obj/item/clothing/under/f13/enclave/peacekeeper
-	r_pocket = /obj/item/flashlight/seclite
 	shoes = /obj/item/clothing/shoes/f13/enclave/serviceboots
 	gloves = /obj/item/clothing/gloves/f13/military
 
@@ -35,7 +34,6 @@
 	satchel = /obj/item/storage/backpack/satchel/enclave
 	belt = /obj/item/storage/belt/military/assault/enclave
 	uniform = /obj/item/clothing/under/f13/enclave/science
-	r_pocket = /obj/item/flashlight/seclite
 	shoes = /obj/item/clothing/shoes/f13/enclave/serviceboots
 
 /datum/outfit/job/enclave/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -590,9 +588,9 @@
 	suit = /obj/item/clothing/suit/armor/f13/environmentalsuit
 	belt = /obj/item/storage/belt/medical
 	suit_store =  /obj/item/tank/internals/oxygen
+	box = /obj/item/storage/survivalkit/firstaid/advanced
 
 	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/pda = 1,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
@@ -654,7 +652,7 @@
 	ears = /obj/item/radio/headset/headset_enclave/command
 
 	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid_adv = 1,
+		/obj/item/storage/survivalkit/firstaid/advanced = 1,
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
@@ -704,7 +702,7 @@
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/storage/survivalkit_aid_adv = 1,
+		/obj/item/storage/survivalkit/firstaid/advanced = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		)
 
@@ -795,7 +793,7 @@
 		/obj/item/gun/energy/laser/plasma/pistol = 1,
 		/obj/item/storage/belt/holster = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/storage/survivalkit_aid_adv = 1,
+		/obj/item/storage/survivalkit/firstaid/advanced = 1,
 		)
 
 /datum/outfit/job/enclave/noncombat/enc_maj/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
