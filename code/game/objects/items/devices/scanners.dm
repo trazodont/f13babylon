@@ -275,14 +275,6 @@ GENETICS SCANNER
 						temp_message += " <span class='info'>Subject is hallucinating.</span>"
 
 
-					//Astrogen shenanigans
-					if(H.reagents.has_reagent(/datum/reagent/fermi/astral))
-						if(H.mind)
-							temp_message += " <span class='danger'>Warning: subject may be possesed.</span>"
-						else
-							temp_message += " <span class='notice'>Subject appears to be astrally projecting.</span>"
-
-
 			//LIVER
 			else if(istype(O, /obj/item/organ/liver))
 				var/obj/item/organ/liver/L = O

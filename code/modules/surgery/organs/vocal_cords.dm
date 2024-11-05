@@ -540,7 +540,7 @@
 	SSblackbox.record_feedback("tally", "voice_of_god", 1, log_message)
 
 	return cooldown
-return
+
 
 
 #undef COOLDOWN_STUN
