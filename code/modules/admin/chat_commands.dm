@@ -142,10 +142,7 @@ GLOBAL_LIST(round_end_notifiees)
 /datum/tgs_chat_command/despacito/Run()
 	return "https://www.youtube.com/watch?v=kJQP7kiw5Fk"
 
-/datum/tgs_chat_command/poly
-	name = "poly"
-	help_text = "The Lewder, more applicable Poly speak for Citadel Station 13."
-	var/list/speech_buffer
+
 
 /datum/tgs_chat_command/poly/Run()
 	LAZYINITLIST(speech_buffer) //I figure this is just safe to do for everything at this point
