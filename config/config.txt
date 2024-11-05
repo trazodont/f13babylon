@@ -21,13 +21,13 @@ $include policy.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-SERVERNAME Fallout 13: Yellowstone
+SERVERNAME Borkylon 13
 
 ## Server tagline: This will appear right below the server's title.
-SERVERTAGLINE [18+] The first furry-friendly Fallout server! MRP/HRP
+SERVERTAGLINE The furry-friendly Fallout server without ERP.
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
-SERVERSQLNAME f13ysql
+SERVERSQLNAME f13by
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
 STATIONNAME Rocky Mountain Wasteland
