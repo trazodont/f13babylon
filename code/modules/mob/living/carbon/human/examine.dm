@@ -347,7 +347,6 @@
 			if (HAS_TRAIT(src, TRAIT_DEAF))
 				msg += "[t_He] appear[p_s()] to not be responding to noises.\n"
 
-	var/obj/item/organ/vocal_cords/Vc = user.getorganslot(ORGAN_SLOT_VOICE)
 
 
 
