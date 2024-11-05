@@ -284,7 +284,7 @@
  * Calls `check_ass()` first to make sure that `ass` exists, among other conditions. Since this proc is called from a timer, it's possible that it was removed.
  * Additionally checks that the mob has their clothes off.
  */
-/obj/machinery/photocopier/proc/make_ass_copy()
+
 	if(!check_ass())
 		return
 	if(ishuman(ass)) //(ass.get_item_by_slot(ITEM_SLOT_ICLOTHING) || ass.get_item_by_slot(ITEM_SLOT_OCLOTHING)))
