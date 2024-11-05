@@ -177,7 +177,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	var/screenshake = 100
 	var/damagescreenshake = 2
-	var/arousable = TRUE
 	var/widescreenpref = TRUE
 	var/end_of_round_deathmatch = FALSE
 	var/autostand = TRUE
